@@ -20,14 +20,14 @@ class Trie {
       word = title[i];
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word] = new TrieNode();
-        currentNode.times += 1;
+        currentNode.children[word].times += 1;
       } else if (currentNode.children.hasOwnProperty(word)) {
-        currentNode.times += 1;
+        currentNode.children[word].times += 1;
       }
       currentNode = currentNode.children[word];
     }
     currentNode.isEnd = true;
-    currentNode.times += 1;
+  
     currentNode.freq = currentNode.freq + 1;
   }
 
@@ -49,8 +49,8 @@ class Trie {
     for (let i = 0; i < sentence.length; i++) {
       word = sentence[i];
     
-      if (currentNode.times > 2){
-        returnArr.push(word)  
+      if (currentNode.children[word].times > 1){
+        returnArr.push({"word": word, "times": currentNode.children[word].times})  
       }else{
         return returnArr
       };
@@ -75,11 +75,19 @@ class Trie {
   }
 }
 
-/* -------------------- Testing --------------------*/
+module.exports.Trie = Trie;
 
+
+
+
+
+/* -------------------- Testing --------------------*/
+// let titleArr = ["test1","test2", "test3"]
+// let titleArr2 = ["test1","test2"]
 
 // let t = new Trie();
-// t.insert(ace);
+// t.insert(titleArr);
+// t.insert(titleArr2);
 // t.insert(ace2);
 // // console.log(t.issentencArr(ace))	  // true
 // t.insert(ww);
@@ -109,6 +117,9 @@ class Trie {
 // check the internal representation of the Trie
 
 //console.log(t.root)
+// test = t.getLineArr(titleArr)
+// test2 = t.getLineArr(titleArr2)
+// console.log(test)
+// console.log(test2)
 
 
-module.exports.Trie = Trie;
