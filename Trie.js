@@ -20,15 +20,15 @@ class Trie {
       word = title[i];
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word] = new TrieNode();
-        currentNode.children[word].times += 1;
+        currentNode.children[word].times++
       } else if (currentNode.children.hasOwnProperty(word)) {
-        currentNode.children[word].times += 1;
+        currentNode.children[word].times++
       }
       currentNode = currentNode.children[word];
     }
     currentNode.isEnd = true;
   
-    currentNode.freq = currentNode.freq + 1;
+    currentNode.freq++// = currentNode.freq + 1;
   }
 
   getNodeForPrefix(sentence) {
