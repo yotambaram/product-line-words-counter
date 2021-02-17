@@ -2,27 +2,32 @@ class TrieNode {
   constructor() {
     this.isEnd = false;
     this.freq = 0;
-    this.times = 0;
+    this.timesInRoot = 0;
+    this.timesInBrand = 0;
+    this.childrenCounter = 0;
     this.children = {};
+    
   }
 }
 
 class Trie {
   constructor() {
-    this.root = new TrieNode();
+    this.root = new TrieNode()
   }
 
-  insert(title) {
+  insert(title, statsObj) {
     if (title.length === 0) return; // forbid empty string
     let word;
     let currentNode = this.root;
     for (let i = 0; i < title.length; i++) {
       word = title[i];
       if (!currentNode.children.hasOwnProperty(word)) {
+        currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
-        currentNode.children[word].times++;
+        currentNode.children[word].timesInRoot++;
+        currentNode.children[word].timesInBrand = statsObj[word]
       } else if (currentNode.children.hasOwnProperty(word)) {
-        currentNode.children[word].times++;
+        currentNode.children[word].timesInRoot++;
       }
       currentNode = currentNode.children[word];
     }
@@ -31,6 +36,7 @@ class Trie {
     currentNode.freq++; // = currentNode.freq + 1;
   }
 
+  
   getNodeForPrefix(sentence) {
     let word;
     let currentNode = this.root;
@@ -61,7 +67,7 @@ class Trie {
 
     // while (5 > i) {
     //   for (let word in currentNode.children) {
-    //     currentNode.children[word].times > 4 ? testArr.push(word) : null;
+    //     currentNode.children[word].timesInRoot > 4 ? testArr.push(word) : null;
     //     currentNode = currentNode.children[word];
     //   }
 
@@ -79,7 +85,7 @@ class Trie {
     // for (let i = 0; i < sentence.length; i++) {
     //   word = sentence[i];
 
-    //   if (currentNode.children[word].times > 1){
+    //   if (currentNode.children[word].timesInRoot > 1){
     //     returnArr.push(word)
     //   } else {
     //     return returnArr
@@ -101,7 +107,7 @@ class Trie {
 
   getsentencArrTimes(title) {
     if (this.getNodeForPrefix(title) === null) return false;
-    return this.getNodeForPrefix(title).times;
+    return this.getNodeForPrefix(title).timesInRoot;
   }
 }
 
