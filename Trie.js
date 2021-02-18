@@ -1,18 +1,19 @@
 class TrieNode {
   constructor() {
+    this.name = "root"
+    this.parent = null
     this.isEnd = false;
     this.freq = 0;
     this.timesInRoot = 0;
     this.timesInBrand = 0;
     this.childrenCounter = 0;
     this.children = {};
-    
   }
 }
 
 class Trie {
   constructor() {
-    this.root = new TrieNode()
+    this.root = new TrieNode();
   }
 
   insert(title, statsObj) {
@@ -25,7 +26,9 @@ class Trie {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
         currentNode.children[word].timesInRoot++;
-        currentNode.children[word].timesInBrand = statsObj[word]
+        currentNode.children[word].timesInBrand = statsObj[word];
+        currentNode.children[word].name = word;
+        currentNode.children[word].parent = currentNode.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
       }
@@ -35,10 +38,9 @@ class Trie {
     //currentNode = currentNode.children[word];
     currentNode.isEnd = true;
 
-     // = currentNode.freq + 1;
+    // = currentNode.freq + 1;
   }
 
-  
   getNodeForPrefix(sentence) {
     let word;
     let currentNode = this.root;
@@ -51,60 +53,103 @@ class Trie {
   }
 
   getLineArr() {
-    let currentNode = this.root;
-    let test = []
-    let stringtest = ""
-    const getLinerecursive = () => {
-      for (let word in currentNode.children) {
-        
-        if(currentNode.children[word].timesInRoot > 5) {
-         
-          test.push(word)
-        }
-        if(currentNode.children[word].childrenCounter > 0) {
-          // go to next nodes
-          currentNode = currentNode.children[word]
-          return getLinerecursive(currentNode)
-        }
-        
-      }
-      
-      
-    }
-    getLinerecursive()
-    return "%$#%#$%#$% getLineArr return"
-    }
-    
-
-    // while (5 > i) {
-    //   for (let word in currentNode.children) {
-    //     currentNode.children[word].timesInRoot > 4 ? testArr.push(word) : null;
-    //     currentNode = currentNode.children[word];
-    //   }
-
-      //currentNode = currentNode.children[curChar];
-    //   i++;
-    // }
-
-    // if (currentNode.value === null && key.length === 0) {
-    // 	return d;
-    // } else {
-    // 	return -1;
-    // }
-
-    ////////////////
-    // for (let i = 0; i < sentence.length; i++) {
-    //   word = sentence[i];
-
-    //   if (currentNode.children[word].timesInRoot > 1){
-    //     returnArr.push(word)
-    //   } else {
-    //     return returnArr
-    //   };
-    //   currentNode = currentNode.children[word];
-    // }
-    // return returnArr;
+     let currentNode = this.root;
+     let output = [];
+  //   let rec = (currentNode) => {
+  //     for (let word in currentNode.children) {
+  //       if (currentNode.children[word].childrenCounter > 0) {
+  //         currentNode = currentNode.children[word];
+  //         test.push(word)
+  //         console.log(test)
+  //         return rec(currentNode);
+  //       } else {
+  //        // console.log("DONE", word);
+  //       }
+  //       if (currentNode.children[word].timesInRoot > 5) {
+  //         test.push(word);
+  //       }
+       
+  //     }
+  //   };
+  //   rec(currentNode);
+  //   return "%$#%#$%#$% getLineArr return";
+  // }
   
+
+  ////////////
+ // for every character in the prefix
+ 
+ for (let word in currentNode.children) {
+  // make sure prefix actually has words
+  if (currentNode.children[word]) {
+    currentNode = currentNode.children[word];
+  } else {
+    // there's none. just return it.
+    return output;
+  }
+}
+
+// recursively find all words in the node
+this.findAllWords(currentNode, output);
+return output;
+};
+
+// recursive function to find all words in the given node.
+findAllWords(node, arr) {
+// base case, if node is at a word, push to output
+if (node.childrenCounter > 0) {
+  test = this.getWord()
+  arr.unshift(node.test);
+}
+
+// iterate through each children, call recursive findAllWords
+for (var child in node.children) {
+  this.findAllWords(node.children[child], arr);
+}
+}
+
+getWord() {
+  var output = [];
+  var node = this;
+  
+  while (node !== null) {
+    node.name ? output.unshift(node.name): null;
+    node = node.children;
+  }
+  
+  return output.join('');
+};
+
+  ////////////
+
+  // while (5 > i) {
+  //   for (let word in currentNode.children) {
+  //     currentNode.children[word].timesInRoot > 4 ? testArr.push(word) : null;
+  //     currentNode = currentNode.children[word];
+  //   }
+
+  //currentNode = currentNode.children[curChar];
+  //   i++;
+  // }
+
+  // if (currentNode.value === null && key.length === 0) {
+  // 	return d;
+  // } else {
+  // 	return -1;
+  // }
+
+  ////////////////
+  // for (let i = 0; i < sentence.length; i++) {
+  //   word = sentence[i];
+
+  //   if (currentNode.children[word].timesInRoot > 1){
+  //     returnArr.push(word)
+  //   } else {
+  //     return returnArr
+  //   };
+  //   currentNode = currentNode.children[word];
+  // }
+  // return returnArr;
 
   issentencArr(title) {
     if (this.getNodeForPrefix(title) === null) return false;

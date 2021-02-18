@@ -1,4 +1,4 @@
-const { WordCounter } = require("../services/Word-counter");
+const { WordCounter } = require("./word-counter");
 
 
 const getStatsObj = (allTitle) => {
