@@ -31,9 +31,11 @@ class Trie {
       }
       currentNode = currentNode.children[word];
     }
+    currentNode.freq++;
+    //currentNode = currentNode.children[word];
     currentNode.isEnd = true;
 
-    currentNode.freq++; // = currentNode.freq + 1;
+     // = currentNode.freq + 1;
   }
 
   
@@ -49,19 +51,28 @@ class Trie {
   }
 
   getLineArr() {
-    let returnArr = [];
     let currentNode = this.root;
-    let i = 0;
-    const testArr = [];
-
-    let buildLine = () => {
+    let test = []
+    let stringtest = ""
+    const getLinerecursive = () => {
       for (let word in currentNode.children) {
-        console.log(word)
-      }
-      if(currentNode.children) {
+        
+        if(currentNode.children[word].timesInRoot > 5) {
+         
+          test.push(word)
+        }
+        if(currentNode.children[word].childrenCounter > 0) {
+          // go to next nodes
+          currentNode = currentNode.children[word]
+          return getLinerecursive(currentNode)
+        }
         
       }
-
+      
+      
+    }
+    getLinerecursive()
+    return "%$#%#$%#$% getLineArr return"
     }
     
 
@@ -93,7 +104,7 @@ class Trie {
     //   currentNode = currentNode.children[word];
     // }
     // return returnArr;
-  }
+  
 
   issentencArr(title) {
     if (this.getNodeForPrefix(title) === null) return false;
