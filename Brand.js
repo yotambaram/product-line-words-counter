@@ -16,7 +16,7 @@ const Brand = (word, times) => {
 //     }
 
 //     addCount(word,count){
-//         console.log(word)
+//  
 //     }
 //   }
 
