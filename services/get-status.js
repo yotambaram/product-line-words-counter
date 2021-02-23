@@ -9,7 +9,7 @@ const getStatsObj = (allTitle) => {
 
     // cleane words status
     let words = Object.keys(wordCounterObj)
-    console.group(words)
+    //console.group(words)
     words.forEach(word => {
       // delete words exists 1 time
       //wordCounterObj[word] < 2 ? delete wordCounterObj[word] : null;
