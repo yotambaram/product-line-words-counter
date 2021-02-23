@@ -5,6 +5,7 @@ class TrieNode {
     this.name = "root";
     this.times = 0;
     this.children = {};
+    this.brandsCounter = 0;
   }
 }
 
@@ -25,14 +26,21 @@ class WordsCounter {
         currentNode.children[wordsString].times++;
         currentNode.children[wordsString].name = wordsString;
         currentNode.children[wordsString].children[brand] = 1;
+        currentNode.children[wordsString].brandsCounter++
         //currentNode.children[wordsString] = wordsString;
         //currentNode.children[wordsString].parent = currentNode.name;
       } 
       else if (currentNode.children.hasOwnProperty(wordsString)) {
         currentNode.children[wordsString].times++;
         let currentbrand = currentNode.children[wordsString].children[brand]//++
-        currentbrand ? currentNode.children[wordsString].children[brand]++ : currentNode.children[wordsString].children[brand] = 1;
-        let re;
+        if(currentbrand) {
+          currentNode.children[wordsString].children[brand]++
+        } 
+        else {
+          currentNode.children[wordsString].children[brand] = 1
+          currentNode.children[wordsString].brandsCounter++
+        }
+        
       }
       // currentNode = currentNode.children[wordsString];
   //  // console.log(currentNode)

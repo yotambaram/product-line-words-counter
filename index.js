@@ -24,6 +24,7 @@ async function getList(path) {
   let firstCleanDataArr = stringToArrCleaner(titleArr);
   // get data one word stats  
   let wordsStatsObj = getStatsObj(firstCleanDataArr);
+  //console.log(wordsStatsObj)
   // clean data with statics
   let cleanedBrandsArr = dataCleaner(firstCleanDataArr, wordsStatsObj);
 

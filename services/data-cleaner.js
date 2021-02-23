@@ -6,7 +6,7 @@ const dataCleaner = (allTitlesArr, wordsStObj) => {
     for (let i = 0; i < allTitlesArr.length; i++) {
       // TODO: wordsStObj[el] < 2 - > use statics to delete (%) 
       _.remove(allTitlesArr[i], (el) => {
-        return el === ""  || el.length < 2 /*|| !isNaN(el) || wordsStObj[el] < 2*/;
+        return el === ""  || el.length < 2 || !el in wordsStObj || wordsStObj[el] < 3/*|| !isNaN(el) || wordsStObj[el] < 2*/;
       });
       splitTitlesArr.push(allTitlesArr[i]);
     }

@@ -12,10 +12,9 @@ const getStatsObj = (allTitle) => {
     //console.group(words)
     words.forEach(word => {
       // delete words exists 1 time
-      //wordCounterObj[word] < 2 ? delete wordCounterObj[word] : null;
-      wordCounterObj[word] < 200 ? delete wordCounterObj[word] : null;
       //delete short words (1 char)
-      word.lenght < 2 ? delete wordCounterObj[word] : null;
+      wordCounterObj[word].count < 2 || word.lenght < 2 ? delete wordCounterObj[word] : null;
+      
       // delete brands, colors, models
 
       // delete words exists to many times
@@ -30,7 +29,7 @@ const getStatsObj = (allTitle) => {
 
 
     ////////////////
-    return wordsObjStatics;
+    return wordCounterObj;
   };
 
 module.exports.getStatsObj = getStatsObj;
