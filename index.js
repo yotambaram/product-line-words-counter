@@ -6,6 +6,7 @@ const { getStatsObj } = require("./services/get-status");
 const { stringToArrCleaner } = require("./services/string-to-array-cleaner");
 const fs = require("fs");
 const { Brand } = require("./Brand");
+const { WordsCounter } = require("./Words-counter");
 const { forEach } = require("lodash");
 const productEnhancemenPath = "./db/product-enhancement-db.csv";
 
@@ -28,15 +29,17 @@ async function getList(path) {
   // clean data with statics
   let cleanedBrandsArr = dataCleaner(firstCleanDataArr, wordsStatsObj);
 
-  let trieRoot = trieBuilder(cleanedBrandsArr);
+  let wordsTreeRoot = trieBuilder(cleanedBrandsArr);
 
+  const jsonData = wordsTreeRoot.cleanNodes()
 
   //console.log(firstCleanDataArr)
 
   // // build trie
 
-   let JsonData = JSON.stringify(trieRoot);
-  fs.writeFile("./word-counter-obj.txt", JsonData, (err) => {
+   let jsonDataStringify = JSON.stringify(jsonData);
+   console.log(jsonDataStringify)
+  fs.writeFile("./word-counter-obj.txt", jsonDataStringify, (err) => {
     if (err) return console.log(err);
     console.log("JsonData Ready");
 
