@@ -1,4 +1,4 @@
-const { WordsCounter } = require("./Words-counter");
+const { WordsCounter } = require("../Models/Words-counter");
 const fs = require("fs");
 
 

@@ -1,42 +1,51 @@
+const fs = require("fs");
 const _ = require("lodash");
 const { csvReader } = require("./services/csv-reader");
 const { dataCleaner } = require("./services/data-cleaner");
 const { twoWordsTreeBuilder } = require("./services/two-words-tree-builder");
+const { trieBuilder } = require("./services/trieBuilder");
 const { oneWordTreeBuilder } = require("./services/one-word-tree-builder");
+const { outputPathBuilder } = require("./services/output-path-builder");
 const { stringToArrCleaner } = require("./services/string-to-array-cleaner");
-const fs = require("fs");
-const { Brand } = require("./Brand");
-const { WordsCounter } = require("./services/Words-counter");
-const { forEach } = require("lodash");
+
+
 const productEnhancemenPath = "./db/product-enhancement-db.csv";
 
-
 async function getList(path) {
-  // get data
+  // Get data (This data is the API results)
   const titleArr = await csvReader(path);
-  // // clean data
-  
+
+  // Clean data (Open titles String to cleaner Array)
   const firstCleanDataArr = stringToArrCleaner(titleArr);
-  // // get data one word stats  
+
+  // Get words static (each word)
   const oneWordStatsTree = oneWordTreeBuilder(firstCleanDataArr);
-  // // clean data with statics
- 
+
+  // Clean more data with statics
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
 
-  const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
+  // Get words static (couples)
+  //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
 
-  const thirdCleanDataArr = dataCleaner(secondCleanDataArr, twoWordsStatsTree);
-  console.log(thirdCleanDataArr)
+  // Clean more data with statics
+  //const thirdCleanDataArr = dataCleaner(secondCleanDataArr, twoWordsStatsTree);
+
+  // S
+  const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
+ 
+  
   //const jsonDataCleanedNodes = thirdCleanDataArr.cleanNodes()
 
   //const jsonDataCleanedWords = jsonDataCleanedNodes.cleanWords(wordsStatsObj)
 
-  // // // build trie
+  // // build trie
 
-  // const jsonDataStringify = JSON.stringify(jsonDataCleanedNodes);
-  //console.log(jsonDataStringify)
-  // return jsonDataStringify
-
+  const jsonDataStringify = JSON.stringify(trieRoot);
+  let outputPath = outputPathBuilder("./db-results/json-data");
+  fs.writeFile(outputPath, jsonDataStringify, (err) => {
+    if (err) return console.log(err);
+    console.log("JsonData Ready");
+  });
 }
 
 getList(productEnhancemenPath);
