@@ -26,7 +26,7 @@ async function getList(path) {
   const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
 
   const thirdCleanDataArr = dataCleaner(secondCleanDataArr, twoWordsStatsTree);
-  console.log(secondCleanDataArr)
+  console.log(thirdCleanDataArr)
   //const jsonDataCleanedNodes = thirdCleanDataArr.cleanNodes()
 
   //const jsonDataCleanedWords = jsonDataCleanedNodes.cleanWords(wordsStatsObj)

@@ -24,9 +24,10 @@ const stringToArrCleaner = (allTitleArr) => {
       .trim()
       .replace(color.toLowerCase(), "")
       .trim();
-    splitTitle = _.split(cleanedBrand, " ");
-    splitTitle.unshift(brand);
-    allTitleCleanedArr.push(splitTitle);
+    const splitTitle = _.split(cleanedBrand, " ");
+    const filteredTitle = _.filter(splitTitle, _.size)
+    filteredTitle.unshift(brand);
+    allTitleCleanedArr.push(filteredTitle);
   }
   return allTitleCleanedArr;
 };
