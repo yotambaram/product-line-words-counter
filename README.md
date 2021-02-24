@@ -22,7 +22,7 @@ $ npm install
 
 ## Executing:
 
-* Open the project and run node command (make sour you are on the right project level):
+* Open the project and run node command (make sure you are on the right project level):
 ```
 $ node index
 
