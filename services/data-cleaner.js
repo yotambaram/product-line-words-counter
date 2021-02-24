@@ -1,13 +1,23 @@
 const _ = require("lodash");
 
-const dataCleaner = (allTitlesArr, wordsStObj) => {
+const dataCleaner = (allTitlesArr, oneWordStat) => {
     let splitTitlesArr = [];
-    let howMany = allTitlesArr.length
+    
     for (let i = 0; i < allTitlesArr.length; i++) {
-      // TODO: wordsStObj[el] < 2 - > use statics to delete (%) 
+      let currentBrand = allTitlesArr[i][0]
+      // TODO: oneWordStat[el] < 2 - > use statics to delete (%) 
       _.remove(allTitlesArr[i], (el) => {
-        return el === ""  || el.length < 2 || !el in wordsStObj || wordsStObj[el] < 3/*|| !isNaN(el) || wordsStObj[el] < 2*/;
+        //word = el.toLowerCase()
+        if(el === "" ) {
+          return false
+        } 
+        return el.length < 2 
+        || !el in oneWordStat 
+        || oneWordStat.root["_TOTAL_PRODUCTS"] > 10 ? oneWordStat.root.children[el].times < 3 : false
+        || oneWordStat.root["_TOTAL_PRODUCTS"] > 10 ?  oneWordStat.root.children[el].times / oneWordStat.root["_TOTAL_PRODUCTS"] > 0.6 : false
+        /*|| !isNaN(el) || oneWordStat[el] < 2*/
       });
+      allTitlesArr[i].unshift(currentBrand)
       splitTitlesArr.push(allTitlesArr[i]);
     }
     return splitTitlesArr;

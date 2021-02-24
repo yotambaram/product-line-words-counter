@@ -1,10 +1,10 @@
-const { WordsCounter } = require("../Words-counter");
+const { WordsCounter } = require("./Words-counter");
 
-const trieBuilder = (splitTitle, statsObj) => {
+const twoWordsTreeBuilder = (splitTitle, statsObj) => {
     let categoryWordsTrie = new WordsCounter();
     for (let i = 0; i < splitTitle.length; i++) {
       const title = splitTitle[i];
-      for (let j = 1; j < title.length - 1; j++) {
+      for (let j = 0; j < title.length - 1; j++) {
       let twoWords;
       let brand = title[0]
       twoWords = `${title[j]} ${title[j + 1]}`;
@@ -14,4 +14,4 @@ const trieBuilder = (splitTitle, statsObj) => {
      return categoryWordsTrie;
   };
 
-  module.exports.trieBuilder = trieBuilder;
+  module.exports.twoWordsTreeBuilder = twoWordsTreeBuilder;

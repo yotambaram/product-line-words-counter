@@ -28,12 +28,6 @@ const stringToArrCleaner = (allTitleArr) => {
     splitTitle.unshift(brand);
     allTitleCleanedArr.push(splitTitle);
   }
-  // let test = JSON.stringify(allTitleCleanedArr)
-  //  console.log(allTitleCleanedArr)
-  // fs.writeFile('./arr-data.txt', test, function (err) {
-  //   if (err) return console.log(err);
-  //   console.log('JsonData Ready');
-  // });
   return allTitleCleanedArr;
 };
 
