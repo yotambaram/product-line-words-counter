@@ -39,7 +39,8 @@ $ node index
 ".\db-results\json-data(number)" 
 
 ```
-The put files are not deleted automatically.
+The output files are not deleted automaticall.
+The output should go to real DB.
 For now is saved as txt file.
 
 
