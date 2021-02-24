@@ -22,7 +22,7 @@ $ npm install
 
 ## Executing:
 
-* Open the project and run node command (make sour you are on the right project level):
+* Open the project and run node command (make sure you are on the right project level):
 ```
 $ node index
 
@@ -39,7 +39,8 @@ $ node index
 ".\db-results\json-data(number)" 
 
 ```
-The put files are not deleted automatically.
+The output files are not deleted automaticall.
+The output should go to real DB.
 For now is saved as txt file.
 
 
