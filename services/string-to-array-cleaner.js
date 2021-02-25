@@ -6,29 +6,34 @@ const stringToArrCleaner = (allTitleArr) => {
   try {
     let allTitleCleanedArr = [];
     for (let i = 0; i < allTitleArr.length; i++) {
-      let title = allTitleArr[i].title.toLowerCase();
-      let brand = allTitleArr[i].brand;
-      let color = allTitleArr[i].color;
-      let cleanedBrand = title
-        //.replace(/(?:\\[rn]|[\r\n]+)+/g, "")
-        .replace(/[|&;$%@"<>()+,]/g, "")
-        .trim()
-        .replace(/[{()}]/g, "")
-        .trim()
-        .replace(/\\|\//g, " ")
-        .trim()
-        .replace(/[\[\]']+/g, "")
-        .trim()
-        .replace("- ", " ")
-        .replace(" -", " ")
-        .replace(brand.toLowerCase(), "")
-        .trim()
-        .replace(color.toLowerCase(), "")
-        .trim();
-      const splitTitle = _.split(cleanedBrand, " ");
-      const filteredTitle = _.filter(splitTitle, _.size)
-      filteredTitle.unshift(brand);
-      allTitleCleanedArr.push(filteredTitle);
+      let product = allTitleArr[i]
+    
+        
+        let brand = product.brand ? product.brand.toLowerCase() : "NO_BRAND";
+        let color = product.color ? product.color.toLowerCase() : "NO_COLOR";
+        let title = product.title ? product.title.toLowerCase() : "NO_TITLE";
+        let cleanedBrand = title
+          //.replace(/(?:\\[rn]|[\r\n]+)+/g, "")
+          .replace(/[|&;$%@"<>()+,]/g, "")
+          .trim()
+          .replace(/[{()}]/g, "")
+          .trim()
+          .replace(/\\|\//g, " ")
+          .trim()
+          .replace(/[\[\]']+/g, "")
+          .trim()
+          .replace("- ", " ")
+          .replace(" -", " ")
+          .replace(brand.toLowerCase(), "")
+          .trim()
+          .replace(color.toLowerCase(), "")
+          .trim();
+        const splitTitle = _.split(cleanedBrand, " ");
+        const filteredTitle = _.filter(splitTitle, _.size)
+        filteredTitle.unshift(brand);
+        allTitleCleanedArr.push(filteredTitle);
+      
+      
     }
     return allTitleCleanedArr;
     

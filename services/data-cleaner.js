@@ -22,7 +22,6 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             wordStatsTree.root.children[el].brandsCounter > 2 ||
             wordStatsTree.root.children[el].times < 3
             // || !isNaN(el) || wordStatsTree[el] < 2
-
           );
         }
       });
