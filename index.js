@@ -30,7 +30,7 @@ async function getList(path) {
   // Clean more data with statics
   //const thirdCleanDataArr = dataCleaner(secondCleanDataArr, twoWordsStatsTree);
 
-  // S
+  // Build trie to get mote statics
   const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
  
   
@@ -38,7 +38,7 @@ async function getList(path) {
 
   //const jsonDataCleanedWords = jsonDataCleanedNodes.cleanWords(wordsStatsObj)
 
-  // // build trie
+  
 
   const jsonDataStringify = JSON.stringify(trieRoot);
   let outputPath = outputPathBuilder("./db-results/json-data");
