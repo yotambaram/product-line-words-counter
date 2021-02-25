@@ -27,10 +27,11 @@ class TitleWordsTrie {
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
-        currentNode.children[word].timesInRoot++;
-        currentNode.children[word].timesInBrand = statsObj[word];
-        currentNode.children[word].name = word;
-        currentNode.children[word].parent = currentNode.name;
+        let currentChild = currentNode.children[word]
+        currentChild.timesInRoot++;
+        currentChild.timesInBrand = statsObj[word];
+        currentChild.name = word;
+        currentChild.parent = currentNode.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
       }

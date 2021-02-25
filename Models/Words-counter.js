@@ -25,18 +25,20 @@ class WordsCounter {
     if (!currentNode.children.hasOwnProperty(wordsString)) {
       //currentNode.childrenCounter++;
       currentNode.children[wordsString] = new TreeNode();
-      currentNode.children[wordsString].times++;
-      currentNode.children[wordsString].name = wordsString;
-      currentNode.children[wordsString].children[brand] = 1;
-      currentNode.children[wordsString].brandsCounter++;
-    } else if (currentNode.children.hasOwnProperty(wordsString)) {
-      currentNode.children[wordsString].times++;
-      let currentbrand = currentNode.children[wordsString].children[brand]; //++
+      let currentChild = currentNode.children[wordsString]
+      currentChild.times++;
+      currentChild.name = wordsString;
+      currentChild.children[brand] = 1;
+      currentChild.brandsCounter++;
+    } else {
+      let currentChild = currentNode.children[wordsString]
+      currentChild.times++;
+      let currentbrand = currentChild.children[brand]; //++
       if (currentbrand) {
-        currentNode.children[wordsString].children[brand]++;
+        currentChild.children[brand]++;
       } else {
-        currentNode.children[wordsString].children[brand] = 1;
-        currentNode.children[wordsString].brandsCounter++;
+        currentChild.children[brand] = 1;
+        currentChild.brandsCounter++;
       }
     }
   }
@@ -45,20 +47,19 @@ class WordsCounter {
     let currentNode = this.root;
     const wordsKeys = Object.keys(currentNode.children);
     for (let i = 0; i < wordsKeys.length; i++) {
-      const element = wordsKeys[i];
-      if (currentNode.children[element].times < 3) {
+      let element = currentNode.children[wordsKeys[i]];
+      if (element.times < 3) {
         delete currentNode.children[element];
-      } else if (currentNode.children[element].brandsCounter > 1) {
+      } else if (element.brandsCounter > 1) {
         delete currentNode.children[element];
       } else if (
-        currentNode.children[element].brandsCounter === 2 &&
-        currentNode.children[element].brandsCounter /
-          currentNode.children[element].times <
+        element.brandsCounter === 2 &&
+        element.brandsCounter /
+        element.times <
           0.6
       ) {
         delete currentNode.children[element];
-      } else {
-      }
+      } 
     }
     let wordsKeys2 = Object.keys(currentNode.children);
     currentNode.times = wordsKeys2.length;
