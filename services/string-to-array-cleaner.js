@@ -28,6 +28,7 @@ const stringToArrCleaner = (allTitleArr) => {
           .trim()
           .replace(color.toLowerCase(), "")
           .trim();
+          // TODO: Add words to delete from db
         const splitTitle = _.split(cleanedBrand, " ");
         const filteredTitle = _.filter(splitTitle, _.size)
         filteredTitle.unshift(brand);

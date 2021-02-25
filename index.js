@@ -24,8 +24,17 @@ async function getList(path) {
   // Clean more data with statics
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
 
-  // Get words static (couples)
-  //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
+  // Get words static (pairs)
+  const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
+  ////////////////
+  //temp for dev:
+  const jsonDataStringify1 = JSON.stringify(twoWordsStatsTree);
+  let outputPath1 = await outputPathBuilder("./db-results/pairs-data");
+  fs.writeFile(outputPath1, jsonDataStringify1, (err) => {
+    if (err) return console.log(err);
+    console.log("JsonData Ready");
+  });
+//////////////////////
 
   // Clean more data with statics
   //const thirdCleanDataArr = dataCleaner(secondCleanDataArr, twoWordsStatsTree);
@@ -42,7 +51,7 @@ async function getList(path) {
   
 
   const jsonDataStringify = JSON.stringify(trieRoot);
-  let outputPath = outputPathBuilder("./db-results/json-data");
+  let outputPath = await outputPathBuilder("./db-results/json-data");
   fs.writeFile(outputPath, jsonDataStringify, (err) => {
     if (err) return console.log(err);
     console.log("JsonData Ready");
