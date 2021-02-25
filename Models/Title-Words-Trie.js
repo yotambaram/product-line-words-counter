@@ -4,6 +4,7 @@ class TrieNode {
   constructor() {
     this.name = "root";
     this.parent = null;
+    this.family = null;
     this.isEnd = false;
     this.freq = 0;
     this.timesInRoot = 0;
@@ -18,6 +19,11 @@ class TitleWordsTrie {
     this.root = new TrieNode();
   }
 
+  idNumberBuilder = (currentNum) => {
+    
+    
+    return currentNum + 1
+  }
   insert(title, statsObj) {
     if (title.length === 0) return; // forbid empty string
     let word;
@@ -32,6 +38,7 @@ class TitleWordsTrie {
         currentChild.timesInBrand = statsObj[word];
         currentChild.name = word;
         currentChild.parent = currentNode.name;
+        currentChild.family = currentNode.family === null ? currentChild.parent : currentNode.family +"," + currentChild.parent;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
       }

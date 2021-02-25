@@ -4,11 +4,10 @@ const fs = require("fs");
 const outputPathBuilder = (path) => {
     try {
         let i = 1;
-        let currentPath = path + ".txt"
+        let currentPath = path + ".txt" //.json
         while (fs.existsSync(currentPath)) {
             console.log(currentPath)
-          //number = i.toString();
-          currentPath = path + i + ".txt";
+          currentPath = path + i + ".txt";//.json
           i++;
         }
         return currentPath}
