@@ -33,6 +33,7 @@ async function getList(path) {
   // Build trie to get mote statics
   const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
  
+  // Clean trie
   
   //const jsonDataCleanedNodes = thirdCleanDataArr.cleanNodes()
 
