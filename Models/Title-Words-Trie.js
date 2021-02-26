@@ -4,7 +4,8 @@ class TrieNode {
   constructor() {
     this.name = "root";
     this.parent = null;
-    this.isEnd = false;
+    this.line = null;
+    //this.isEnd = false;
     this.freq = 0;
     this.timesInRoot = 0;
     this.timesInBrand = 0;
@@ -18,6 +19,9 @@ class TitleWordsTrie {
     this.root = new TrieNode();
   }
 
+  idNumberBuilder = (currentNum) => {
+    return currentNum + 1;
+  };
   insert(title, statsObj) {
     if (title.length === 0) return; // forbid empty string
     let word;
@@ -27,18 +31,26 @@ class TitleWordsTrie {
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
-        let currentChild = currentNode.children[word]
+        let currentChild = currentNode.children[word];
         currentChild.timesInRoot++;
         currentChild.timesInBrand = statsObj[word];
         currentChild.name = word;
         currentChild.parent = currentNode.name;
+        currentChild.line =
+          currentNode.line === null || currentNode.line === "root"
+            ? currentNode.name
+            : currentNode.line +
+              "," +
+              currentChild.parent +
+              "," +
+              currentChild.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
       }
       currentNode = currentNode.children[word];
     }
     currentNode.freq++;
-    currentNode.isEnd = true;
+   // currentNode.isEnd = true;
   }
 
   getNodeForPrefix(sentence) {
@@ -123,9 +135,7 @@ module.exports.TitleWordsTrie = TitleWordsTrie;
 // t.insert(ww);
 //t.insert(ace)
 
-
 // t.insert(at);
-
 
 // // t.insert(cat)
 // // t.insert(cat)

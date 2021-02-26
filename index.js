@@ -7,8 +7,8 @@ const { trieBuilder } = require("./services/trieBuilder");
 const { oneWordTreeBuilder } = require("./services/one-word-tree-builder");
 const { outputPathBuilder } = require("./services/output-path-builder");
 const { stringToArrCleaner } = require("./services/string-to-array-cleaner");
-
-
+const { convertArrayToCSV } = require('convert-array-to-csv');
+const converter = require('convert-array-to-csv');
 const productEnhancemenPath = "./db/product-enhancement-db.csv";
 
 async function getList(path) {
@@ -23,6 +23,12 @@ async function getList(path) {
 
   // Clean more data with statics
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
+  //const header = ['brand', 'line1', 'line2', 'line3', 'line4', 'line5', 'line6'];
+
+  const csvFromArrayOfArrays = convertArrayToCSV(secondCleanDataArr, {
+   // header,
+    separator: ','
+  });
 
   // Get words static (couples)
   //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
@@ -32,20 +38,26 @@ async function getList(path) {
 
   // Build trie to get mote statics
   const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
- 
+
   // Clean trie
-  
+
   //const jsonDataCleanedNodes = thirdCleanDataArr.cleanNodes()
 
   //const jsonDataCleanedWords = jsonDataCleanedNodes.cleanWords(wordsStatsObj)
 
+  //const jsonDataArrStringify = JSON.stringify(secondCleanDataArr);
   
-
-  const jsonDataStringify = JSON.stringify(trieRoot);
-  let outputPath = outputPathBuilder("./db-results/json-data");
-  fs.writeFile(outputPath, jsonDataStringify, (err) => {
+  let outputPath = await outputPathBuilder("./db-results/csv-data", ".csv");
+  fs.writeFile(outputPath, csvFromArrayOfArrays, (err) => {
     if (err) return console.log(err);
-    console.log("JsonData Ready");
+    console.log("CSV File Data Ready");
+  });
+
+  const jsonDataObjStringify = JSON.stringify(trieRoot);
+  outputPath = await outputPathBuilder("./db-results/json-data", ".txt");
+  fs.writeFile(outputPath, jsonDataObjStringify, (err) => {
+    if (err) return console.log(err);
+    console.log("TEXT (Json) File Data Ready");
   });
 }
 

@@ -1,14 +1,14 @@
 const fs = require("fs");
 
 
-const outputPathBuilder = (path) => {
+const outputPathBuilder = (path, format) => {
     try {
         let i = 1;
-        let currentPath = path + ".txt"
+        let currentPath = path + format
         while (fs.existsSync(currentPath)) {
             console.log(currentPath)
           //number = i.toString();
-          currentPath = path + i + ".txt";
+          currentPath = path + i + format;
           i++;
         }
         return currentPath}
