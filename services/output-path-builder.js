@@ -1,13 +1,12 @@
 const fs = require("fs");
 
 
-const outputPathBuilder = (path) => {
+const outputPathBuilder = (path, format) => {
     try {
         let i = 1;
-        let currentPath = path + ".txt" //.json
+        let currentPath = path + format
         while (fs.existsSync(currentPath)) {
-            console.log(currentPath)
-          currentPath = path + i + ".txt";//.json
+          currentPath = path + i + format;
           i++;
         }
         return currentPath}

@@ -3,10 +3,14 @@ const _ = require("lodash");
 const { csvReader } = require("./services/csv-reader");
 const { dataCleaner } = require("./services/data-cleaner");
 const { twoWordsTreeBuilder } = require("./services/two-words-tree-builder");
+const {resultMatching} = require("./services/result-matching")
 const { trieBuilder } = require("./services/trieBuilder");
 const { oneWordTreeBuilder } = require("./services/one-word-tree-builder");
 const { outputPathBuilder } = require("./services/output-path-builder");
 const { stringToArrCleaner } = require("./services/string-to-array-cleaner");
+const { shortStringToArrCleaner } = require("./services/short-string-to-array-cleaner");
+const { convertArrayToCSV } = require('convert-array-to-csv');
+const converter = require('convert-array-to-csv');
 
 
 const productEnhancemenPath = "./db/product-enhancement-db.csv";
@@ -24,39 +28,51 @@ async function getList(path) {
   // Clean more data with statics
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
 
+  
+  
   // Get words static (pairs)
-  //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
-  ////////////////
-  //temp for dev:
-  // const jsonDataStringify1 = JSON.stringify(twoWordsStatsTree);
-  // let outputPath1 = await outputPathBuilder("./db-results/pairs-data");
-  // fs.writeFile(outputPath1, jsonDataStringify1, (err) => {
-  //   if (err) return console.log(err);
-  //   console.log("JsonData Ready");
-  // });
-//////////////////////
-
-  // Clean more data with statics
-  //const thirdCleanDataArr = dataCleaner(secondCleanDataArr, twoWordsStatsTree);
+  //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr)
 
   // Build trie to get mote statics
   const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
-  let test = trieRoot.find(["baby jogger"])
-  console.log(test)
-  // Clean trie
-  
-  //const jsonDataCleanedNodes = thirdCleanDataArr.cleanNodes()
+  const trieResultsArr = trieRoot.getLines()
+  const firstlineArr = shortStringToArrCleaner(trieResultsArr)
+  const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  //const jsonDataCleanedWords = jsonDataCleanedNodes.cleanWords(wordsStatsObj)
+  const matchingResults = resultMatching(trieRoot2, titleArr)
 
-  
 
-  const jsonDataStringify = JSON.stringify(trieRoot);
-  let outputPath = await outputPathBuilder("./db-results/json-data");
-  fs.writeFile(outputPath, jsonDataStringify, (err) => {
-    if (err) return console.log(err);
-    console.log("JsonData Ready");
-  });
+
+
+
+
+
+
+
+
+
+const csvFromArrayOfArrays = convertArrayToCSV(firstlineArr, {
+  // header,
+   separator: ','
+ });
+
+let outputPath = await outputPathBuilder("./db-results/csv-data", ".csv");
+fs.writeFile(outputPath, csvFromArrayOfArrays, (err) => {
+  if (err) return console.log(err);
+  console.log("CSV File Data Ready");
+});
+
+const jsonDataObjStringify = JSON.stringify(trieRoot2);
+outputPath = await outputPathBuilder("./db-results/json-data", ".txt");
+fs.writeFile(outputPath, jsonDataObjStringify, (err) => {
+  if (err) return console.log(err);
+  console.log("TEXT (Json) File Data Ready");
+});
 }
+
+/////////
+  
+
+
 
 getList(productEnhancemenPath);

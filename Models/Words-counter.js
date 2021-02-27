@@ -6,7 +6,7 @@ class TreeNode {
     this.times = 0;
     this.brandsCounter = 0;
     this.children = {};
-    //this.brandKeys = []
+    this.timesMap = {}
   }
 }
 
