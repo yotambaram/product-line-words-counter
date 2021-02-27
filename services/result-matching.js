@@ -1,21 +1,28 @@
 
 
-const resultMatching =(trieRoot, titleArr) => {
-    console.log(trieRoot)
-    console.log("firstCleanDataArr",titleArr)
-    for(let i = 0; titleArr.length -1; i++) {
-        if (i == titleArr.length) {
-            debugger
-        }
-        let title = titleArr[i].title
-        let splitedTitle = title.split(" ")
-        for (let j = 1; j < splitedTitle.length-1; j++) {
-            const element = splitedTitle[j];
-            console.log(element)
+const resultMatching =(trieRoot, titlesArr) => {
+   // console.log(trieRoot)
+    console.log("firstCleanDataArr",titlesArr[0])
+    for (let i = 0; i < titlesArr.length; i++) {
+        let brand = titlesArr[i].brand.toLowerCase();
+        let title = titlesArr[i].title.toLowerCase();
+        splitedTitle = title.split(" ")
+        let titleString ="";
+        for (let j = 1; j < splitedTitle.length; j++) {
+            const word = splitedTitle[j];
+            //if word in trieRoot
+            // TODO: TRAVERS
+            if( word in trieRoot.root.children[brand].children) {
+                
+                titleString += word
+
+            }
             
         }
+        console.log(titleString)
+        
     }
-
+    
 
 }
 
