@@ -25,15 +25,15 @@ async function getList(path) {
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
 
   // Get words static (pairs)
-  const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
+  //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr);
   ////////////////
   //temp for dev:
-  const jsonDataStringify1 = JSON.stringify(twoWordsStatsTree);
-  let outputPath1 = await outputPathBuilder("./db-results/pairs-data");
-  fs.writeFile(outputPath1, jsonDataStringify1, (err) => {
-    if (err) return console.log(err);
-    console.log("JsonData Ready");
-  });
+  // const jsonDataStringify1 = JSON.stringify(twoWordsStatsTree);
+  // let outputPath1 = await outputPathBuilder("./db-results/pairs-data");
+  // fs.writeFile(outputPath1, jsonDataStringify1, (err) => {
+  //   if (err) return console.log(err);
+  //   console.log("JsonData Ready");
+  // });
 //////////////////////
 
   // Clean more data with statics
@@ -41,7 +41,8 @@ async function getList(path) {
 
   // Build trie to get mote statics
   const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
- 
+  let test = trieRoot.find(["baby jogger"])
+  console.log(test)
   // Clean trie
   
   //const jsonDataCleanedNodes = thirdCleanDataArr.cleanNodes()

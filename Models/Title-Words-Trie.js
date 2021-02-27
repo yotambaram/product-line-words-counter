@@ -4,7 +4,7 @@ class TrieNode {
   constructor() {
     this.name = "root";
     this.parent = null;
-    this.family = null;
+    this.line = null;
     this.isEnd = false;
     this.freq = 0;
     this.timesInRoot = 0;
@@ -14,16 +14,31 @@ class TrieNode {
   }
 }
 
+const dfs = (node, list) => {
+  if( node.childrenCounter === 0) {
+    list.push(node.line + "," + node.name)
+  }
+  const childrens = Object.keys(node.children);
+  if (childrens.length > 0) {
+    childrens.forEach((child) => {
+      let childNode = node.children[child];
+      dfs(childNode, list);
+    });
+  }
+  let te = list
+  list = []
+  return te
+};
+
 class TitleWordsTrie {
   constructor() {
     this.root = new TrieNode();
   }
 
-  idNumberBuilder = (currentNum) => {
-    
-    
-    return currentNum + 1
-  }
+  // idNumberBuilder = (currentNum) => {
+  //   return currentNum + 1;
+  // };
+
   insert(title, statsObj) {
     if (title.length === 0) return; // forbid empty string
     let word;
@@ -33,12 +48,19 @@ class TitleWordsTrie {
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
-        let currentChild = currentNode.children[word]
+        let currentChild = currentNode.children[word];
         currentChild.timesInRoot++;
         currentChild.timesInBrand = statsObj[word];
         currentChild.name = word;
         currentChild.parent = currentNode.name;
-        currentChild.family = currentNode.family === null ? currentChild.parent : currentNode.family +"," + currentChild.parent;
+        currentChild.line =
+          currentNode.line === null || currentNode.line === "root"
+            ? currentNode.name
+            : currentNode.line +
+              "," +
+              currentChild.parent //+
+              // "," +
+              // currentChild.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
       }
@@ -46,6 +68,11 @@ class TitleWordsTrie {
     }
     currentNode.freq++;
     currentNode.isEnd = true;
+  }
+  
+  
+  find(test) {
+    return dfs(this.root, [])
   }
 
   getNodeForPrefix(sentence) {
@@ -130,9 +157,7 @@ module.exports.TitleWordsTrie = TitleWordsTrie;
 // t.insert(ww);
 //t.insert(ace)
 
-
 // t.insert(at);
-
 
 // // t.insert(cat)
 // // t.insert(cat)
