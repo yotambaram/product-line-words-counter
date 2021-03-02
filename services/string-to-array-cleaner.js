@@ -22,19 +22,27 @@ const stringToArrCleaner = (allTitleArr) => {
           .trim()
           .replace(/[\[\]']+/g, "")
           .trim()
+          //.replace("-", " ")
           .replace("- ", " ")
           .replace(" -", " ")
           .replace(brand.toLowerCase(), "")
           .trim()
           .replace(color.toLowerCase(), "")
           .trim();
-          // TODO: Add words to delete from db
+          // TODO: Add words to delete from db (for, From and)
         const splitTitle = _.split(cleanedBrand, " ");
-        const filteredTitle = _.filter(splitTitle, _.size)
+        // TODO: dont delete size if its a num
+        const filteredTitle = _.filter(splitTitle, word => {
+         
+          
+          return word.length > 0 || word.match(/[a-z]/i);
+        })
+        
         filteredTitle.unshift(brand);
         allTitleCleanedArr.push(filteredTitle);
       
       
+     
     }
     return allTitleCleanedArr;
     
