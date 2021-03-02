@@ -31,6 +31,7 @@ const stringToArrCleaner = (allTitleArr) => {
           .trim();
           // TODO: Add words to delete from db (for, From and)
         const splitTitle = _.split(cleanedBrand, " ");
+        // TODO: dont delete size if its a num
         const filteredTitle = _.filter(splitTitle, _.size)
         filteredTitle.unshift(brand);
         allTitleCleanedArr.push(filteredTitle);

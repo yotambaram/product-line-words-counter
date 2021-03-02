@@ -13,8 +13,10 @@ const resultMatching =(trieRoot, titlesArr) => {
             //if word in trieRoot
             // TODO: TRAVERS
             if( word in trieRoot.root.children[brand].children) {
-                
+                // if find the word, take the next word and loog for here at the tree in world child
                 titleString += word
+
+                
 
             }
             

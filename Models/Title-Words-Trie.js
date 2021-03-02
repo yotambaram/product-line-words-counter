@@ -15,9 +15,12 @@ class TrieNode {
 }
 
 const dfs = (node, list) => {
-  if( node.childrenCounter === 0) {
+  if(node.timesInRoot < 2 && node.name !== "root") {
+    list.push(node.line)
+  } else if( node.childrenCounter === 0) {
     list.push(node.line + "," + node.name)
   }
+
   const childrens = Object.keys(node.children);
   if (childrens.length > 0) {
     childrens.forEach((child) => {
