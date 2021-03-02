@@ -22,7 +22,7 @@ const stringToArrCleaner = (allTitleArr) => {
           .trim()
           .replace(/[\[\]']+/g, "")
           .trim()
-          .replace("-", " ")
+          //.replace("-", " ")
           .replace("- ", " ")
           .replace(" -", " ")
           .replace(brand.toLowerCase(), "")
@@ -33,12 +33,16 @@ const stringToArrCleaner = (allTitleArr) => {
         const splitTitle = _.split(cleanedBrand, " ");
         // TODO: dont delete size if its a num
         const filteredTitle = _.filter(splitTitle, word => {
+         
+          
           return word.length > 0 || word.match(/[a-z]/i);
         })
+        
         filteredTitle.unshift(brand);
         allTitleCleanedArr.push(filteredTitle);
       
       
+     
     }
     return allTitleCleanedArr;
     

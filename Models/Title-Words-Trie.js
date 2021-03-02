@@ -86,30 +86,31 @@ class TitleWordsTrie {
         .split(" ");
       splitedTitle[0] === brand ? splitedTitle.shift() : null;
       
-
+    //   if(brand === "uppababy") {
+    //     debugger
+    // }
       let results;
       let gotLine = false;
       for (let i = 0; i < splitedTitle.length; i++) {
         
-        const word = splitedTitle[i];
-        if(currentNode.children[word]){
+        const word = splitedTitle[i].toLowerCase();
+
+        if(currentNode.children[word] && word != brand){
           gotLine = true;
           currentNode = currentNode.children[word]
           
-        } else if(gotLine === true) {
+        } else if(gotLine === true  && word != brand) {
           break
         }
       }
-      // if(brand === "baby jogger") {
-      //   debugger
-      // }
+   
       let currentLn = currentNode.line+","+currentNode.name
       results = currentLn.replace(/[,]/g, " ").replace(brand, "").trim()
      // results = currentLine,currentNode.name
       //results[0] === brand ? splitedTitle.shift() : null;
-      if(brand === "geep") {
-        debugger
-      }
+    //   if(brand === "uppababy") {
+    //     debugger
+    // }
       return results
     }
   }

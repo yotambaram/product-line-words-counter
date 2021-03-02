@@ -22,8 +22,7 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
         //        If the word appears X% from the total products.
 
         if (wordStatsTree.root["_TOTAL_PRODUCTS"] > 10 && el != currentBrand) {
-          return el.length < 2 ||
-            !el in wordStatsTree ||
+          return !el in wordStatsTree ||
             (wordStatsTree.root.children[el].brandsCounter /
               wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] >
               0.9 &&
@@ -38,6 +37,7 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             : false;
 
           // || !isNaN(el) || wordStatsTree[el] < 2
+          //el.length < 2 ||
         }
       });
 
