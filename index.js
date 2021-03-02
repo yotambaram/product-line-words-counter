@@ -41,7 +41,8 @@ async function getList(path) {
   const firstlineArr = shortStringToArrCleaner(trieResultsArr)
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  //const matchingResults = resultMatching(trieRoot2, titleArr)
+  const matchingResults = resultMatching(trieRoot2, titleArr)
+ 
 
 
 
@@ -53,7 +54,7 @@ async function getList(path) {
 
 /////////////////
 // print
-const csvFromArrayOfArrays = convertArrayToCSV(firstlineArr, {
+const csvFromArrayOfArrays = convertArrayToCSV(matchingResults, {
   // header,
    separator: ','
  });
