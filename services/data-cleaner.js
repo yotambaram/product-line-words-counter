@@ -16,40 +16,44 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
     let splitTitlesArr = [];
     for (let i = 0; i < allTitlesArr.length; i++) {
       let currentBrand = allTitlesArr[i][0];
-
       // Filter words
-      _.remove(allTitlesArr[i], (el) => {
-        //        If the word appears X% from the total products.
+      if(wordStatsTree.root.children[currentBrand].times > 1){
 
-        if (wordStatsTree.root["_TOTAL_PRODUCTS"] > 10 && el != currentBrand) {
-          return !el in wordStatsTree ||
-            (wordStatsTree.root.children[el].brandsCounter /
-              wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] >
-              0.9 &&
-              wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] > 2) ||
-            wordStatsTree.root.children[el].times < 2 ||
-            wordStatsTree.root.children[el].children[currentBrand] /
-              wordStatsTree.root.BrandMap[currentBrand] >
-              0.9
-            ? true
-            : false || el in wordToDelete
-            ? true
-            : false;
-
-          // || !isNaN(el) || wordStatsTree[el] < 2
-          //el.length < 2 ||
+        _.remove(allTitlesArr[i], (el) => {
+          //        If the word appears X% from the total products.
+  
+          if (wordStatsTree.root["_TOTAL_PRODUCTS"] > 10 && el != currentBrand) {
+            return !el in wordStatsTree ||
+              (wordStatsTree.root.children[el].brandsCounter /
+                wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] >
+                0.9 &&
+                wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] > 2) ||
+              //wordStatsTree.root.children[el].times >||
+              wordStatsTree.root.children[el].children[currentBrand] /
+                wordStatsTree.root.BrandMap[currentBrand] >
+                0.9
+              ? true
+              : false || el in wordToDelete
+              ? true
+              : false;
+  
+            // || !isNaN(el) || wordStatsTree[el] < 2
+            //el.length < 2 ||
+          }
+        });
+        for (let j = 0; j < 2; j++) {
+          
+          let commonWordIndex = allTitlesArr[j].indexOf(
+            wordStatsTree.root.commonWord[j]
+          );
+          commonWordIndex > 1 ? allTitlesArr[j].splice(commonWordIndex) : null;
+          
         }
-      });
-
-      let commonWordIndex = allTitlesArr[i].indexOf(
-        wordStatsTree.root.commonWord
-      );
-      commonWordIndex > 3 ? allTitlesArr[i].splice(commonWordIndex) : null;
+        
+      }
+     
       allTitlesArr[i].splice(5);
       if (allTitlesArr[i].length > 2) {
-        // if (allTitlesArr[i][0] === "hot mom") {
-        //   debugger;
-        // }
         if (wordStatsTree.root.BrandMap[currentBrand] > 20) {
           for (let j = 2; j < allTitlesArr[i].length; j++) {
             //TODO: save the brand and common word inside map to do let loops
@@ -57,7 +61,7 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             if (
               wordStatsTree.root.children[currentWord].children[currentBrand] /
                 wordStatsTree.root.BrandMap[currentBrand] >
-              0.5
+              0.6
             ) {
               allTitlesArr[i].splice(j);
               break;
@@ -70,7 +74,7 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             if (
               wordStatsTree.root.children[currentWord].children[currentBrand] /
                 wordStatsTree.root.BrandMap[currentBrand] >
-              0.5
+              0.7
             ) {
               allTitlesArr[i].splice(j);
               break;

@@ -27,8 +27,7 @@ async function getList(path) {
 
   // Clean more data with statics
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
-
-  
+ 
   
   // Get words static (pairs)
   //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr)
@@ -41,7 +40,7 @@ async function getList(path) {
   const firstlineArr = shortStringToArrCleaner(trieResultsArr)
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  const matchingResults = resultMatching(trieRoot2, titleArr)
+  const matchingResults = resultMatching(trieRoot2, titleArr, firstCleanDataArr)
  
 
 
@@ -65,7 +64,7 @@ fs.writeFile(outputPath, csvFromArrayOfArrays, (err) => {
   console.log("CSV File Data Ready");
 });
 
-const jsonDataObjStringify = JSON.stringify(trieRoot2);
+const jsonDataObjStringify = JSON.stringify(trieRoot);
 outputPath2 = await outputPathBuilder("./db-results/json-data", ".txt");
 fs.writeFile(outputPath2, jsonDataObjStringify, (err) => {
   if (err) return console.log(err);

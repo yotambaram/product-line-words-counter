@@ -1,20 +1,21 @@
-const resultMatching = (trieRoot, titelsArr) => {
-  // console.log(trieRoot)
+const resultMatching = (trieRoot, titlesArr, splitedTitle) => {
   let newList = [];
-  //console.log("firstCleanDataArr",titelsArr[0])
-  for (let i = 0; i < titelsArr.length; i++) {
-    if (titelsArr[i].title.length > 1) {
-      //if word in trieRoot
-      // TODO: TRAVERS
+
+  for (let i = 0; i < titlesArr.length; i++) {
+  //  if(splitedTitle[i][0] === "uppababy" && splitedTitle[i][1] === "2018" && splitedTitle[i][2] === "vista"){
+  //    debugger
+  //  }
+    if (titlesArr[i].title.length > 1) {
       // if find the word, take the next word and loog for here at the tree in world child
-      let line = trieRoot.findLine(titelsArr[i]);
-      titelsArr[i].line = line;
-      newList.push(titelsArr[i]);
+      let line = trieRoot.findLine(titlesArr[i], splitedTitle[i]);
+      titlesArr[i].line = line;
+      newList.push(titlesArr[i]);
     } else {
-      titelsArr[i].line = "no title";
-      newList.push(titelsArr[i]);
+      titlesArr[i].line = "### No Title ###";
+      newList.push(titlesArr[i]);
     }
   }
+ 
   return newList;
 };
 

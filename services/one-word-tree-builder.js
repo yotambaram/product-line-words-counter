@@ -26,6 +26,7 @@ const oneWordTreeBuilder = (allTitle) => {
     }
 
     let bigestNum = 0;
+    // Can use map()
     for (const [key, value] of Object.entries(
       categoryWordsTrie.root.children
     )) {
@@ -37,9 +38,9 @@ const oneWordTreeBuilder = (allTitle) => {
         categoryWordsTrie.root.timesMap[timesVal].push(key);
       }
     }
-   // categoryWordsTrie.root.commonWord = "";
+   let keysArr = Object.keys(categoryWordsTrie.root.timesMap)
     categoryWordsTrie.root["commonWord"] =
-      categoryWordsTrie.root.timesMap[bigestNum][0]; //takes only one
+    [keysArr.pop(),keysArr.pop(),keysArr.pop()]; 
     return categoryWordsTrie;
   } catch (err) {
     console.log(err);

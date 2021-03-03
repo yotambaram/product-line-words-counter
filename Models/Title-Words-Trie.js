@@ -11,11 +11,15 @@ class TrieNode {
     this.timesInBrand = 0;
     this.childrenCounter = 0;
     this.children = {};
+    this.level = 0;
   }
 }
 
 const dfs = (node, list) => {
-  if (node.timesInRoot < 2 && node.name !== "root") {
+  // if(node.name==="babideal"){
+  //   debugger
+  // }
+  if (node.timesInRoot < 2 && node.level > 3) {
     list.push(node.line);
   } else if (node.childrenCounter === 0) {
     list.push(node.line + "," + node.name);
@@ -55,6 +59,7 @@ class TitleWordsTrie {
         currentChild.timesInBrand = statsObj[word];
         currentChild.name = word;
         currentChild.parent = currentNode.name;
+        currentChild.level = currentNode.level + 1
         currentChild.line =
           currentNode.line === null || currentNode.line === "root"
             ? currentNode.name
@@ -63,6 +68,7 @@ class TitleWordsTrie {
         // currentChild.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
+        
       }
       currentNode = currentNode.children[word];
     }
@@ -74,43 +80,39 @@ class TitleWordsTrie {
     return dfs(this.root, []);
   }
 
-  findLine(productNode) {
+  findLine(productNode, splitedTitle) {
     let currentNode = this.root;
     let brand = productNode.brand.toLowerCase();
+ 
     if (currentNode.children[brand]) {
+      // if (brand === "baby joy") {
+      //   debugger
+      // }
+
       currentNode = currentNode.children[brand];
       // get title arr
-      let splitedTitle = productNode.title
-        .toLowerCase()
-        .replace(/[|&;$%@"<>()+,]/g, "")
-        .split(" ");
+      // let splitedTitle = productNode.title
+      //   .toLowerCase()
+      //   .replace(/[|&;$%@"<>()+,]/g, "")
+      //   .replace(brand)
+      //   .split(" ");
+      // if(splitedTitle[0] ==="baby joy"){
+      //   debugger
+      // }
       splitedTitle[0] === brand ? splitedTitle.shift() : null;
-      
-    //   if(brand === "uppababy") {
-    //     debugger
-    // }
       let results;
       let gotLine = false;
       for (let i = 0; i < splitedTitle.length; i++) {
-        
         const word = splitedTitle[i].toLowerCase();
-
         if(currentNode.children[word] && word != brand){
           gotLine = true;
           currentNode = currentNode.children[word]
-          
         } else if(gotLine === true  && word != brand) {
           break
         }
       }
-   
       let currentLn = currentNode.line+","+currentNode.name
       results = currentLn.replace(/[,]/g, " ").replace(brand, "").trim()
-     // results = currentLine,currentNode.name
-      //results[0] === brand ? splitedTitle.shift() : null;
-    //   if(brand === "uppababy") {
-    //     debugger
-    // }
       return results
     }
   }
