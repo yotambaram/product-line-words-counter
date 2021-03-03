@@ -16,17 +16,17 @@ class TrieNode {
 }
 
 const dfs = (node, list) => {
-  // if(node.name==="babideal"){
-  //   debugger
-  // }
-  if (node.timesInRoot < 2 && node.level > 3) {
+ // If the brand has one product:
+
+ //else:
+  if (node.timesInRoot === 1 && node.level > 3) {
     list.push(node.line);
-  } else if (node.childrenCounter === 0) {
+  } else if (node.childrenCounter === 0 && node.timesInRoot > 1) {
     list.push(node.line + "," + node.name);
   }
 
   const childrens = Object.keys(node.children);
-  if (childrens.length > 0) {
+  if (childrens.length > 0 && node.timesInRoot > 1 || node.level < 4 ) {
     childrens.forEach((child) => {
       let childNode = node.children[child];
       dfs(childNode, list);
@@ -80,7 +80,7 @@ class TitleWordsTrie {
     return dfs(this.root, []);
   }
 
-  findLine(productNode, splitedTitle) {
+  findLine(productNode) {
     let currentNode = this.root;
     let brand = productNode.brand.toLowerCase();
  
@@ -91,19 +91,28 @@ class TitleWordsTrie {
 
       currentNode = currentNode.children[brand];
       // get title arr
-      // let splitedTitle = productNode.title
-      //   .toLowerCase()
-      //   .replace(/[|&;$%@"<>()+,]/g, "")
-      //   .replace(brand)
-      //   .split(" ");
-      // if(splitedTitle[0] ==="baby joy"){
-      //   debugger
-      // }
+      let splitedTitle = productNode.title.toLowerCase()
+      .replace(/[|&;$%@"<>(),]/g, "")
+      .trim()
+      .replace(/[{()}]/g, "")
+      .trim()
+      .replace(/\\|\//g, " ")
+      .trim()
+      .replace(/[\[\]']+/g, "")
+      .trim()
+      //.replace("-", " ")
+      .replace(" +", " ")
+      .replace("- ", " ")
+      .replace(" -", " ")
+      .replace(brand, "")
+      .replace(/\s+/g, ' ')
+      .split(" ");
+    
       splitedTitle[0] === brand ? splitedTitle.shift() : null;
       let results;
       let gotLine = false;
       for (let i = 0; i < splitedTitle.length; i++) {
-        const word = splitedTitle[i].toLowerCase();
+        const word = splitedTitle[i]
         if(currentNode.children[word] && word != brand){
           gotLine = true;
           currentNode = currentNode.children[word]

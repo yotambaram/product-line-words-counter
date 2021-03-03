@@ -40,7 +40,7 @@ async function getList(path) {
   const firstlineArr = shortStringToArrCleaner(trieResultsArr)
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  const matchingResults = resultMatching(trieRoot2, titleArr, firstCleanDataArr)
+  const matchingResults = resultMatching(trieRoot2, titleArr)
  
 
 
@@ -52,21 +52,33 @@ async function getList(path) {
 
 
 /////////////////
+const csvFromArrayOfArrays2 = convertArrayToCSV(firstlineArr, {
+  // header,
+   separator: ','
+ });
+
+const outputPath1 = await outputPathBuilder("./db-results/product-line-per-brand", ".csv");
+fs.writeFile(outputPath1, csvFromArrayOfArrays2, (err) => {
+  if (err) return console.log(err);
+  console.log("CSV File Data Ready");
+});
+
+
 // print
 const csvFromArrayOfArrays = convertArrayToCSV(matchingResults, {
   // header,
    separator: ','
  });
 
-const outputPath = await outputPathBuilder("./db-results/csv-data", ".csv");
-fs.writeFile(outputPath, csvFromArrayOfArrays, (err) => {
+const outputPath2 = await outputPathBuilder("./db-results/csv-data", ".csv");
+fs.writeFile(outputPath2, csvFromArrayOfArrays, (err) => {
   if (err) return console.log(err);
   console.log("CSV File Data Ready");
 });
 
 const jsonDataObjStringify = JSON.stringify(trieRoot);
-outputPath2 = await outputPathBuilder("./db-results/json-data", ".txt");
-fs.writeFile(outputPath2, jsonDataObjStringify, (err) => {
+outputPath3 = await outputPathBuilder("./db-results/json-data", ".txt");
+fs.writeFile(outputPath3, jsonDataObjStringify, (err) => {
   if (err) return console.log(err);
   console.log("TEXT (Json) File Data Ready");
 });
