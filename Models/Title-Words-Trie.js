@@ -14,25 +14,26 @@ class TrieNode {
     this.level = 0;
   }
 }
-
-const dfs = (node, list) => {
-  if(node.name === "ak concepts") {
-    debugger
-  }
- // If the brand has one product:
+let childNode
+let currentFreq = 0
+const dfs = (node, list, parentFreq) => {
 
  //else:
   if (node.timesInRoot === 1 && node.level > 3) {
     list.push(node.line);
   } else if (node.childrenCounter === 0 && node.timesInRoot > 1) {
     list.push(node.line + "," + node.name);
-  }
+  } 
+  // else if (node.freq / node.timesInRoot > 0.4){
+  //   list.push(node.line + "," + node.name);
+  // }
 
   const childrens = Object.keys(node.children);
   if (childrens.length > 0 && node.timesInRoot > 1 || node.level < 4 ) {
     childrens.forEach((child) => {
-      let childNode = node.children[child];
-      dfs(childNode, list);
+      childNode = node.children[child];
+      currentFreq = node.freq
+      dfs(childNode, list, currentFreq);
     });
   }
 
@@ -80,7 +81,7 @@ class TitleWordsTrie {
   }
 
   getLines() {
-    return dfs(this.root, []);
+    return dfs(this.root, [], 0);
   }
 
   findLine(productNode) {

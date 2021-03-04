@@ -12,6 +12,7 @@ const stringToArrCleaner = (allTitleArr) => {
         let brand = product.brand ? product.brand.toLowerCase() : "NO_BRAND";
         let color = product.color ? product.color.toLowerCase() : "NO_COLOR";
         let title = product.title ? product.title.toLowerCase() : "NO_TITLE";
+        let model = product.title ? product.model.toLowerCase() : "NO_TITLE";
         let cleanedBrand = title
           //.replace(/(?:\\[rn]|[\r\n]+)+/g, "")
           .replace(/[|&;$%@"<>(),]/g, "")
@@ -24,11 +25,14 @@ const stringToArrCleaner = (allTitleArr) => {
           .trim()
           //.replace("-", " ")
           .replace(" +", " ")
+          .replace("+", " ")
           .replace("- ", " ")
           .replace(" -", " ")
           .replace(brand.toLowerCase(), "")
           .trim()
           .replace(color.toLowerCase(), "")
+          .trim()
+          .replace(model.toLowerCase(), "")
           .trim();
           // TODO: Add words to delete from db (for, From and)
           

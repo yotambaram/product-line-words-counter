@@ -9,13 +9,17 @@ const shortStringToArrCleaner = (allTitleArr) => {
     for (let i = 0; i < allTitleArr.length; i++) {
       // let product = allTitleArr[i];
       //   product
-        if(!titleMap[allTitleArr[i]]) {
-          titleMap[allTitleArr[i]] = true;
-        const splitTitle = _.split(allTitleArr[i], ",");
+    
+        // if(!titleMap[allTitleArr[i]]) {
+        //   titleMap[allTitleArr[i]] = 1;
+        const splitTitle = _.split(allTitleArr[i], ",")
         //const filteredTitle = _.filter(splitTitle, _.size);
        // filteredTitle.unshift(brand);
         allTitleCleanedArr.push(splitTitle);
-        }
+        // } 
+        // else {
+        //   titleMap[allTitleArr[i]]++;
+        // }
           // TODO: Add words to delete from db
           
       

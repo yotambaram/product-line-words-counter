@@ -12,20 +12,28 @@ let wordToDelete = {
 
 const dataCleaner = (allTitlesArr, wordStatsTree) => {
   try {
+
+
+
     // Delete most common word for all search
     let splitTitlesArr = [];
     for (let i = 0; i < allTitlesArr.length; i++) {
+    
+
+
       let currentBrand = allTitlesArr[i][0];
       // Filter words
       if (wordStatsTree.root.children[currentBrand].times > 1) {
         _.remove(allTitlesArr[i], (el) => {
           //        If the word appears X% from the total products.
-
+          // if(el=="2011") {
+          //   debugger
+          // }
           if (
             wordStatsTree.root["_TOTAL_PRODUCTS"] > 10 &&
             el != currentBrand
           ) {
-            // if return true, delete
+            // return true delete el (word)
             return !el in wordStatsTree ||
               (wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] > 2 &&
                 wordStatsTree.root.children[el].brandsCounter /
@@ -44,13 +52,20 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             //el.length < 2 ||
           }
         });
-        for (let j = 0; j < 2; j++) {
+        for (let j = 0; j < wordStatsTree.root.commonWord.length; j++) {
           let commonWordIndex = allTitlesArr[j].indexOf(
             wordStatsTree.root.commonWord[j]
           );
-          commonWordIndex > 1 ? allTitlesArr[j].splice(commonWordIndex) : null;
+          // if(allTitlesArr[i][0] == "evenflo") {
+          //   debugger
+          // }
+          commonWordIndex > 1 ? allTitlesArr[i].splice(commonWordIndex) : null;
         }
       }
+
+      //   if (allTitlesArr[i][0] === "baby jogger" && allTitlesArr[i][1] == "2011") {
+      //   debugger
+      // }
 
       if (allTitlesArr[i].length > 2) {
         allTitlesArr[i].splice(5);
@@ -61,7 +76,7 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             if (
               wordStatsTree.root.children[currentWord].children[currentBrand] /
                 wordStatsTree.root.BrandMap[currentBrand] >
-              0.6
+              0.95
             ) {
               allTitlesArr[i].splice(j);
               break;

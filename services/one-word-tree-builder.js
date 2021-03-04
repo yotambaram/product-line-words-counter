@@ -40,7 +40,7 @@ const oneWordTreeBuilder = (allTitle) => {
     }
    let keysArr = Object.keys(categoryWordsTrie.root.timesMap)
     categoryWordsTrie.root["commonWord"] =
-    [keysArr.pop(),keysArr.pop(),keysArr.pop()]; 
+    categoryWordsTrie.root.timesMap[keysArr.pop()]; 
     return categoryWordsTrie;
   } catch (err) {
     console.log(err);
