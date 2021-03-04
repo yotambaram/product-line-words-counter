@@ -16,6 +16,9 @@ class TrieNode {
 }
 
 const dfs = (node, list) => {
+  if(node.name === "ak concepts") {
+    debugger
+  }
  // If the brand has one product:
 
  //else:

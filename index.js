@@ -41,6 +41,12 @@ async function getList(path) {
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
   const matchingResults = resultMatching(trieRoot2, titleArr)
+  test = {}
+  for (let i = 0; i < matchingResults.length; i++) {
+    const element = matchingResults[i];
+    
+  }
+
  
 
 
