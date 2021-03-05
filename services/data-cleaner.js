@@ -23,18 +23,18 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
 
       let currentBrand = allTitlesArr[i][0];
       // Filter words
+     
       if (wordStatsTree.root.children[currentBrand].times > 1) {
         _.remove(allTitlesArr[i], (el) => {
-          //        If the word appears X% from the total products.
-          // if(el=="2011") {
-          //   debugger
-          // }
+      
           if (
             wordStatsTree.root["_TOTAL_PRODUCTS"] > 10 &&
             el != currentBrand
           ) {
             // return true delete el (word)
+            
             return !el in wordStatsTree ||
+            
               (wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] > 2 &&
                 wordStatsTree.root.children[el].brandsCounter /
                   wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] >
@@ -53,7 +53,8 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
           }
         });
         for (let j = 0; j < wordStatsTree.root.commonWord.length; j++) {
-          let commonWordIndex = allTitlesArr[j].indexOf(
+ 
+          let commonWordIndex = allTitlesArr[i].indexOf(
             wordStatsTree.root.commonWord[j]
           );
           // if(allTitlesArr[i][0] == "evenflo") {

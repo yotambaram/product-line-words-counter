@@ -14,26 +14,25 @@ class TrieNode {
     this.level = 0;
   }
 }
-let childNode
-let currentFreq = 0
-const dfs = (node, list, parentFreq) => {
+
+const dfs = (node, list) => {
+ // If the brand has one product:
 
  //else:
-  if (node.timesInRoot === 1 && node.level > 3) {
+ if(node.freq / node.timesInRoot > 0.5 && (node.level > 3 || node.childrenCounter === 0)) {
+  list.push(node.line + "," + node.name);
+ }
+  else if (node.timesInRoot === 1 && node.level > 3) {
     list.push(node.line);
   } else if (node.childrenCounter === 0 && node.timesInRoot > 1) {
     list.push(node.line + "," + node.name);
-  } 
-  // else if (node.freq / node.timesInRoot > 0.4){
-  //   list.push(node.line + "," + node.name);
-  // }
+  }
 
   const childrens = Object.keys(node.children);
-  if (childrens.length > 0 && node.timesInRoot > 1 || node.level < 4 ) {
+  if (node.childrenCounter > 0 && node.timesInRoot > 1 || node.level < 4) {
     childrens.forEach((child) => {
-      childNode = node.children[child];
-      currentFreq = node.freq
-      dfs(childNode, list, currentFreq);
+      let childNode = node.children[child];
+      dfs(childNode, list);
     });
   }
 
@@ -55,6 +54,7 @@ class TitleWordsTrie {
     let currentNode = this.root;
     for (let i = 0; i < title.length; i++) {
       word = title[i];
+
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
@@ -81,7 +81,7 @@ class TitleWordsTrie {
   }
 
   getLines() {
-    return dfs(this.root, [], 0);
+    return dfs(this.root, []);
   }
 
   findLine(productNode) {
@@ -89,10 +89,6 @@ class TitleWordsTrie {
     let brand = productNode.brand.toLowerCase();
  
     if (currentNode.children[brand]) {
-      // if (brand === "baby joy") {
-      //   debugger
-      // }
-
       currentNode = currentNode.children[brand];
       // get title arr
       let splitedTitle = productNode.title.toLowerCase()
@@ -109,12 +105,16 @@ class TitleWordsTrie {
       .replace("- ", " ")
       .replace(" -", " ")
       .replace(brand, "")
-      .replace(/\s+/g, ' ')
+      .replace(/\s+/g, " ")
+      .trim()
+     // .replace(/\s+/g, '');
       .split(" ");
     
-      splitedTitle[0] === brand ? splitedTitle.shift() : null;
-      let results;
-      let gotLine = false;
+     // splitedTitle[0] === brand ? splitedTitle.shift() : null;
+      
+     //let currentLn;
+     let results;
+     let gotLine = false;
       for (let i = 0; i < splitedTitle.length; i++) {
         const word = splitedTitle[i]
         if(currentNode.children[word] && word != brand){
@@ -124,8 +124,8 @@ class TitleWordsTrie {
           break
         }
       }
-      let currentLn = currentNode.line+","+currentNode.name
-      results = currentLn.replace(/[,]/g, " ").replace(brand, "").trim()
+      results = currentNode.line+","+currentNode.name
+      //results11 = currentLn.replace(/[,]/g, " ").replace(brand, "").trim()
       return results
     }
   }
