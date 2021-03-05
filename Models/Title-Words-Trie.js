@@ -1,4 +1,5 @@
 const { forEach, result } = require("lodash");
+const _ = require("lodash");
 
 class TrieNode {
   constructor() {
@@ -16,20 +17,22 @@ class TrieNode {
 }
 
 const dfs = (node, list) => {
- // If the brand has one product:
+  // If the brand has one product:
 
- //else:
- if(node.freq / node.timesInRoot > 0.5 && (node.level > 3 || node.childrenCounter === 0)) {
-  list.push(node.line + "," + node.name);
- }
-  else if (node.timesInRoot === 1 && node.level > 3) {
+  //else:
+  if (
+    node.freq / node.timesInRoot > 0.5 &&
+    (node.level > 3 || node.childrenCounter === 0)
+  ) {
+    list.push(node.line + "," + node.name);
+  } else if (node.timesInRoot === 1 && node.level > 3) {
     list.push(node.line);
   } else if (node.childrenCounter === 0 && node.timesInRoot > 1) {
     list.push(node.line + "," + node.name);
   }
 
   const childrens = Object.keys(node.children);
-  if (node.childrenCounter > 0 && node.timesInRoot > 1 || node.level < 4) {
+  if ((node.childrenCounter > 0 && node.timesInRoot > 1) || node.level < 4) {
     childrens.forEach((child) => {
       let childNode = node.children[child];
       dfs(childNode, list);
@@ -63,7 +66,7 @@ class TitleWordsTrie {
         currentChild.timesInBrand = statsObj[word];
         currentChild.name = word;
         currentChild.parent = currentNode.name;
-        currentChild.level = currentNode.level + 1
+        currentChild.level = currentNode.level + 1;
         currentChild.line =
           currentNode.line === null || currentNode.line === "root"
             ? currentNode.name
@@ -72,7 +75,6 @@ class TitleWordsTrie {
         // currentChild.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInRoot++;
-        
       }
       currentNode = currentNode.children[word];
     }
@@ -87,46 +89,79 @@ class TitleWordsTrie {
   findLine(productNode) {
     let currentNode = this.root;
     let brand = productNode.brand.toLowerCase();
- 
+    // if (productNode.brand==="Blu-Pier Technology, Inc.") {
+    //   debugger
+    // }
+
     if (currentNode.children[brand]) {
       currentNode = currentNode.children[brand];
       // get title arr
-      let splitedTitle = productNode.title.toLowerCase()
-      .replace(/[|&;$%@"<>(),]/g, "")
-      .trim()
-      .replace(/[{()}]/g, "")
-      .trim()
-      .replace(/\\|\//g, " ")
-      .trim()
-      .replace(/[\[\]']+/g, "")
-      .trim()
-      //.replace("-", " ")
-      .replace(" +", " ")
-      .replace("- ", " ")
-      .replace(" -", " ")
-      .replace(brand, "")
-      .replace(/\s+/g, " ")
-      .trim()
-     // .replace(/\s+/g, '');
-      .split(" ");
-    
-     // splitedTitle[0] === brand ? splitedTitle.shift() : null;
-      
-     //let currentLn;
-     let results;
-     let gotLine = false;
+      let splitedTitle = productNode.title
+        .toLowerCase()
+        .replace(/[|&;$%@"<>(),]/g, "")
+        .trim()
+        .replace(/[{()}]/g, "")
+        .trim()
+        .replace(/\\|\//g, " ")
+        .trim()
+        .replace(/[\[\]']+/g, "")
+        .trim()
+        //.replace("-", " ")
+        .replace(" +", " ")
+        .replace("- ", " ")
+        .replace(" -", " ")
+        .replace(brand, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        // .replace(/\s+/g, '');
+        .split(" ");
+
+      // splitedTitle[0] === brand ? splitedTitle.shift() : null;
+
+      //let currentLn;
+      let results;
+      let gotLine = false;
+      let wordStats = {};
+
       for (let i = 0; i < splitedTitle.length; i++) {
-        const word = splitedTitle[i]
-        if(currentNode.children[word] && word != brand){
-          gotLine = true;
-          currentNode = currentNode.children[word]
-        } else if(gotLine === true  && word != brand) {
-          break
+        const word = splitedTitle[i];
+        
+        ///////////
+        //Baby Jogger 81260KIT1 2011 City Select Stroller with Bassinet - Onyx
+        if (currentNode.children[word] && word != brand) {
+          wordStats[word] = currentNode.children[word].timesInRoot;
+        }
+
+        //////////
+        // if(currentNode.children[word] && word != brand){
+        //   gotLine = true;
+        //   currentNode = currentNode.children[word]
+        // } else if(gotLine === true  && word != brand) {
+        //   break
+        // }
+      }
+      // let max = Object.keys(wordStats).reduce((a, b) => wordStats[a] > wordStats[b] ? a : b);
+      let max = 0;
+      let maxWord = "";
+      // Get the biggest
+      for (let word in wordStats) {
+        if (word == "81260kit1") {
+          debugger;
+        }
+        if (wordStats[word] > max) {
+          max = wordStats[word];
+          maxWord = word;
         }
       }
-      results = currentNode.line+","+currentNode.name
+      // Check if the bigest has parent or chile to find where to start
+    
+      if (currentNode.children[maxWord] && currentNode.children[maxWord].parent in wordStats){
+        parentToStartWith = currentNode.children[maxWord].parent
+        currentNode = currentNode.children[parentToStartWith]
+      }
+      results = currentNode.line + "," + currentNode.name;
       //results11 = currentLn.replace(/[,]/g, " ").replace(brand, "").trim()
-      return results
+      return results;
     }
   }
 

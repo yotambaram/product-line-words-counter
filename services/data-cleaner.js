@@ -8,6 +8,7 @@ let wordToDelete = {
   with: true,
   //sand: true,
   best: true,
+  inc: true
 };
 
 const dataCleaner = (allTitlesArr, wordStatsTree) => {
@@ -23,7 +24,9 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
 
       let currentBrand = allTitlesArr[i][0];
       // Filter words
-     
+      // if(currentBrand ==="blu-pier technology, inc."){
+      //   debugger
+      // }
       if (wordStatsTree.root.children[currentBrand].times > 1) {
         _.remove(allTitlesArr[i], (el) => {
       

@@ -4,7 +4,7 @@ const resultMatching = (trieRoot, productArr) => {
   for (let i = 0; i < productArr.length; i++) {
     if (productArr[i].title.length > 1) {
       // if find the word, take the next word and loog for here at the tree in world child
-
+//Blu-Pier Technology 1498
       let line = trieRoot.findLine(productArr[i]);
       let brand = productArr[i].brand
      // productArr[i].line = line;
