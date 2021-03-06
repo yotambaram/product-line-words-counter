@@ -25,7 +25,7 @@ const dfs = (node, list) => {
     (node.level > 3 || node.childrenCounter === 0)
   ) {
     list.push(node.line + "," + node.name);
-  } else if (node.timesInRoot === 1 && node.level > 3) {
+  } else if (node.timesInRoot < 2 && node.level > 2) {
     list.push(node.line);
   } else if (node.childrenCounter === 0 && node.timesInRoot > 1) {
     list.push(node.line + "," + node.name);
@@ -86,52 +86,26 @@ class TitleWordsTrie {
     return dfs(this.root, []);
   }
 
-  findLine(productNode) {
+  findLine(productsArr) {
     let currentNode = this.root;
-    let brand = productNode.brand.toLowerCase();
-    // if (productNode.brand==="Blu-Pier Technology, Inc.") {
-    //   debugger
-    // }
+    let brand = productsArr[0].toLowerCase();
 
+    
     if (currentNode.children[brand]) {
       currentNode = currentNode.children[brand];
-      // get title arr
-      let splitedTitle = productNode.title
-        .toLowerCase()
-        .replace(/[|&;$%@"<>(),]/g, "")
-        .trim()
-        .replace(/[{()}]/g, "")
-        .trim()
-        .replace(/\\|\//g, " ")
-        .trim()
-        .replace(/[\[\]']+/g, "")
-        .trim()
-        //.replace("-", " ")
-        .replace(" +", " ")
-        .replace("- ", " ")
-        .replace(" -", " ")
-        .replace(brand, "")
-        .replace(/\s+/g, " ")
-        .trim()
-        // .replace(/\s+/g, '');
-        .split(" ");
-
-      // splitedTitle[0] === brand ? splitedTitle.shift() : null;
-
-      //let currentLn;
       let results;
       let gotLine = false;
       let wordStats = {};
 
-      for (let i = 0; i < splitedTitle.length; i++) {
-        const word = splitedTitle[i];
+      for (let i = 0; i < productsArr.length; i++) {
+        const word = productsArr[i];
         
         ///////////
         //Baby Jogger 81260KIT1 2011 City Select Stroller with Bassinet - Onyx
         if (currentNode.children[word] && word != brand) {
           wordStats[word] = currentNode.children[word].timesInRoot;
         }
-
+      
         //////////
         // if(currentNode.children[word] && word != brand){
         //   gotLine = true;
@@ -141,27 +115,66 @@ class TitleWordsTrie {
         // }
       }
       // let max = Object.keys(wordStats).reduce((a, b) => wordStats[a] > wordStats[b] ? a : b);
+     
       let max = 0;
-      let maxWord = "";
+      let startsWord = "";
+      let year = 0
       // Get the biggest
+      
       for (let word in wordStats) {
-        if (word == "81260kit1") {
-          debugger;
+       
+       
+        if ( !isNaN(word)) {
+          //check if its a year
         }
         if (wordStats[word] > max) {
           max = wordStats[word];
-          maxWord = word;
+          startsWord = word;
         }
+       
+
       }
+
+      let maxWordIndex = productsArr.indexOf(startsWord)
+      if (productsArr[maxWordIndex -1] in wordStats && currentNode.children[productsArr[maxWordIndex -1]].timesInRoot > 2) {
+        startsWord = productsArr[maxWordIndex -1]
+        maxWordIndex--
+      }
+
       // Check if the bigest has parent or chile to find where to start
+      
+        // if(currentNode.name==="uppababy") {
+        //   debugger
+        // }
+  
+     //console.log(currentNode.name)
+        currentNode = currentNode.children[startsWord]
+        if(!currentNode){
+          debugger
+        }
+        
+      
+    let productLine = currentNode.line + "," + currentNode.name;
+        while(currentNode.freq / currentNode.timesInRoot < 0.6) {
+          
+          maxWordIndex++
+          if(currentNode.children[productsArr[maxWordIndex]]) {
+            currentNode = currentNode.children[productsArr[maxWordIndex]]
+            productLine = currentNode.line + "," + currentNode.name
+          } else{break}
+        }
+       
+     
     
-      if (currentNode.children[maxWord] && currentNode.children[maxWord].parent in wordStats){
-        parentToStartWith = currentNode.children[maxWord].parent
-        currentNode = currentNode.children[parentToStartWith]
-      }
-      results = currentNode.line + "," + currentNode.name;
+
+    //   let parentToStartWith
+    //  for (currentNode.children[startsWord].parent in wordStats){
+    //     let parentToStartWith = currentNode.children[startsWord].parent
+    //     currentNode = currentNode.children[parentToStartWith]
+    //   }
+    //   results = currentNode.line + "," + currentNode.name;
       //results11 = currentLn.replace(/[,]/g, " ").replace(brand, "").trim()
-      return results;
+      return productLine;
     }
   }
 

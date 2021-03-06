@@ -21,7 +21,7 @@ async function getList(path) {
   const titleArr = await csvReader(path);
 
   // Clean data (Open titles String to cleaner Array)
-  const firstCleanDataArr = stringToArrCleaner(titleArr);
+  const firstCleanDataArr = await stringToArrCleaner(titleArr);
 
   // Get words static (each word)
   const oneWordStatsTree = oneWordTreeBuilder(firstCleanDataArr);
@@ -40,11 +40,11 @@ async function getList(path) {
   const firstlineArr = shortStringToArrCleaner(trieResultsArr);
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  const matchingResultsArr = resultMatching(trieRoot2, titleArr);
+  const matchingResultsArr = resultMatching(trieRoot2, firstCleanDataArr);
 
   const testArr = []
   for (let i = 0; i < matchingResultsArr.length; i++) {
-    let test = matchingResultsArr[i].line
+    let test = matchingResultsArr[i]
     
     if(test) {
       let test2 = test.split(",")
@@ -54,24 +54,6 @@ async function getList(path) {
   }
 
   const trieRoot3 = trieBuilder(testArr, oneWordStatsTree);  
-
-  let k;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -89,20 +71,6 @@ async function getList(path) {
     if (err) return console.log(err);
     console.log("CSV File Data Ready");
   });
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   // print
   const csvFromArrayOfArrays = convertArrayToCSV(matchingResultsArr, {
@@ -116,7 +84,7 @@ async function getList(path) {
     console.log("CSV File Data Ready");
   });
 
-  const jsonDataObjStringify = JSON.stringify(trieRoot);
+  const jsonDataObjStringify = JSON.stringify(trieRoot3);
   outputPath3 = await outputPathBuilder("./db-results/json-data", ".txt");
   fs.writeFile(outputPath3, jsonDataObjStringify, (err) => {
     if (err) return console.log(err);

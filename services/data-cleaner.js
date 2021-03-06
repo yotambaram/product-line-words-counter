@@ -2,13 +2,26 @@ const _ = require("lodash");
 
 //take this out
 let wordToDelete = {
-  for: true,
-  to: true,
-  from: true,
-  with: true,
+  "for": true,
+  "to": true,
+  "from": true,
+  "with": true,
   //sand: true,
-  best: true,
-  inc: true
+  "best": true,
+  "inc": true,
+  "3-in-1": true,
+  "2-in-1": true,
+  "best": true,
+  "black": true,
+  "yellow": true,
+  "grey": true,
+  "navy": true,
+  "red": true,
+  "pink": true,
+  "blue": true
+  
+
+
 };
 
 const dataCleaner = (allTitlesArr, wordStatsTree) => {
