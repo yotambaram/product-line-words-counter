@@ -2,13 +2,52 @@ const _ = require("lodash");
 const fs = require('fs');
 
 
-const stringToArrCleaner = (allTitleArr) => {
+
+
+wordsCleaner = (stringTitle) => {
+  let wordToDeleteArr = [
+    "for",
+    "to",
+    "from",
+    "with",
+    "best",
+    "inc",
+    "2-in-1",
+    "3-in-1",
+    "4-in-1",
+    "5-in-1",
+    "2 in 1",
+    "3 in 1",
+    "4 in 1",
+    "5 in 1",
+    "best",
+    "black",
+    "yellow",
+    "grey",
+    "navy",
+    "red",
+    "pink",
+    "blue",
+    "2 weeks delivery!",
+   "2-in1"
+  
+  
+  ];
+  let cleanedWord
+  wordToDeleteArr.forEach(element => {
+    cleanedWord = stringTitle.replace(element, "").trim();
+    
+  });
+  return cleanedWord
+}
+
+
+
+async function stringToArrCleaner(allTitleArr){
   try {
     let allTitleCleanedArr = [];
     for (let i = 0; i < allTitleArr.length; i++) {
       let product = allTitleArr[i]
-    
-         
 
         let brand = product.brand ? product.brand.toLowerCase() : "no_brand";
         let color = product.color ? product.color.toLowerCase() : "no_color";
@@ -16,7 +55,8 @@ const stringToArrCleaner = (allTitleArr) => {
         let model = product.title ? product.model.toLowerCase() : "no_model";
        
       
-        let cleanedBrand = title
+        let cleanedTitle = title
+        .replace(/ *\([^)]*\) */g, "")
           //.replace(/(?:\\[rn]|[\r\n]+)+/g, "")
           .replace(/[|&;$%@"<>()]/g, "")
           .trim()
@@ -24,7 +64,8 @@ const stringToArrCleaner = (allTitleArr) => {
           .trim()
           .replace(/\\|\//g, " ")
           .trim()
-          .replace(/[\[\]']+/g, "")
+          
+          .replace(/[,\[\]']+/g, "")
           .trim()
           //.replace("-", " ")
           .replace(" +", " ")
@@ -33,36 +74,40 @@ const stringToArrCleaner = (allTitleArr) => {
           .replace("+", " ")
           .replace("- ", " ")
           .replace(" -", " ")
-          .replace(brand.toLowerCase(), "")
+          .replace(brand, "")
           .trim()
-          .replace(brand.toLowerCase(), "")
+          .replace(brand, "")
           .trim()
-          .replace(brand.toLowerCase(), "")
+          .replace(brand, "")
           .trim()
-          .replace(color.toLowerCase(), "")
+          .replace(color, "")
           .trim()
-          .replace(model.toLowerCase(), "")
+          .replace(model, "")
+          .trim()
+          .replace("2 in 1", "")
           .trim();
-          // TODO: Add words to delete from db (for, From and)
           
-        
-        const splitTitle = _.split(cleanedBrand, " ");
+          // TODO: Add words to delete from db (for, From and)
+          // if(brand.startsWith('aegilmc') && color == "gray"){
+          //   debugger
+          // }
+          let cleanedBrandString = wordsCleaner(cleanedTitle)
+         
+  
+        const splitTitleArr = _.split(cleanedBrandString, " ");
        
-        cleanBrand = brand.replace(/[-|.&;$%@"<>()-,]/g, " ").trim().replace(/\s+/g, ' ')
+        let cleanBrand = brand.replace(/[-|.&;$%@"<>()-,]/g, " ").trim().replace(/\s+/g, ' ')
       
-        // if(brand.startsWith('blu-pier')){
-        //   debugger
-        // }
-
+     
         if(cleanBrand.split(" ").length > 1) {
           splitedBrand = cleanBrand.split(" ")
           for (let j = 0; j < splitedBrand.length; j++) {
-            splitTitle[0] === splitedBrand[j] ? splitTitle.shift() : null;
+            splitTitleArr[0] === splitedBrand[j] ? splitTitleArr.shift() : null;
             
           }
         }
         // TODO: dont delete size if its a num
-        const filteredTitle = _.filter(splitTitle, word => {
+        const filteredTitle = _.filter(splitTitleArr, word => {
           return word.length > 0 || word.match(/[a-z]/i);
         })
         

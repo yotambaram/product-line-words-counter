@@ -29,37 +29,37 @@ async function getList(path) {
   // Clean more data with statics
   const secondCleanDataArr = dataCleaner(firstCleanDataArr, oneWordStatsTree);
 
+  const oneWordStatsTree2 = oneWordTreeBuilder(secondCleanDataArr);
+
   // Get words static (pairs)
   //const twoWordsStatsTree = twoWordsTreeBuilder(secondCleanDataArr)
 
   // Build trie to get current statics
-  const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
+  const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree2);
   //console.log(JSON.stringify(trieRoot))
-  const trieResultsArr = trieRoot.getLines();
+  const trieResultsArr = trieRoot.getLines(oneWordStatsTree2);
   // Split the
-  const firstlineArr = shortStringToArrCleaner(trieResultsArr);
-  const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
+  const firstLineArr = shortStringToArrCleaner(trieResultsArr);
+  const trieRoot2 = trieBuilder(firstLineArr, oneWordStatsTree2);
 
-  const matchingResultsArr = resultMatching(trieRoot2, firstCleanDataArr);
+  const matchingResultsArr = resultMatching(trieRoot2, secondCleanDataArr);
 
-  const testArr = []
-  for (let i = 0; i < matchingResultsArr.length; i++) {
-    let test = matchingResultsArr[i]
-    
-    if(test) {
-      let test2 = test.split(",")
-    testArr.push(test2)  
-    }
-      
-  }
-
-  const trieRoot3 = trieBuilder(testArr, oneWordStatsTree);  
+  const firstMatchResult = shortStringToArrCleaner(matchingResultsArr);
 
 
+  const trieRoot3 = trieBuilder(firstMatchResult, oneWordStatsTree2);  
+
+  const trieResultsArr2 = trieRoot3.getLines(oneWordStatsTree2.brandMap);
+
+  const secondLineArr = shortStringToArrCleaner(trieResultsArr2);
+
+  
+  const secondMatchResult = shortStringToArrCleaner(matchingResultsArr);
+  
 
   /////////////////
-  const csvFromArrayOfArrays2 = convertArrayToCSV(firstlineArr, {
-    // header,
+  const csvFromArrayOfArrays2 = convertArrayToCSV(secondLineArr, {
+    header:["Brand", "Line", "Sub Line 1", "Sub Line 2", "Sub Line 3", "Sub Line 4"],
     separator: ",",
   });
 
@@ -78,11 +78,11 @@ async function getList(path) {
     separator: ",",
   });
 
-  const outputPath2 = await outputPathBuilder("./db-results/csv-data", ".csv");
-  fs.writeFile(outputPath2, csvFromArrayOfArrays, (err) => {
-    if (err) return console.log(err);
-    console.log("CSV File Data Ready");
-  });
+  // const outputPath2 = await outputPathBuilder("./db-results/csv-data", ".csv");
+  // fs.writeFile(outputPath2, csvFromArrayOfArrays, (err) => {
+  //   if (err) return console.log(err);
+  //   console.log("CSV File Data Ready");
+  // });
 
   const jsonDataObjStringify = JSON.stringify(trieRoot3);
   outputPath3 = await outputPathBuilder("./db-results/json-data", ".txt");
