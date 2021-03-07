@@ -24,10 +24,12 @@ let wordToDelete = {
 
 };
 
-const dataCleaner = (allTitlesArr, wordStatsTree) => {
+const dataCleaner = (allTitles, wordStatsTree) => {
   try {
 
-
+    let allTitlesArr = allTitles.map(cleanTitle => {
+      return cleanTitle.filteredTitle
+    })
 
     // Delete most common word for all search
     let splitTitlesArr = [];
@@ -35,11 +37,8 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
     
 
 
-      let currentBrand = allTitlesArr[i][0];
+      let currentBrand = allTitlesArr[i][0]
       // Filter words
-      // if(currentBrand ==="blu-pier technology, inc."){
-      //   debugger
-      // }
       if (wordStatsTree.root.children[currentBrand].times > 1) {
         _.remove(allTitlesArr[i], (el) => {
       
@@ -51,14 +50,14 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             
             return !el in wordStatsTree ||
             
-              (wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] > 2 &&
+              (wordStatsTree.root.brandMap["_TOTAL_BRANDS"] > 2 &&
                 wordStatsTree.root.children[el].brandsCounter /
-                  wordStatsTree.root.BrandMap["_TOTAL_BRANDS"] >
+                  wordStatsTree.root.brandMap["_TOTAL_BRANDS"] >
                   0.9) ||
                   el in wordToDelete ? true : false;
               //wordStatsTree.root.children[el].times >||
               // wordStatsTree.root.children[el].children[currentBrand] /
-              //   wordStatsTree.root.BrandMap[currentBrand] >
+              //   wordStatsTree.root.brandMap[currentBrand] >
               //   0.9
               // ? true
               // : false || 
@@ -80,19 +79,15 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
         }
       }
 
-      //   if (allTitlesArr[i][0] === "baby jogger" && allTitlesArr[i][1] == "2011") {
-      //   debugger
-      // }
-
       if (allTitlesArr[i].length > 2) {
         allTitlesArr[i].splice(5);
-        if (wordStatsTree.root.BrandMap[currentBrand] > 20) {
+        if (wordStatsTree.root.brandMap[currentBrand] > 20) {
           for (let j = 2; j < allTitlesArr[i].length; j++) {
             //TODO: save the brand and common word inside map to do let loops
             const currentWord = allTitlesArr[i][j];
             if (
               wordStatsTree.root.children[currentWord].children[currentBrand] /
-                wordStatsTree.root.BrandMap[currentBrand] >
+                wordStatsTree.root.brandMap[currentBrand] >
               0.95
             ) {
               allTitlesArr[i].splice(j);
@@ -105,7 +100,7 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
             const currentWord = allTitlesArr[i][j];
             if (
               wordStatsTree.root.children[currentWord].children[currentBrand] /
-                wordStatsTree.root.BrandMap[currentBrand] >
+                wordStatsTree.root.brandMap[currentBrand] >
               0.7
             ) {
               allTitlesArr[i].splice(j);
@@ -114,9 +109,6 @@ const dataCleaner = (allTitlesArr, wordStatsTree) => {
           }
         }
       }
-
-      //allTitlesArr[i].unshift(currentBrand)
-
       allTitlesArr[i].length > 1 ? splitTitlesArr.push(allTitlesArr[i]) : null;
     }
     return splitTitlesArr;

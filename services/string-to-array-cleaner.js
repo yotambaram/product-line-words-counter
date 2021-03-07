@@ -51,7 +51,7 @@ async function stringToArrCleaner(allTitleArr){
 
         let brand = product.brand ? product.brand.toLowerCase() : "no_brand";
         let color = product.color ? product.color.toLowerCase() : "no_color";
-        let title = product.title ? product.title.toLowerCase() : "no_title";
+        let title = product.title ? product.title.toLowerCase() : brand;
         let model = product.title ? product.model.toLowerCase() : "no_model";
        
       
@@ -116,12 +116,13 @@ async function stringToArrCleaner(allTitleArr){
         // if(brand === "bob gear" && filteredTitle[1] === "deluxe") {
         //   debugger
         // }
-        allTitleCleanedArr.push(filteredTitle);
+        allTitleArr[i].filteredTitle = filteredTitle
+        //allTitleCleanedArr.push(filteredTitle);
       
       
      
     }
-    return allTitleCleanedArr;
+    return allTitleArr;
     
   } catch (err) {
     console.log(err)

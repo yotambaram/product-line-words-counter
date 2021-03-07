@@ -35,21 +35,21 @@ async function getList(path) {
   // Build trie to get current statics
   const trieRoot = trieBuilder(secondCleanDataArr, oneWordStatsTree);
   //console.log(JSON.stringify(trieRoot))
-  const trieResultsArr = trieRoot.getLines();
+  const trieResultsArr = trieRoot.getLines(oneWordStatsTree);
   // Split the
   const firstlineArr = shortStringToArrCleaner(trieResultsArr);
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  const matchingResultsArr = resultMatching(trieRoot2, secondCleanDataArr);
+  const matchingResultsArr = resultMatching(trieRoot2, firstCleanDataArr);
 
   const secondtlineArr = shortStringToArrCleaner(matchingResultsArr);
 
   const trieRoot3 = trieBuilder(secondtlineArr, oneWordStatsTree);  
 
-
+  const matchingResultsArr2 = resultMatching(trieRoot3, titleArr);
 
   /////////////////
-  const csvFromArrayOfArrays2 = convertArrayToCSV(firstlineArr, {
+  const csvFromArrayOfArrays2 = convertArrayToCSV(secondtlineArr, {
     // header,
     separator: ",",
   });
