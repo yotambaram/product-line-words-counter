@@ -40,20 +40,11 @@ async function getList(path) {
   const firstlineArr = shortStringToArrCleaner(trieResultsArr);
   const trieRoot2 = trieBuilder(firstlineArr, oneWordStatsTree);
 
-  const matchingResultsArr = resultMatching(trieRoot2, firstCleanDataArr);
+  const matchingResultsArr = resultMatching(trieRoot2, secondCleanDataArr);
 
-  const testArr = []
-  for (let i = 0; i < matchingResultsArr.length; i++) {
-    let test = matchingResultsArr[i]
-    
-    if(test) {
-      let test2 = test.split(",")
-    testArr.push(test2)  
-    }
-      
-  }
+  const secondtlineArr = shortStringToArrCleaner(matchingResultsArr);
 
-  const trieRoot3 = trieBuilder(testArr, oneWordStatsTree);  
+  const trieRoot3 = trieBuilder(secondtlineArr, oneWordStatsTree);  
 
 
 

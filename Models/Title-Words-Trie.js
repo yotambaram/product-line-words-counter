@@ -8,7 +8,7 @@ class TrieNode {
     this.line = null;
     this.isEnd = false;
     this.freq = 0;
-    this.timesInRoot = 0;
+    this.timesInBranch = 0;
     this.timesInBrand = 0;
     this.childrenCounter = 0;
     this.children = {};
@@ -21,18 +21,18 @@ const dfs = (node, list) => {
 
   //else:
   if (
-    node.freq / node.timesInRoot > 0.5 &&
+    node.freq / node.timesInBranch > 0.5 &&
     (node.level > 3 || node.childrenCounter === 0)
   ) {
     list.push(node.line + "," + node.name);
-  } else if (node.timesInRoot < 2 && node.level > 2) {
+  } else if (node.timesInBranch < 2 && node.level > 2) {
     list.push(node.line);
-  } else if (node.childrenCounter === 0 && node.timesInRoot > 1) {
+  } else if (node.childrenCounter === 0 && node.timesInBranch > 1) {
     list.push(node.line + "," + node.name);
   }
 
   const childrens = Object.keys(node.children);
-  if ((node.childrenCounter > 0 && node.timesInRoot > 1) || node.level < 4) {
+  if ((node.childrenCounter > 0 && node.timesInBranch > 1) || node.level < 4) {
     childrens.forEach((child) => {
       let childNode = node.children[child];
       dfs(childNode, list);
@@ -55,15 +55,20 @@ class TitleWordsTrie {
     if (title.length === 0) return; // forbid empty string
     let word;
     let currentNode = this.root;
+    let brand = title[0];
     for (let i = 0; i < title.length; i++) {
       word = title[i];
+     
 
       if (!currentNode.children.hasOwnProperty(word)) {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
         let currentChild = currentNode.children[word];
-        currentChild.timesInRoot++;
-        currentChild.timesInBrand = statsObj[word];
+        currentChild.timesInBranch++;
+        if(!statsObj.root.children[word]) {
+          debugger
+        }
+        currentChild.timesInBrand = statsObj.root.children[word].children[brand];
         currentChild.name = word;
         currentChild.parent = currentNode.name;
         currentChild.level = currentNode.level + 1;
@@ -74,7 +79,7 @@ class TitleWordsTrie {
         // "," +
         // currentChild.name;
       } else if (currentNode.children.hasOwnProperty(word)) {
-        currentNode.children[word].timesInRoot++;
+        currentNode.children[word].timesInBranch++;
       }
       currentNode = currentNode.children[word];
     }
@@ -103,7 +108,7 @@ class TitleWordsTrie {
         ///////////
         //Baby Jogger 81260KIT1 2011 City Select Stroller with Bassinet - Onyx
         if (currentNode.children[word] && word != brand) {
-          wordStats[word] = currentNode.children[word].timesInRoot;
+          wordStats[word] = currentNode.children[word].timesInBranch;
         }
       
         //////////
@@ -136,7 +141,7 @@ class TitleWordsTrie {
       }
 
       let maxWordIndex = productsArr.indexOf(startsWord)
-      if (productsArr[maxWordIndex -1] in wordStats && currentNode.children[productsArr[maxWordIndex -1]].timesInRoot > 2) {
+      if (productsArr[maxWordIndex -1] in wordStats && currentNode.children[productsArr[maxWordIndex -1]].timesInBranch > 2) {
         startsWord = productsArr[maxWordIndex -1]
         maxWordIndex--
       }
@@ -155,7 +160,7 @@ class TitleWordsTrie {
         
       
     let productLine = currentNode.line + "," + currentNode.name;
-        while(currentNode.freq / currentNode.timesInRoot < 0.6) {
+        while(currentNode.freq / currentNode.timesInBranch < 0.6) {
           
           maxWordIndex++
           if(currentNode.children[productsArr[maxWordIndex]]) {

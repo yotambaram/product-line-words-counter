@@ -18,9 +18,8 @@ adil,children
 adil,children,adjustable
 adorish,16x3.00,motorcycle
 advance mobility,bug,canopy
-aegilmc,2
-aegilmc,2,in,1
 aegilmc,infant,toddler
+aegilmc,baby
 aibab,baby,cart
 aili strollers,4
 aili strollers,4,in
@@ -50,8 +49,9 @@ allen sports,premier,aluminum,1-child
 allen sports,jtx-1,trailer
 amazing mart,on,the
 amenz,sport
+amenz,sport,strollerdouble
 amenz,strollr
-amenz,strollr,pushchair
+amenz,strollr,pushchaircarrycotpram
 amoroso,convenient,baby
 amoroso,single,jogging
 amoroso,twin,umbrella
@@ -87,13 +87,12 @@ anst,one,pair
 ap dishu,lightweight,compact
 apepal,baby,tricycle
 apontus,2,in1
-apontus,2
-apontus,2,in
 apontus,3,wheel
 apontus,foldable,twin
 apontus,foldable,lightweight
 apontus,foldable
 apontus,foldable,baby,kids
+apontus,double,child
 apontus,lightweight,umbrella
 apple baby,hippo,collection
 apregies,baby,stroller
@@ -125,7 +124,7 @@ babies r us,white,beige
 babies r us,deluxe,umbrella
 babifis,twins,strollr
 baby,trend,sit
-baby bike trailer,new,2
+baby bike trailer,new,bicycle
 baby bling,design,company
 baby born,twin,jogger
 baby cargo,100,series
@@ -181,10 +180,10 @@ baby jogger,2019,city
 baby jogger,2019,city,mini,gt
 baby jogger,81268
 baby jogger,81268,city,select
-baby jogger,city,mini,2,4
 baby jogger,city,mini,2,double
 baby jogger,city,mini,2,pram
 baby jogger,city,mini,2,travel
+baby jogger,city,mini,2,4wheel
 baby jogger,city,mini,2,gt2
 baby jogger,city,mini,2,3-wheeled
 baby jogger,city,mini
@@ -294,11 +293,12 @@ baby jogger,summit,xc,single,hybrid
 baby jogger,summit,xc,single,jogging
 baby jogger,belly,bar
 baby jogger,belly,bar,single
+baby jogger,car,seat,adapter,singlefor
 baby jogger,car,seat,adapter,single
 baby jogger,car,seat,adapter,city
 baby jogger,car,seat,adapter,multi
 baby jogger,car,seat,adapter,and
-baby jogger,bug,canopy,cover
+baby jogger,bug,canopy
 baby jogger,deluxe,pram,kit
 baby jogger,rear,wheel
 baby jogger,rear,wheel
@@ -352,8 +352,9 @@ baby jogger,87174consol
 baby jogger,87174consol,city
 baby joy,double,light-weight
 baby joy,lightweight
-baby joy,stroller,2,in,1
 baby joy,stroller,convertible,bassinet,sleeping
+baby joy,stroller,convertible,carriage,bassinet
+baby joy,stroller,aluminum,carriage,w
 baby joy,stroller,front,rear,facing
 baby joy,stroller,pram,baby,carriage
 baby joy,pocket
@@ -431,7 +432,7 @@ baby trend,expedition
 baby trend,expedition,premiere
 baby trend,expedition,race,tec,jogger
 baby trend,expedition,race,tec,travel
-baby trend,expedition,lx
+baby trend,expedition,lx,jogger
 baby trend,expedition,lx,swivel,jogging
 baby trend,expedition,lx,swivel,jogger
 baby trend,expedition,lx,jogging
@@ -557,8 +558,6 @@ baby trend,ovation,travel
 baby tripclips,2,pack
 baby tripclips,-,2
 baby tripclips,-,2-pack
-baby tripclips,oh
-baby tripclips,oh,baby,-
 baby tripclips 2 pack,2,pack
 baby trolley,lll,twin
 baby trolley,lll,baby
@@ -590,7 +589,6 @@ babyroués,babyroues,traveler
 babyroués,babyroues
 babyroués,babyroues,newborn
 babyroués,airplane,lightweight,travel
-babyroués,airplane,lightweight
 babyroués,baby
 babysing,baby,stroller-french,high,landscape
 babysing,baby
@@ -616,7 +614,7 @@ babyzen,yoyo,6
 babyzen,yoyo,6+,color,pack
 babyzen,yoyo
 babyzen,yoyo,cup,holder
-babyzen,yoyo,stroller-black,frame,taupe
+babyzen,yoyo,stroller-black,frame
 babyzen,yoyo,frame
 babyzen,yoyo,newborn,plus
 babyzen,yoyo,newborn,plus,taupe
@@ -704,7 +702,7 @@ best offer deals,power,supply,board,08-l171wd2-pw200aa
 best offer deals,power,supply,board,pw.108w2.683
 best offer deals,power,supply,board,08-l12nla2-pw210aa
 best offer deals,power,supply,board,bn4400941a
-best offer deals,power,supply,board,40-l14th4-pwb1cg
+best offer deals,power,supply
 best offer deals,power
 best offer deals,power,main
 best offer deals,bn96-28772a
@@ -736,7 +734,7 @@ best offer deals,tcl,55us57
 best offer deals,lvds
 best offer deals,lvds,cable
 best offer deals,lvds
-best offer deals,lvds,cables
+best offer deals,lvds,cablesfor
 best ride on cars,maserati,ghibli
 bestofferdeals,75pfl6601,f7b
 bfwy,urbini,omni
@@ -745,7 +743,7 @@ biba,double
 big oshi,baby,time,shopping,umbrella
 big oshi,lexington
 bikehard,expandable,seat
-bikezilla,2,two
+bikezilla,2x,baby
 billion deals,2017
 billion deals,2017,new
 billion deals,baby
@@ -945,7 +943,6 @@ bugaboo,bee,3,frame
 bugaboo,bee
 bugaboo,bee,self
 bugaboo,bee,by,diesel,complete
-bugaboo,bee
 bugaboo,bee,canopy
 bugaboo,bee,plus
 bugaboo,bee,sun,canopy,electric
@@ -977,8 +974,6 @@ bugaboo,cameleon3,adapter
 bugaboo,cameleon3,aluminum
 bugaboo,cameleon3
 bugaboo,cameleon3,charcoal
-bugaboo,cameleon3
-bugaboo,cameleon3,rd,avenue
 bugaboo,cameleon3,special,edition,blend
 bugaboo,cameleon3,special,edition,kite
 bugaboo,cameleon3,base
@@ -1050,6 +1045,7 @@ bugaboo,cameleon,breezy
 bugaboo,cameleon
 bugaboo,cameleon,canvas
 bugaboo,rain,cover
+bugaboo,cameleon3avenue
 bugaboo,neon
 bugaboo,neon,special
 bugaboo,frog,complete
@@ -1110,7 +1106,7 @@ burley design,solstice
 burley design,solstice,solstice
 burley design,honey
 burley design,honey,bee
-busydd,baby
+busydd,baby,strollerstroller
 camidy,universal,baby
 cart,stroller,childrens
 cartener,umbrella
@@ -1130,8 +1126,8 @@ cc strollers,luxury,infant
 cc strollers,luxury,bassinet
 cc strollers,four,rounds
 c chain,ultra-lightweight,double
-cchainway,c-chain,2,in,1
 cchainway,c-chain,foldable,lightweight
+cchainway,c-chain,baby
 cchainway,newborn,baby
 cdm,folding,bicycle
 ceiling fan designers,baby,nursery
@@ -1199,7 +1195,6 @@ chicco,cortina,together
 chicco,cortina
 chicco,cortina,cx
 chicco,cortina,se,30,travel
-chicco,cortina,travel,system,graphica
 chicco,cortina,travel,system,luna
 chicco,cortina,travel,system,midori
 chicco,cortina,travel,system,keyfit
@@ -1245,7 +1240,7 @@ chicco,ct,0.5,twin
 chicco,trevi,twin
 chicco,london
 chicco,nuevo
-chicco,nuevo,travel
+chicco,nuevo,travel,system
 chicco,ergo
 chicco,ergo,baby,jogging
 chicco,travel
@@ -1317,7 +1312,7 @@ comfy baby,!,universal
 comfy baby,insect
 comfy baby,insect,bug,netting
 concord global trading,quix,stroller
-confidence,2-in1,double
+confidence,double,baby
 contours,2017,option,elite,tandem
 contours,2018,option,elite,tandem
 contours,curve,tandem,double
@@ -1383,7 +1378,7 @@ cosco,juvenile,flurry
 cosco,sprinter,go,lightly,travel
 cosco,commuter,travel,system,zahari
 cosco,commuter,travel,system,quigley
-cosco,commuter,travel,system,w
+cosco,commuter,travel
 cosco,commuter
 cosco,commuter,compact
 cosco,funsport,play,yard,retro
@@ -1585,6 +1580,7 @@ disney,baby,winnie-the-pooh,umbrella
 disney,baby,bundle,collection,baby
 disney,baby,gear
 disney,umbrella
+disney,umbrella,baby,travel
 disney,amble,quad,travel,system
 disney,mickey
 disney,mickey,mouse
@@ -1597,8 +1593,6 @@ disney,character,umbrella
 disney,pixar
 disney,pixar,planes
 disney,toy,story,infant,boys
-disney,safety
-disney,safety,1st
 disney,princess
 disney,princess,infant
 disney,saftey
@@ -1716,7 +1710,7 @@ ella baby,2018,versa
 ema jane,small
 ema jane,small,gerber
 ema jane,delicious
-ema jane,delicious,headband
+ema jane,delicious,headband,sets
 ema jane,christmas
 ema jane,christmas,set
 emsco group,emscogroup,infant
@@ -1845,9 +1839,9 @@ fleurville inc,sling,tote
 flybloom,folding,adjustable
 foho,bumbleride,rocket
 fome home,infant,baby
-foofoo,summer,infant,convenience
+foofoo,summer,infant,convenience,strollerthree
 foofoo,fashion
-foofoo,fashion,pu
+foofoo,fashion,pu,leather
 foryulik,toddler,light
 foujoy,lightweight,baby
 foundations,2020
@@ -1883,11 +1877,11 @@ freekids,high-view,strollers
 frera,luxury,newborn
 frjjthchy,foldable,baby
 fruit of the loom,girls,ankle
-fumee,diaper,bag
+fumee,diaper,bagstroller
 fyjk,3,in,1
-fyjk,convertible
+fyjk,convertible,strollerbaby,bassinet,strollernewborn
 fyjk,lightweight
-fyjk,baby
+fyjk,baby,strollernewborn
 g o o d b a b y / hao hai zi,happy,dino
 gaggle,compass,3-seat,tandem
 gaggle,compass,4-seat,quad
@@ -1952,7 +1946,7 @@ generic,j,is
 generic,american
 generic,american,plastics,on-the-go
 generic,new
-generic,new,2
+generic,new,bicycle
 generic,the
 generic,the,first
 generic,inner
@@ -1977,8 +1971,7 @@ gff,ultra-lightweight
 gff,wheelbarrow
 ggggg,stroller,ultra
 gglittle,buggyguard,anti-theft
-ghf,pushchair
-ghf,pushchair,2
+ghf,pushchair,baby
 ghf,childrens,tricycle
 giantex,child,trailer
 gl gland electronics,baby,strollers
@@ -2036,7 +2029,7 @@ graco,2015,breaze,click,connect
 graco,2015
 graco,2015,fastaction
 graco,244681
-graco,244681,system,antifeeze,wws
+graco,244681,system,antifeezewws
 graco,modes,3,essentials,lx
 graco,modes,3,lite,dlx
 graco,modes,3,lite,travel
@@ -2174,8 +2167,7 @@ graco,duoglider,classic
 graco,duoglider,lx
 graco,duoglider,lxi
 graco,signature,series,modular
-graco,mosaic
-graco,mosaic,stroller-,logan
+graco,mosaic,stroller-
 graco,snugride
 graco,snugride,click
 graco,metrolite
@@ -2230,7 +2222,7 @@ guzzie guss,connect+3
 guzzie guss,goose
 guzzie guss,lynx
 guzzie guss,connec,3
-gwx,baby,pushchair
+gwx,baby,pushchairlightweight
 gxyawpj hulan,small,chassis
 gyfy,baby,stroller
 gymqian,ultra-lightweight
@@ -2285,7 +2277,7 @@ havis,inc.,inc.
 heao,baby,stroller
 heay,3,in,1,pushchair
 heay,3,in,1,pushchair，compact
-heay,prams,and,pushchairs,birth
+heay,prams,and,pushchairs,birthtravel
 heay,strollers,coches,para,bebes
 heay,standard
 heay,standard,baby
@@ -2342,7 +2334,7 @@ honey joy,jogger
 hope carried,namaste,linen
 horoshop,baby,blanket，knitted
 hot mom,baby,stroller:360,degree,rotation
-hot mom,infant,bassinet,2,in
+hot mom,infant,bassinet,toddler
 hotone,walk,diary
 hrd,lightweight,stroller
 hsrg,lightweight,stroller
@@ -2353,6 +2345,9 @@ httdian,childrens,scooter
 huiqi,cochecito,de
 hurley,baby,boys
 hwlg,lightweight
+hwlg,lightweight,strollerlightweight,strollerrainproof
+hwlg,lightweight
+hwlg,lightweight,strollerone-handed
 hwtong,sticky,fly
 hype,2seat,kids
 hzc,3
@@ -2400,7 +2395,6 @@ idfurlf,gravity,one
 iessential,safeplus,foldable
 if hlmf,baby,stroller
 ikevan_,universal,baby
-infans,2,in,1
 infans,newborn
 infans,baby
 infans,baby,pram
@@ -2487,7 +2481,6 @@ instep,suburban
 instep,suburban,swivel
 instep,double
 instep,double,fixed,wheel
-instep,double
 instep,double,safari
 instep,swivel
 instep,swivel,wheel
@@ -2569,13 +2562,16 @@ jian e,four,seasons
 jiaobei,high,view
 jiaobei,fashion,high
 jiaobei,baby
-jiax,baby
+jiax,baby,strollerpram,carriage
 jiax,tandem,double
 jiax,tandem
 jiax,tandem,stroller，best,double
+jiax,summer
 jiax,summer,convenience
 jiax,lightweight,baby
 jiax,convenience
+jiax,convenience,strollermulti-position
+jiax,convenience,strollerbaby
 jiax,stroller
 jiax,stroller,newborn
 jiax,infant
@@ -2660,9 +2656,8 @@ joovy,too,qool,silver,double
 joovy,ergo,caboose,stroller:,ergo
 joovys,premium,jogger
 joovys,premium
-joovys,premium,double
-joovys,jogger
-joovys,jogger,ultralight,baby
+joovys,premium,double,tandem
+joovys,jogger,ultralight
 jovers,ear,buds
 jovial,portable,folding
 jtbb,baby
@@ -2691,8 +2686,12 @@ khuy,4
 khuy,4,wheel
 khuy,pram
 khuy,pram,travel
+khuy,pram
 khuy,pram,carriage
+khuy,lightweight
 khuy,lightweight,double
+khuy,lightweight
+khuy,lightweight,strollercompact
 khuy,lightweight
 khuy,lightweight,pram
 khuy,lightweight
@@ -2716,7 +2715,7 @@ kiddy,city,n
 kiddy,sport,n
 kiddy,evocity,1
 kids koalas,kidskoalas,airplane
-kidsclub,stroller,airplane,stroller,""
+kidsclub,stroller,airplane
 kidsembrace,batman,lightweight
 kidstyle,pram,case
 kinbor,toddle,baby
@@ -2779,11 +2778,11 @@ kosgk,deluxe,bikes,pedal
 kosgk,child
 kosgk,child,bikes,bicycles
 kovalenthor,handlebar,adjustable
-kpdvxa,2
-kpdvxa,2,in
 kpdvxa,baby
 kpdvxa,twin,bby
 kpdvxa,aby
+kpdvxa,slim
+kpdvxa,slim,folding
 ktyxde,baby
 ktyxde,childrens
 ktyxde,childrens,tricycle
@@ -2861,8 +2860,8 @@ liucs,baby
 liucs,baby,strollers,ultra
 liuhaitao,trolley,baby
 ljfⓡ,hot,mom
-ljhhh,2
-ljhhh,2,in,1
+ljhhh,baby
+ljhhh,folding
 ljhhh,folding,tricycle
 ljq,3,in
 lll,baby
@@ -2884,17 +2883,18 @@ lofami strollers,four-wheeled,baby
 lofami strollers,lightweight,baby
 loulou lollipop,color,block
 loveindiy,baby,stroller
-lovie,large,tuscany
+lovie,tuscany,elephant
 lqryjdz,3,in,1,foldable
 lqryjdz,stroller
 lqryjdz,stroller,pushchair
+lqryjdz,baby,strollerbaby
 lqryjdz,baby,carriage,pushchairs
-lqryjdz,baby,carriage,pushchairs,pushchair,trolley,portable
+lqryjdz,baby,carriage,pushchairs,pushchairtrolleyportable
 lqryjdz,childrens,cart,pushchairs
 lullaby earth,super,lightweight
 lumiwill cosmetic,city,select
 luvit llc,easy,fit
-lux4kids,magnum,2,in,1
+lux4kids,magnum,pram,combi
 lux4kids,children,bedding,bed,set
 lux4kids,combi
 lux4kids,footmuff
@@ -3016,8 +3016,8 @@ maclaren,n.a.,volo,festival
 maclaren,bmw
 maclaren,bmw,universal,organizer
 maclaren,bmw,twin
-maclaren,bmw,buggy,medieval
-maclaren,bmw,m,crimson
+maclaren,bmw,buggy
+maclaren,bmw,m
 maclaren,dylans
 maclaren,dylans,candy
 maclaren,alpine
@@ -3115,7 +3115,7 @@ mamas papas,mama
 mamas papas,universal
 mamas papas,universal,raincover
 mamas papas,mylo
-mamas papas,mylo,color
+mamas papas,mylo,color,pack
 mammygol,lightweight,baby
 manito,melange,alpha
 marxiao,baby,stroller
@@ -3197,11 +3197,9 @@ milkbe,auto,braking
 milly mally,royal,truck
 miluxyt,milu,baby
 miluxyt,milu,multi-functional
-mima,xari,stoller,4g,aluminum
-mima,xari,stoller,4g,chassis
+mima,xari,stoller,4g
 mima,xari,stoller,4g,champagne
 mima,xari,starter,pack
-mima,xari,starter,pack,white
 mima,xari
 mima,xari,travel,bag
 mima,xari,winter,outfit
@@ -3242,13 +3240,11 @@ mountain buggy,2017,nano
 mountain buggy,2019
 mountain buggy,2019,terrain,active
 mountain buggy,nano,2
-mountain buggy,nano
-mountain buggy,nano,2020
 mountain buggy,nano,v3
-mountain buggy,nano,duo,buggy
-mountain buggy,nano,duo,double
 mountain buggy,nano,year,of,the
 mountain buggy,nano,year,of,pig
+mountain buggy,nano,duo,buggy
+mountain buggy,nano,duo,double
 mountain buggy,nano,v2
 mountain buggy,bagrider,suitcase
 mountain buggy,duet,2016,double
@@ -3357,7 +3353,7 @@ muv,baby,trend,gaan
 muv,baby,trend,reis
 muv,gaan,complete
 muv,reis,complete
-mw,baby
+mw,baby,strollerlightweight
 mw,bby
 my babiie,your,babiie,mawma,by
 my babiie,your,babiie
@@ -3755,7 +3751,7 @@ protect a bub,bling,stars,sparkle
 puma,x,cloud9
 pushchair,high,landscape
 putars_e,putars,baby
-qaba,2,in
+qaba,design,lightweight
 qdy strollers,childrens
 qdy strollers,baby
 qdy strollers,fashion,baby
@@ -3854,7 +3850,7 @@ regal lager,cybex,ruby
 regal lager,onyx
 regal lager,onyx,candy
 rideonecar,3,wheels
-rindasr,baby,stroller
+rindasr,baby,strollerhigh
 rmxmy,childrens,stroller
 roan,baby
 roan,classic,pram
@@ -3864,7 +3860,7 @@ rock star baby,candy
 romirus,rear
 romirus,rear,wheel,pack
 romirus,stroller
-romirus,stroller,footrest
+romirus,stroller,footrestfootboard
 romirus,front
 romirus,front,wheels
 romirus,twin
@@ -3946,7 +3942,7 @@ schwinn,free,runner,lt,jogging
 schwinn,free,runner
 schwinn,hope,jogging
 schwinn,z-force
-schwinn,z-force,bmx
+schwinn,z-force,bmx,bike
 schwinn,safari
 schwinn,safari,tt
 scj,lightweight
@@ -4028,7 +4024,6 @@ stanley,family
 stanley,family,extra
 stokke,beat,compact,urban,infant
 stokke,beat,lightweight,compact
-stokke,xplory,2011
 stokke,xplory,balance,limited,edition
 stokke,xplory,v6,chassis
 stokke,xplory,v6,deep
@@ -4058,7 +4053,7 @@ stokke,stroller,summer,kit
 stokke,stroller
 stokke,stroller,winter
 stokke,stroller
-stokke,stroller,xplory
+stokke,stroller,xplory,v4
 stokke,stroller
 stokke,stroller,seat
 stokke,trailz with,classic,wheels
@@ -4115,7 +4110,7 @@ stroller bike,baby,child,and
 stroller costumes,fire,truck
 stroller costumes,car
 stroller costumes,costume,turns
-strollergrip,stroller,buggy,pushchair,""
+strollergrip,stroller,buggy,pushchair
 strollergrip,bugaboo,cameleon
 strollers by ets,baby,rain
 strolly,spin,spinning
@@ -4228,7 +4223,7 @@ thule,all-terrain,urban
 tianrui,mini,cochecito,de,bebé
 tianrui,lightweight,fold,baby,stroller-airplane
 tianrui,baby,cart.,lightweight,neat
-tianrui,4kg,light,high-view,"",folding,""
+tianrui,4kg,light,high-view,folding
 tidyard,kids,tricycle,adjustable,convertible
 tidyard,chid
 tidyard,chid,bike
@@ -4254,7 +4249,7 @@ tike tech,trax360,single,2007,lime
 tike tech,atx,all-terrain
 tike tech,atx
 tike tech,atx,all
-tine,lightweight,stroller
+tine,lightweight,strollercompact
 tiny wonders,lightweight,compact
 tiny wonders,single,baby
 tiny wonders,deluxe,dual-brake
@@ -4266,7 +4261,7 @@ tobabyfat,kids,pushchair
 tom's village,galaxy,note
 tom's village,iphone
 tom's village,iphone,xs,max
-toogoo r,toogoorbuggy,pram
+toogoo r,toogoobuggy,pram
 topbi,fashion,chilren
 topbi,fashion,hildren
 topbi,fashion,childrn
@@ -4296,7 +4291,7 @@ txtc,3,in,1,pushchair
 txtc,3,in,1,convenience
 txtc,3,in,1,foldable
 txtc,3,in,1,travel
-txtc,two-way,pushchair
+txtc,two-way,pushchair,strollercompact
 txtc,travel
 txtc,travel,system,baby，baby
 txtc,pushchair
@@ -4332,7 +4327,7 @@ unknown,lightweight
 unknown,lightweight,toddler,baby
 unknown,bob,revolution,flex,duallie
 unknown,new
-unknown,new,2
+unknown,new,bicycle
 unknown,laz,lightweight,baby
 unknown,laz,lightweight
 unknown,laz,tricycle,bicycle,lightweight
@@ -4346,7 +4341,6 @@ unknown,chalkboard
 unknown,chalkboard,hearts
 unknown,gaggle
 unknown,gaggle,4
-unknown,comfortable,prams
 unknown,comfortable,prams,baby
 unknown,comfortable,prams,ultra-light,easy
 unknown,comfortable,prams,ultra-light,portable
@@ -4373,12 +4367,6 @@ uppababy,2015,vista,travel,system
 uppababy,2015,cruz,deluxe
 uppababy,2015,g-link,stoller
 uppababy,2017,cruz
-uppababy,2017,cruz,carbon
-uppababy,2017,cruz
-uppababy,2017,vista
-uppababy,2017,vista
-uppababy,2017,vista
-uppababy,2017,vista,carbon
 uppababy,2017,vista
 uppababy,2018
 uppababy,2018,19
@@ -4386,56 +4374,47 @@ uppababy,2018,minu
 uppababy,2018,g-luxe
 uppababy,2018,vista
 uppababy,2018,g-lite
-uppababy,2018,birth,kit
+uppababy,2018,birth,kit,jordan
+uppababy,2018,birth,kit,denny
+uppababy,2018,birth,kit,jake
+uppababy,2018,birth,kit,ryan
 uppababy,2018,cruz
-uppababy,2018,bassinet
-uppababy,2018,bassinet
-uppababy,2018,bassinet
-uppababy,2018,bassinet
-uppababy,2018,bassinet
-uppababy,vista
-uppababy,vista,2010
+uppababy,2018,bassinet,henry
+uppababy,2018,bassinet,jordan
+uppababy,2018,bassinet,loic
+uppababy,2018,bassinet,taylor
+uppababy,2018,bassinet,denny
 uppababy,vista,v2
-uppababy,vista,rumbleseat
+uppababy,vista,rumbleseat,taylor
 uppababy,vista,rumbleseat,bryce
 uppababy,vista,rumbleseat
 uppababy,vista,rumbleseat
-uppababy,vista,rumbleseat
-uppababy,vista
 uppababy,vista,henry
+uppababy,vista,taylor2015
 uppababy,vista
-uppababy,vista,taylor
-uppababy,vista
-uppababy,vista,travel
+uppababy,vista,travel,bag
 uppababy,vista
 uppababy,vista,mosquito,net
-uppababy,rumbleseat,indigo
-uppababy,rumbleseat,wheat
-uppababy,rumbleseat,marine
 uppababy,rumbleseat
 uppababy,rumbleseat,cozyganoosh,jake
 uppababy,rumbleseat,denny
 uppababy,cozyganoosh,mesa
 uppababy,cozyganoosh,mesa,stella
 uppababy,cozyganoosh,stella
-uppababy,cozyganoosh
 uppababy,cozyganoosh,finn
-uppababy,cozyganoosh,olive
 uppababy,no_title
 uppababy,cruz,2017
 uppababy,cruz,v2
 uppababy,cruz
 uppababy,cruz, stroller
-uppababy,birth,kit,light
+uppababy,birth,kit
 uppababy,minu
-uppababy,minu,stroller-devinlight
+uppababy,minu,stroller-devin
 uppababy,minu
-uppababy,minu,stroller-light
-uppababy,g-link,2
-uppababy,g-link
-uppababy,g-link,pascal,silver
-uppababy,g-link
-uppababy,g-link,jake,carbon
+uppababy,minu,stroller-
+uppababy,g-link,2,stroller-jake
+uppababy,g-link,pascal
+uppababy,g-link,jake
 uppababy,g-luxe,lightweight
 uppababy,ganoosh,taylor
 uppababy,ppababy,vista
@@ -4473,7 +4452,7 @@ urbini10ea1y viau,urbini,omni
 usa_best_seller,foldable,lightweight,front,back
 usa_best_seller,aluminum,lightweight
 utk,3,wheels
-utomen,2,in
+utomen,baby
 utomen,stroller
 utomen,stroller,connectors
 valco,tri-mode,ex,bassinet-raven
@@ -4490,18 +4469,20 @@ valco baby,snap,4,trend,lightweight
 valco baby,snap,4,trend,single
 valco baby,snap,4,single
 valco baby,snap,duo,2,tailor
-valco baby,snap,duo,2015,snap
-valco baby,snap,duo,2015,bevi
 valco baby,snap,duo,trend,light
 valco baby,snap,duo
+valco baby,snap,duo,snap,duo
+valco baby,snap,duo,snap,snap4
 valco baby,snap,duo
 valco baby,snap,duo,booties
+valco baby,snap,duo
 valco baby,snap,trend,lightweight,reversible
 valco baby,snap,ultra,trend
 valco baby,snap,ultra,bassinet
 valco baby,snap,snap4,vogue,set
-valco baby,snap,duo2,2014,snap
-valco baby,snap,duo2
+valco baby,snap,duo2,beauty
+valco baby,snap,duo2,snap,duo
+valco baby,snap,duo2,snap,snap4
 valco baby,twin,tri,mode,joey
 valco baby,twin,tri,mode,ex
 valco baby,twin,tri,mode,se
@@ -4527,7 +4508,7 @@ valco baby,open
 valco baby,open,box
 valco baby,runabout
 valco baby,mama,bag
-valco baby' manufacturer merchant: ',baby,snap3
+valco baby' manufacturer merchant: ',baby,snapsingle
 valco strollers,2012
 valco strollers,2012,spark,single
 valco strollers,spark,duo
@@ -4544,9 +4525,9 @@ veer,comfort
 veer,comfort,seat,toddlers
 veer,custom
 veer,custom,sidewall
-venicci,carbo,2
-venicci,pure,2
-venicci,shadow,2
+venicci,carbo,travel
+venicci,pure,travel
+venicci,shadow,travel
 venice child,maverick,single,double
 venice child,maverick
 venice child,maverick,tandem
@@ -4555,6 +4536,7 @@ venice child,maverick,travel
 venice child,kangaroo
 venum,club,joggings
 vera bradley,baby,bottle
+vera bradley,baby,bottle,caddy
 vgeby1,stroller,umbrella
 vi yo,baby,stroller
 viagasafamido,front,wheel
@@ -4623,9 +4605,8 @@ wonder buggy,taylor,umbrella
 wonder buggy,skyler,jumbo,umbrella
 wonder buggy,all,town,rider,light
 wonder buggy,parker,umbrella
-wonder buggy,stork,2,in,1
-wonder buggy,stork
-wonder buggy,stork,deluxe
+wonder buggy,stork,deluxe,urban,carrycot
+wonder buggy,stork,deluxe,urban,carry
 wonder buggy,roadmate,multi,position,compact
 wonder buggy,baby
 wonder buggy,nano
@@ -4693,7 +4674,7 @@ wyx strollers,twin
 wyx strollers,twin,bby
 wyx strollers,baby
 wyx strollers,baby,pram
-wzp,csters,2
+wzp,csters2,with
 xbyestc,two-way,implementation,lightweight
 xbyestc,ultra-light,portable
 xiaoli,baby
@@ -4804,11 +4785,10 @@ yo yo2015,baby,strollr,double
 yo yo2015,bby
 yo yo2015,babyzen
 yo yo2015,babyzen,yoyo
-yoyobaby,baby,stroller
+yoyobaby,baby,strollerlightweight
 yrcbhj,umbrella
 yrcbhj,baby
 yrstc,pram,arriage
-yrstc,pram,convenience
 yrstc,onvenience
 yrstc,jogger,aby
 yrstc,compact
@@ -4821,6 +4801,7 @@ yrstc,travel,stroller，baby,jogger
 yrstc,lightweight
 yrstc,lightweight,stroller，with
 yrstc,infant
+yrstc,pramconvenience
 ytpb,twins,of
 yujiayi,baby,carriage
 yxyxml,baby,carriage
@@ -4830,6 +4811,7 @@ yyqtyec,tricycle,children
 yyqx,aby
 yyzz,baby,strollers,lightweight
 yyzz,baby,strollers,high-view
+yyzz,baby,strollerairplane
 yyzz,stroller
 yyzz,stroller,3
 yyzz,stroller,high-view
@@ -4857,8 +4839,10 @@ zhaoru trolley,scooter,children,3-6-14,child
 zhaoru trolley,scooter,children,3-6-14,children
 zhaoru trolley,five
 zhaoru trolley,five,rounds
-zhilixing,2,in
+zhilixing,baby,stroller
 zhong xing,childrens,three-foot
+zhou d 1,baby
+zhou d 1,baby,strollertravel
 zhou d 1,baby
 zhou d 1,baby,strollers，pram
 zhou d 1,pushchairs
@@ -4867,7 +4851,7 @@ zhou d 1,prams
 zhou d 1,prams,two
 zhou d 1,prams
 zhou d 1,prams,high
-zhou d 1,pushchair,trolley,portable
+zhou d 1,pushchairtrolleyportable,baby
 zhou d 1,high,view
 zikenvi shop,arsenal
 zikenvi shop,arsenal,short,away
@@ -4877,14 +4861,13 @@ zikenvi shop,barcelona,short,home
 zipel,jelly,berry
 znx,single,umbrella
 znx,single,jogging
-zoe,twin,luxe,xl2
-zoe,twin,xl2
-zoe,the,tour,xl1,everyday
-zoe,the,tour,luxe,xl1
-zoe,the,traveler,xlc,lightweight
-zoe,the,twin,xl2,double
-zoe,the,trio,xl3,triple
-zoe,the,tandem,xl1,lightweight
+zoe,twin,luxestroller,lightweight,double
+zoe,the,tour,everyday,single
+zoe,the,tour,luxe,everyday
+zoe,the,traveler,lightweight,travel
+zoe,the,twin,double
+zoe,the,trio,triple
+zoe,the,tandem,lightweight,travel
 zoe,xl1,tandem,lightweight,travel
 zoe,trip
 zoomkit,complete,fuchsia
@@ -4903,7 +4886,7 @@ zooper,rhumba
 zooper,rhumba,teal,color
 zooper,rhumba,umbrella
 zoopolr,4,pack
-zoujun,lightweight,stroller
+zoujun,lightweight,strollercompact
 zuca,sport,bag
 zuipenglai,5,frameless
 zuipenglai,stroller
@@ -4989,7 +4972,7 @@ no_brand,baby,trend
 no_brand,baby,trend
 no_brand,baby,zen,yoyo,0
 no_brand,baby
-no_brand,baby,tricycle
+no_brand,baby,tricycle4-in-1
 no_brand,baby
 no_brand,baby,child
 no_brand,baby
