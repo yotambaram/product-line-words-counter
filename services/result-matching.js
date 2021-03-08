@@ -4,7 +4,7 @@ const resultMatching = (trieRoot, productArr) => {
     if (productArr[i].filteredTitle.length > 1) {
       let line = trieRoot.findLine(productArr[i].filteredTitle);
      if(!line) {
-      line = productArr[i]
+      line = productArr[i].filteredTitle
      }
      if(typeof(line) === "string") {
       line = line.split(",");

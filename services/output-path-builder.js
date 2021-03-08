@@ -6,7 +6,7 @@ const outputPathBuilder = (path, format) => {
         let i = 1;
         let currentPath = path + format
         while (fs.existsSync(currentPath)) {
-          currentPath = path + i + format;
+          currentPath = path + "("+i+")" + format;
           i++;
         }
         return currentPath}

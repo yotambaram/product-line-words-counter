@@ -14,6 +14,8 @@ const {
 const { convertArrayToCSV } = require("convert-array-to-csv");
 const converter = require("convert-array-to-csv");
 
+let categoryName = "strollers"
+let categoryId = "166842011"
 const productEnhancemenPath = "./db/product-enhancement-db.csv";
 
 async function getList(path) {
@@ -42,15 +44,40 @@ async function getList(path) {
 
   const matchingResultsArr = resultMatching(trieRoot2, firstCleanDataArr);
 
-  const secondtlineArr = shortStringToArrCleaner(matchingResultsArr);
+  let matchingResultsTitleArr = matchingResultsArr.map(product => {
+    return product.filteredTitle
+  })
 
-  const trieRoot3 = trieBuilder(secondtlineArr, oneWordStatsTree);  
+  const trieRoot3 = trieBuilder(matchingResultsTitleArr, oneWordStatsTree);  
 
-  const matchingResultsArr2 = resultMatching(trieRoot3, titleArr);
+  const matchingResultsArr2 = resultMatching(trieRoot3, firstCleanDataArr);
+
+
+  let titlesResultMap = {};
+  let titlesResultArr = [];
+  for (let i = 0; i < matchingResultsArr2.length; i++) {
+    titledString = matchingResultsArr2[i].filteredTitle.join(" ")
+    let titleArrRes
+    if (!titlesResultMap[titledString]) {
+     titlesResultMap[titledString] = 1;
+     titlesResultArr.push(matchingResultsArr2[i].filteredTitle);
+     
+    } else {
+       titlesResultMap[titledString]++
+       
+    }
+    
+  }
+
+
+  
+
+
+
 
   /////////////////
-  const csvFromArrayOfArrays2 = convertArrayToCSV(secondtlineArr, {
-    // header,
+  const csvFromArrayOfArrays2 = convertArrayToCSV(titlesResultArr, {
+    header: ["Brand", "Line", "Sub Line1", "Sub Line2", "Sub Line3"],
     separator: ",",
   });
 
@@ -69,7 +96,7 @@ async function getList(path) {
     separator: ",",
   });
 
-  const outputPath2 = await outputPathBuilder("./db-results/csv-data", ".csv");
+  const outputPath2 = await outputPathBuilder(`./db-results/${categoryId}-${categoryName}`, ".csv");
   fs.writeFile(outputPath2, csvFromArrayOfArrays, (err) => {
     if (err) return console.log(err);
     console.log("CSV File Data Ready");
