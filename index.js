@@ -13,6 +13,7 @@ const {
 } = require("./services/short-string-to-array-cleaner");
 const { convertArrayToCSV } = require("convert-array-to-csv");
 const converter = require("convert-array-to-csv");
+const {dataToCsv} = require("./services/data-to-csv")
 
 let categoryName = "strollers"
 let categoryId = "166842011"
@@ -68,14 +69,6 @@ async function getList(path) {
     }
     
   }
-
-
-  
-
-
-
-
-  /////////////////
   const csvFromArrayOfArrays2 = convertArrayToCSV(titlesResultArr, {
     header: ["Brand", "Line", "Sub Line1", "Sub Line2", "Sub Line3"],
     separator: ",",

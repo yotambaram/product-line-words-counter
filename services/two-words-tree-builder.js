@@ -13,7 +13,7 @@ const twoWordsTreeBuilder = (splitTitle, statsObj) => {
       }
     }
     return categoryWordsTrie;
-  } catch (err) {}
+  } catch (err) { }
 };
 
 module.exports.twoWordsTreeBuilder = twoWordsTreeBuilder;

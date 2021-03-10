@@ -37,7 +37,7 @@ graco
 baby trend,cityscape,jogger,travel,system
 safety 1st,smooth,ride,travel,system
 no_brand,disney,umbrella
-bob gear,handlebar,console,duallie
+bob gear,handlebar,console,for,duallie
 joovy,zoom,360,ultralight,jogging
 graco,fastaction
 delta children,jeep,north,star
@@ -50,7 +50,7 @@ disney,amble,quad,travel,system
 delta children,jeep
 chicco,keyfit,caddy,frame
 baby trend,sky,view
-bob gear,handlebar,console,single
+bob gear,handlebar,console,for,single
 thule,urban,glide,2,jogging
 baby trend,expedition,double,jogger
 delta children,city,street,lx,side
@@ -80,14 +80,15 @@ baby jogger,city,mini,2
 baby trend,sit,n,stand,dx
 joovy,caboose,too
 maxi cosi,zelia,max,5-in-1
+baby trend,expedition,2-in-1
 maxi cosi,zelia,max
 graco,verb
 baby trend,navigator
-bob gear,snack,tray,single
+bob gear,snack,tray,for,single
 baby trend,tango,travel,system
 uppababy,cozyganoosh,jordan
 boppy,head,neck,support
-zoe,the,twin,double
+zoe,the,twin
 uppababy,2018,g-luxe
 joovy,scooter,x2,double
 dream on me,coast,rider
@@ -99,18 +100,18 @@ bob gear,alterrain,pro
 baby trend,tango
 baby trend,skyview
 baby jogger,child,tray
-britax,b-agile
+britax,child,tray,for,single
 baby jogger,parent,console
 baby trend,sit,n
 baby joy,stroller
-uppababy,cozyganoosh,mesa
+uppababy,cozyganoosh
 chicco,corso
 uppababy,2018,minu
 baby jogger,city,go
 delta children,jeep,gemini
 baby jogger,bassinet
 delta children,jeep,powerglyde,plus
-zoe,twin,luxestroller,lightweight,double
+zoe,twin,luxestroller
 baby joy,lightweight
 joovy,caboose,ultralight,graphite
 baby jogger,summit,x3
@@ -121,7 +122,7 @@ cybex,gazelle,s
 baby trend,sit,n,stand,5-in-1
 kolcraft,cloud,lightweight,umbrella
 joovy,zoom,x2,double,jogging
-evenflo,vive,travel,system,embrace
+evenflo,vive,travel,system,with
 booyah strollers,double
 britax,b-lively,lightweight
 baby trend,sit,n,stand,easy
@@ -132,7 +133,6 @@ dreambaby,stroller,blanket
 maclaren,mark,ii,style,set
 delta children,jeep,scout,double
 joovy,caboose,graphite
-britax,b-lively
 baby jogger,city
 summer infant,myria
 baby jogger,glider,board
@@ -159,7 +159,7 @@ wonderfold,multi-function,2
 graco,fitfold,jogging
 hot mom,baby
 zoe,the,tour
-dinky ninky,stroller,pegs,hook,muslin
+dinky ninky,stroller,pegs,to,hook
 wonderfold,multi-function,push,2
 chicco,liteway
 ergobaby,metro,lightweight,baby
@@ -172,6 +172,7 @@ bob gear,alterrain
 graco,uno2duo
 chicco,tre,jogging
 summer infant,3dflip,convenience
+britax,b-lively
 joovy,new,groove,ultralight,umbrella
 summer infant,modular
 baby trend,sit,n,stand,sport
@@ -210,7 +211,7 @@ thule,stroller,cup,holder,bottle
 quinny,limited,edition,south,beach
 wonfuss,baby
 baby joy,double,light-weight
-zoe,the
+zoe,the,traveler
 baby trend,go,lite,snap,fit
 keenz,stroller,wagon,–,7s
 gb,qbit,all-city
@@ -235,7 +236,7 @@ comfy baby,!,universal,double
 sasha kiddie products,sashas,rain,and
 springbuds,baby,stroller,bassinet
 bugaboo,bee6
-zoe,the,trio,triple
+zoe,the,trio
 babyzen,yoyo2
 baby trend,sit,n,stand,5
 joolz,day3,complete,set
@@ -249,6 +250,7 @@ baby trend,go,lite,snap,tech
 wonderfold,2,passenger,push,pull
 peg perego,booklet,50
 chicco,cortina,together,double
+baby jogger,front,wheel
 baby jogger,parent,console,universal
 dream on me,insta,auto,fold
 graco,breaze,lightweight
@@ -258,11 +260,11 @@ bugaboo,fox,2,complete,full-size
 uppababy,minu
 wonderfold,multi-function
 no_brand,lightweight
-uppababy,cozyganoosh,mesa,stella
-evenflo,sibby,travel,system,litemax
+evenflo,sibby,travel,system,with
 evenflo,minno,twin,double
 keenz,stroller,wagon,–,pull
 evenflo,folio3,stroll,jog,travel
+britax,b-agile
 uppababy,2018
 dream on me,vista,moonwalk
 dream on me,jasper,lightweight
@@ -285,7 +287,7 @@ tiny wonders,deluxe,dual-brake,single,baby
 beberoad,car,seat,adapter
 mountain buggy,duet,luxury
 kinbor,umbrella
-uppababy,birth,kit
+uppababy,from,birth,kit
 wonderfold,2
 maclaren,atom,jason,woodside,style
 bugaboo,ant,baby
@@ -307,7 +309,7 @@ daphyls,grateful,dead,ultralight
 blahoo,baby
 gb,qbit
 summer infant,3dpac,cs,double
-peg perego,pop-up,seat,team,duette
+peg perego,pop-up,seat,for,team
 evenflo,sibby,travel,system
 honey joy,umbrella
 maxi cosi,dana
@@ -319,7 +321,7 @@ evenflo,aero2,ultra-lightweight,double
 cosco,dorel,juvenile
 cynebaby,umbrella,baby
 roan,classic,pram,stroller
-zoe,xl1,tandem,lightweight,travel
+zoe,xl1
 honey joy,baby
 goodbaby,gb,pockit
 joovy,balloon
