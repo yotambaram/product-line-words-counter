@@ -54,6 +54,16 @@ async function getList(path) {
   const matchingResultsArr2 = resultMatching(trieRoot3, firstCleanDataArr);
 
 
+
+
+
+
+
+
+
+  //TODO: take out printing
+
+  // Ptint
   let titlesResultMap = {};
   let titlesResultArr = [];
   for (let i = 0; i < matchingResultsArr2.length; i++) {
