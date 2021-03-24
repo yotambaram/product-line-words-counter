@@ -1,5 +1,4 @@
 const resultMatching = (trieRoot, productArr) => {
-  let newList = [];
   for (let i = 0; i < productArr.length; i++) {
     if (productArr[i].filteredTitle.length > 1) {
       let line = trieRoot.findLine(productArr[i].filteredTitle);

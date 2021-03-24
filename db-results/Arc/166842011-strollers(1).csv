@@ -62,7 +62,7 @@ Summer Infant,32873,Gray,AIDGOM512001,"Summer Infant 3D Mini Convenience Strolle
 Baby Trend,JG94068R,Phantom,AID2HLI91001,"Baby Trend Expedition Jogger Stroller, Phantom, 50 Pounds",baby trend,expedition,jogger
 Kolcraft,KL029-FRR1,Fire Red,AID17ZA12001,"Kolcraft Cloud Plus Lightweight Easy Fold Compact Travel Baby Stroller, Fire Red",kolcraft,cloud,plus
 Baby Jogger,2104206,Slate,AIDH8GK72001,"Baby Jogger City Mini GT2 Double Stroller, Slate",baby jogger,city,mini
-Maxi-Cosi,TR389ETQA,Emerald Tide,AID03A182001,"Maxi-Cosi Zelia 5-In-1 Modular Travel System, Emerald Tide, One Size",maxi cosi,zelia,5-in-1
+Maxi-Cosi,TR389ETQA,Emerald Tide,AID03A182001,"Maxi-Cosi Zelia 5-In-1 Modular Travel System, Emerald Tide, One Size",maxi cosi,zelia,modular
 Disney,TR351CZR,Garden Delight Minnie,AID7J7012001,Disney Baby Minnie Mouse Amble Quad Travel System Stroller with Onboard 22 LT Infant Car Seat (Garden Delight),disney,baby
 Thule,10101948,Grey Melange,AIDXNFT54001,"Thule Urban Glide 2, Grey Melange, One Size",thule,urban,glide,2,one
 Evenflo,56041990A,Casual Grey,AID7JBS81001,"",evenflo
@@ -87,7 +87,7 @@ Graco,2113874,Frisco,AIDWLG112001,"Graco NimbleLite Travel System | Includes Lig
 Safety 1st,TR378EEL,Monument 2,AIDNSO591001,"Safety 1st Smooth Ride Travel System with OnBoard 35 LT Infant Car Seat, Monument 2",safety 1st,smooth,ride,travel,system
 Graco,"",Redmond,AIDLJ5N04001,"Graco Modes Pramette Stroller | Baby Stroller with True Bassinet Mode, Reversible Seat, One Hand Fold, Extra Storage, Child Tray, Redmond, Amazon Exclusive",graco,modes
 "","",Mickey Tuxedo,AIDHMECA2001,"Disney Umbrella Stroller, Mickey Tuxedo",no_brand,disney,umbrella
-BOB Gear,S12104700,Black,AIDJ6VS72001,BOB Gear Handlebar Console for Duallie Jogging Strollers,bob gear,handlebar,console,for,duallie
+BOB Gear,S12104700,Black,AIDJ6VS72001,BOB Gear Handlebar Console for Duallie Jogging Strollers,bob gear,handlebar,console,duallie
 Joovy,8061,Red,AIDOC4B12001,"Joovy Zoom 360 Ultralight Jogging Stroller, Large Canopy, Lightweight Jogger, Extra Large Air Filled Tires, Red",joovy,zoom,360,ultralight,jogging
 Safety 1st,TR378EEJ,Lake Blue,AIDCJOE81001,"",safety 1st
 Graco,2084432,Tessa,AIDMYX571001,"Graco FastAction SE Travel System | Includes FastAction SE Stroller and SnugRide 30 LX Infant Car Seat, Tessa",graco,fastaction
@@ -96,7 +96,7 @@ INFANS,"",Grey,AIDA62M12001,"INFANS Baby Stroller for Newborn, 2 in 1 High Lands
 Baby Jogger,"",Jet,AIDGAFCA2001,"Baby Jogger City Mini GT2 Stroller & Pram, Jet",baby jogger,city,mini
 Delta Children,33098-2279,Black with Royal Blue,AIDIAY512001,"Jeep North Star Stroller – Lightweight Stroller Features Parent Organizer, Cup Holder and Cool-Climate Mesh Seat, Black with Royal Blue",delta children,jeep,north,star
 Disney,US124AFS1,Grey,AIDM9F512001,"Disney Umbrella Stroller with Canopy, I Heart Mickey",disney,umbrella
-Maxi-Cosi,TR389ETPA,Aventurine Blue,AIDYJG112001,"Maxi-Cosi Zelia 5-In-1 Modular Travel System, Aventurine Blue, One Size (TR389ETPA)",maxi cosi,zelia,5-in-1
+Maxi-Cosi,TR389ETPA,Aventurine Blue,AIDYJG112001,"Maxi-Cosi Zelia 5-In-1 Modular Travel System, Aventurine Blue, One Size (TR389ETPA)",maxi cosi,zelia,modular
 Baby Trend,TJ75B72B,Optic Pink,AIDEIBC81001,"Baby Trend Pathway 35 Jogger Travel System, Optic Pink",baby trend,pathway,35,jogger,travel
 Baby Jogger,2086530,Jet,AIDVNGCA2001,"Baby Jogger City Mini GT2 Travel System, Jet",baby jogger,city,mini
 Joovy,8067,Black,AID44YG91001,"Joovy Zoom 360 Ultralight Jogging Stroller, Large Canopy, Lightweight Jogger, Extra Large Air Filled Tires, Black",joovy,zoom,360,ultralight,jogging
@@ -116,7 +116,7 @@ Graco,2112327,Spencer,AID0SF022001,"Graco Modes Nest Stroller | Baby Stroller wi
 Baby Trend,TS89A81A,Diamond Geo,AIDD6VS72001,"Baby Trend Sky View Travel System, Diamond Geo",baby trend,sky,view
 UPPAbaby,0320-VIS-US-BRY,White,AIDOPWAA2001,UPPAbaby VISTA V2 Stroller - BRYCE (white marl/silver/chestnut leather),uppababy,vista,v2
 Summer Infant,32883,Pink/Black,AID5XT781001,"Summer Infant 3D Mini Convenience Stroller, Pink/Black",summer infant,3d,mini,convenience
-BOB Gear,S12104600,Black,AIDO77182001,BOB Gear Handlebar Console for Single Jogging Strollers,bob gear,handlebar,console,for,single
+BOB Gear,S12104600,Black,AIDO77182001,BOB Gear Handlebar Console for Single Jogging Strollers,bob gear,handlebar,console,single
 Graco,"",Redmond,AIDYMT434001,"",graco
 gb,"",Blue,AIDSQO534001,GB Pockit+ All-City Stroller - Night Blue,gb,pockit
 Graco,2113876,Bayfield,AID0TF022001,"Graco Modes Nest Travel System | Includes Baby Stroller with Height Adjustable Reversible Seat, Bassinet Mode, Lightweight Aluminum Frame and SnugRide 35 Lite Elite Infant Car Seat, Bayfield",graco,modes
@@ -145,7 +145,7 @@ Cosco,US119BPX,Floating,AIDIMZBA2001,"Cosco Umbrella Stroller with Canopy, Float
 Baby Trend,SS76B71A,Optic Green,AIDA9RCA2001,"Baby Trend Sit n Stand Double Stroller, Optic Green",baby trend,sit,n,stand,double
 Disney,US139BMG,Mickey,AIDB7KSD1001,Disney Baby Mickey Mouse Umbrella Stroller with Basket,disney,baby
 Thule,10101943,Majolica Blue,AIDG0LG34001,"Thule Urban Glide 2, Majolica Blue, One Size",thule,urban,glide,2,one
-Maxi-Cosi,TR389ETR,Violet Caspia,AID5W1H12001,"Maxi-Cosi Zelia 5-in-1 Modular Travel System - Stroller and Mico 30 Infant Car Seat Set, Violet Caspia",maxi cosi,zelia,5-in-1
+Maxi-Cosi,TR389ETR,Violet Caspia,AID5W1H12001,"Maxi-Cosi Zelia 5-in-1 Modular Travel System - Stroller and Mico 30 Infant Car Seat Set, Violet Caspia",maxi cosi,zelia,modular
 Joovy,8060,Blueberry,AIDJQ7182001,"Joovy Zoom 360 Ultralight Jogging Stroller, Large Canopy, Lightweight Jogger, Extra Large Air Filled Tires, Blueberry",joovy,zoom,360,ultralight,jogging
 Chicco,04079747680070,Techna,AIDVJIK72001,"Chicco Viaro Travel System, Techna",chicco,viaro,travel,system
 BRITAX,S12399800,Asher,AIDAVYCA2001,"Britax B-Free Sport Travel System with B-Safe Endeavors Infant Car Seat | All Terrain Tires + Adjustable Handlebar + Extra Storage with Front Access + One Hand, Easy Fold - Asher Grey",britax,b-free
@@ -185,7 +185,7 @@ Dream On Me,365-GRAY,Grey,AIDT8C791001,"Dream On Me, Coast Stroller Rider, Light
 Thule,10101926,Thule Blue,AIDC58V72001,"Thule Urban Glide 2 Jogging Stroller , Thule Blue",thule,urban,glide,2,jogging
 Baby Trend,SS76072A,Onyx,AIDC2DA12001,"Baby Trend Sit and Stand Double Stroller, Onyx",baby trend,sit,and,stand,double
 Baby Trend,SS76044,Millennium Pink,AIDF2WD81001,"Baby Trend Double Sit N Stand Stroller, Millennium Pink",baby trend,double,sit,n,stand
-Maxi-Cosi,TR389EMJA,Night Black,AIDCMUF12001,"Maxi-Cosi Zelia 5-In-1 Modular Travel System, Night Black",maxi cosi,zelia,5-in-1
+Maxi-Cosi,TR389EMJA,Night Black,AIDCMUF12001,"Maxi-Cosi Zelia 5-In-1 Modular Travel System, Night Black",maxi cosi,zelia,modular
 Evenflo,19132264,Gypsy,AIDNQF512001,Evenflo Pivot Xplore All-Terrain Stroller Wagon,evenflo,pivot
 UPPAbaby,0320-VIS-US-FIN/1017-MSA-US-JKE,Finn,AIDXGD182001,UPPAbaby Vista V2 Stroller - Finn (Deep Sea/Silver/Chestnut Leather) + Mesa Infant Car Seat - Jake (Black),uppababy,vista,v2
 Summer Infant,31963,Granite Herringbone,AIDCDL9Z3001,"Summer Infant 3Dlite+ Convenience Stroller, Granite Herringbone  – Lightweight Umbrella Stroller with Oversized Canopy, Extra-Large Storage and Compact Fold",summer infant,3dlite,convenience
@@ -205,9 +205,9 @@ Baby Trend,SS74740,Vanguard,AID1O0DA2001,"Baby Trend Sit N Stand DX Stroller, Va
 Baby Trend,SS66068,Phantom,AID3L2N61001,"Baby Trend Sit N Stand Ultra Tandem Stroller, Phantom",baby trend,sit,n,stand,ultra
 Baby Jogger,2008340,Taupe,AIDHH5BJ1001,"Baby Jogger City Select LUX Stroller | Baby Stroller with 20 Ways to Ride, Goes from Single to Double Stroller | Quick Fold Stroller, Taupe",baby jogger,city,select
 Joovy,"",Red,AID07VS72001,"Joovy Caboose Too Graphite Stand-On Tandem Stroller, Red with Caboose Rear Seat, Red",joovy,caboose,too
-Maxi-Cosi,TR414ETK,Nomad Black,AIDE0PP81001,"Maxi-Cosi Zelia Max 5-in-1 Modular Travel System, Nomad Black, One Size",maxi cosi,zelia,max,5-in-1
+Maxi-Cosi,TR414ETK,Nomad Black,AIDE0PP81001,"Maxi-Cosi Zelia Max 5-in-1 Modular Travel System, Nomad Black, One Size",maxi cosi,zelia,max
 Baby Trend,SS76B73A,Optic Grey,AIDTT0CB1001,"Baby Trend Sit n Stand Double Stroller, Optic Grey",baby trend,sit,n,stand,double
-Baby Trend,WG01D15A,Ultra Marine,AIDE62M12001,"Baby Trend Expedition 2-in-1 Stroller Wagon PLUS, Ultra Marine",baby trend,expedition,2-in-1
+Baby Trend,WG01D15A,Ultra Marine,AIDE62M12001,"Baby Trend Expedition 2-in-1 Stroller Wagon PLUS, Ultra Marine",baby trend,expedition
 Maxi-Cosi,TR414EMR,Nomad Sand,AID0P7012001,"Maxi-Cosi Maxi Cosi Zelia Max Travel System, Nomad Sand, One Size",maxi cosi,zelia,max
 BOB Gear,U231950,Lunar Black,AIDLW5O22001,"BOB Gear Revolution Flex 3.0 Duallie Double Jogging Stroller | Ultra-Reflective Fabric + Smooth Ride Suspension + Easy Fold + Adjustable Handlebar, Lunar Black [New Logo]",bob gear,revolution,flex,3.0
 Graco,2047762,Merrick,AIDK0RCJ1001,"Graco Verb Travel System | Includes Verb Stroller and SnugRide 30 Infant Car Seat, Merrick",graco,verb
@@ -216,14 +216,14 @@ Baby Trend,DX60740,Vanguard,AID331LJ1001,"Baby Trend Navigator Double Jogger Str
 Chicco,07079673970070,Q Collection,AIDYHB191001,"Chicco Activ3 Air Jogging Stroller, Q Collection",chicco,activ3,air,jogging
 Baby Trend,DJ86A08B,Lincoln,AIDZV8182001,"Baby Trend Navigator Lite Double Jogger Stroller, Lincoln",baby trend,navigator
 Disney,US136DVB1,Minnie Tuxedo,AIDH6VS72001,"Disney Umbrella Stroller, Minnie Tuxedo",disney,umbrella
-BOB Gear,SN1001,Black,AID3YSJF1001,"BOB Gear Snack Tray for Single Jogging Strollers, Black, One Size (SN1001)",bob gear,snack,tray,for,single
+BOB Gear,SN1001,Black,AID3YSJF1001,"BOB Gear Snack Tray for Single Jogging Strollers, Black, One Size (SN1001)",bob gear,snack,tray,single
 Baby Trend,TS04D27A,Blue Mist,AIDSTLCA2001,"Baby Trend Tango Travel System, Blue Mist",baby trend,tango,travel,system
 BRITAX,S11747200,Frost,AID4O7012001,"Britax B-Free Travel System with B-Safe Ultra Infant Car Seat | All Terrain Tires + Adjustable Handlebar + Extra Storage with Front Access + One Hand, Easy Fold - Frost",britax,b-free
 Baby Trend,TJ75B71B,Optic Green,AIDNC8L72001,"Baby Trend Pathway 35 Jogger Travel System, Optic Green",baby trend,pathway,35,jogger,travel
 Baby Jogger,2086529,Jet,AID4UTCA2001,"Baby Jogger City Mini 2 Travel System, Jet",baby jogger,city,mini,2
 UPPAbaby,0920-CGN-WW-JOR,Gray,AID6JTM04001,UPPAbaby Cozyganoosh - Jordan (Charcoal Melange),uppababy,cozyganoosh,jordan
 Boppy,00060104060490,Grey,AID68SL72001,"Boppy Head & Neck Support, Charcoal Heathered",boppy,head,neck,support
-ZOE,XL2 BEST v2,Lime Green,AIDTK8DA2001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella,zoe,the,twin
+ZOE,XL2 BEST v2,Lime Green,AIDTK8DA2001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella,zoe,the,twin,double
 Baby Trend,JG76D05A,Pink,AIDTZFK72001,Baby Trend Expedition Race Tec Jogger,baby trend,expedition
 UPPAbaby,0518-GLX-US-JOR,Charcoal/Silver,AIDK37EB1001,2018 UPPAbaby G-Luxe Stroller - Jordan (Charcoal/Silver),uppababy,2018,g-luxe
 Evenflo,63012263,Wayfarer,AIDXKXDA2001,"Pivot Xplore Stroller Wagon Second Seat, Wayfarer Black",evenflo,pivot
@@ -263,7 +263,7 @@ Baby Jogger,2083995,City Mini GT2,AID95TJ91001,"Baby Jogger Child Tray, City Min
 Baby Trend,ST04D06A,Cassis,AIDA6VS72001,Baby Trend Tango Stroller,baby trend,tango
 Cosco,US119AOY,Dots,AID0K6182001,"Cosco Umbrella Stroller with Canopy, Dots",cosco,umbrella
 Baby Trend,DJ99C09B,Griffin,AID87Q471001,"Baby Trend Expedition Double Jogger, Griffin",baby trend,expedition,double,jogger
-BRITAX,S08218700,Black,AIDZB8991001,"Britax Child Tray for Single B-Agile, B-Free and Pathway Strollers, Black",britax,child,tray,for,single
+BRITAX,S08218700,Black,AIDZB8991001,"Britax Child Tray for Single B-Agile, B-Free and Pathway Strollers, Black",britax,b-agile
 Baby Jogger,2084000,Black,AID05TJ91001,Baby Jogger Parent Console,baby jogger,parent,console
 Chicco,07079664330070,Eucalyptus,AIDFZ4691001,"Chicco Mini Bravo Plus Lightweight Stroller, Eucalyptus",chicco,mini,bravo
 Baby Trend,TJ75B73B,Optic Grey,AIDV6SF12001,"",baby trend
@@ -275,7 +275,7 @@ Baby Trend,SS66944,Pinwheel,AIDUSZAA2001,"Baby Trend Hello Kitty Sit N Stand Ult
 Baby Trend,SS66773,Millennium,AIDS4U981001,"Baby Trend Sit N Stand Ultra Stroller, Millennium",baby trend,sit,n,stand,ultra
 Baby Joy,"",Beige,AIDB00391001,"BABY JOY Baby Stroller, 2-in-1 Convertible Bassinet Sleeping Stroller, Foldable Pram Carriage with 5-Point Harness, Including Rain Cover, Net, Cushion Pad, Foot Cover, Diaper Bag (Beige)",baby joy,stroller
 Baby Trend,ST04D27A,Blue Mist,AID4ELCA2001,"Baby Trend Tango Stroller, Blue Mist (ST04D27A)",baby trend,tango
-UPPAbaby,0920-MCG-WW-JKE,Gray,AIDIN3I04001,UPPAbaby Cozyganoosh for MESA & Mesa I-Size - Jake (Charcoal),uppababy,cozyganoosh
+UPPAbaby,0920-MCG-WW-JKE,Gray,AIDIN3I04001,UPPAbaby Cozyganoosh for MESA & Mesa I-Size - Jake (Charcoal),uppababy,cozyganoosh,mesa
 Chicco,08079563220070,Veranda,AID7QH364001,Chicco Corso LE Modular Travel System - Veranda,chicco,corso
 UPPAbaby,0818-MIN-US-DNY,Red Melange/Silver/Black Leather,AIDX6VS72001,2018 UPPAbaby MINU Stroller - Denny (Red Melange/Silver/Black Leather),uppababy,2018,minu
 Evenflo,63012255,Stallion,AIDZAJ652001,"Evenflo Pivot Xpand Modular Stroller Second Seat, Compatible with Evenflo Pivot Xpand Modular Travel System and Modular Stroller, Holds Up to 55-lbs, Multiple Configurations, Stallion Black",evenflo,pivot
@@ -288,7 +288,7 @@ Baby Jogger,2085334,Jet,AIDZ4HZ62001,"Baby Jogger Bassinet, Jet",baby jogger,bas
 Baby Jogger,1980173,Juniper,AIDMN7BA2001,"Baby Jogger City Tour Stroller | Compact Travel Stroller | Lightweight Baby Stroller with Backpack-Style Carry Bag, Perfect for Travel, Juniper",baby jogger,city,tour
 Baby Jogger,2082867,Sepia,AIDF5UCA2001,"Baby Jogger City Mini 2 Stroller - 2019 | Compact, Lightweight Stroller | Quick Fold Baby Stroller, Sepia",baby jogger,city,mini,2
 Delta Children,11459-2148,Grey,AIDPNN9Z3001,"Jeep PowerGlyde Plus Stroller by Delta Children - Lightweight Travel Stroller with Smoothest Ride, Aluminum Frame, 4-Position Recline, Extra Large Storage Basket, Grey",delta children,jeep,powerglyde,plus
-ZOE,"",Luxe Pink,AIDLK8DA2001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller
+ZOE,"",Luxe Pink,AIDLK8DA2001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller,lightweight,double
 Baby Joy,"",Green,AIDVLYOI5001,"BABY JOY Lightweight Stroller, Aluminum Baby Umbrella Convenience Stroller, Travel Foldable Design with Oxford Canopy/ 5-Point Harness/Cup Holder/Storage Basket, Green",baby joy,lightweight
 Joovy,8119,Gray,AIDNGUY61001,"Joovy Caboose Ultralight Graphite Stroller, Sit and Stand, Tandem Stroller, Red",joovy,caboose,ultralight,graphite
 Baby Jogger,1959390,Black,AIDUJT4J1001,"Baby Jogger Summit X3 Jogging Stroller - 2016 | Air-Filled Rubber Tires | All-Wheel Suspension | Quick Fold Jogging Stroller, Black/Gray",baby jogger,summit,x3
@@ -296,7 +296,7 @@ cynebaby,"",Gray,AIDNCGB12001,Infant Toddler Baby Stroller Carriage - Cynebaby C
 BRITAX,U911933,Navy,AIDBPJO52001,"Britax B-Ready G3 Stroller, Navy",britax,b-ready,g3
 Delta Children,"",Black,AIDVPU781001,The Clutch Stroller by Delta Children - Lightweight Compact Folding Stroller - Includes Travel Bag - Fits Airplane Overhead Storage - Black,delta children,the,clutch
 Cybex,520003559,Soho Grey,AIDWJXDZ3001,"CYBEX Gazelle S Stroller, Soho Grey",cybex,gazelle,s
-Baby Trend,NT27C87A,Grey/Black,AIDHZM9Z3001,"Baby Trend Sit N Stand 5-in-1 Shopper Travel System, Moon Dust",baby trend,sit,n,stand,5-in-1
+Baby Trend,NT27C87A,Grey/Black,AIDHZM9Z3001,"Baby Trend Sit N Stand 5-in-1 Shopper Travel System, Moon Dust",baby trend,sit,n,stand,shopper
 Kolcraft,KU022-BLK1,Black,AID07T2Z3001,"Kolcraft Cloud Lightweight Umbrella Stroller with Large Sun Canopy, Black",kolcraft,cloud,lightweight,umbrella
 Joovy,8268,Paprika,AIDKGE182001,"Joovy Zoom X2 Double Jogging Stroller, Double Stroller, Extra Large Air Filled Tires, Paprika",joovy,zoom,x2,double,jogging
 Baby Trend,TS89B00A,Leap Frog,AIDBHDCA2001,"Baby Trend Skyview Travel System, Leap Frog",baby trend,skyview,travel,system
@@ -316,9 +316,9 @@ Dream On Me,446-MIN,Mint,AIDUXBDA2001,"Dream On Me Volgo Twin Umbrella Stroller,
 Baby Trend,SS66758A,Morning Mist,AID3JKXE1001,"Baby Trend Sit n Stand Ultra Stroller, Morning Mist",baby trend,sit,n,stand,ultra
 Baby Trend,SS76B72A,Pink,AID1JX191001,"Baby Trend Sit n Stand Double Stroller, Optic Pink",baby trend,sit,n,stand,double
 Baby Trend,"",Reseda,AIDIJOCA2001,Baby Trend Sit N Stand Ultra Stroller - Reseda,baby trend,sit,n,stand,ultra
-Evenflo,55411874,Hayden Dot,AIDN6VS72001,"Evenflo Vive Travel System with Embrace, Hayden Dot",evenflo,vive,travel,system,with
+Evenflo,55411874,Hayden Dot,AIDN6VS72001,"Evenflo Vive Travel System with Embrace, Hayden Dot",evenflo,vive,travel,system,embrace
 Disney,TR342CZQ,Minnie Pop,AIDGOZUD1001,"Disney Amble Quad Travel System, Minnie Pop",disney,amble,quad,travel,system
-Maxi-Cosi,TR414ETL,Nomad Grey,AID4T5Q81001,"Maxi-Cosi Zelia Max 5-in-1 Modular Travel System, Nomad Grey, One Size",maxi cosi,zelia,max,5-in-1
+Maxi-Cosi,TR414ETL,Nomad Grey,AID4T5Q81001,"Maxi-Cosi Zelia Max 5-in-1 Modular Travel System, Nomad Grey, One Size",maxi cosi,zelia,max
 Graco,2081958,Wynton,AID29TF12001,"",graco
 Baby Trend,SS76B74A,Optic Teal,AID5XIK72001,"Baby Trend Sit n Stand Double Stroller, Optic Teal",baby trend,sit,n,stand,double
 Baby Trend,DJ86B78B,Candy Apple,AIDRATM61001,"Baby Trend Navigator Lite Double Jogger Stroller, Candy Apple",baby trend,navigator
@@ -352,7 +352,7 @@ Delta Children,11708-0981,Lunar Burgundy,AIDJXCT81001,"Jeep Scout Double Strolle
 Joovy,8147,Black,AIDS5PRE1001,"Joovy Caboose Graphite Stroller, Stand on Tandem, Sit and Stand, Black",joovy,caboose,graphite
 Baby Jogger,2113376,Jet,AIDAXKZ62001,"Baby Jogger City Tour 2 Travel System, Jet",baby jogger,city,tour
 Graco,2082773,Carbie,AID2O4E71001,"Graco FastAction SE Travel System | Includes FastAction SE Stroller and SnugRide 30 LX Infant Car Seat, Carbie",graco,fastaction
-BRITAX,S10404900,Black,AID94ZO91001,"Britax Child Tray for Single B-Lively Strollers, Black",britax,child,tray,for,single
+BRITAX,S10404900,Black,AID94ZO91001,"Britax Child Tray for Single B-Lively Strollers, Black",britax,b-lively
 Baby Jogger,1968629,City Premier Single,AIDPB7E81001,"Baby Jogger City Premier Child Tray Single Black, City Premier Single",baby jogger,city
 Summer Infant,20892,Onyx Black,AID1TGJ22001,"Summer Myria Modular Travel System with The Affirm 335 Rear-Facing Infant Car Seat, Onyx Blacky  – Convenient Stroller and Car Seat with Advanced Safety Features",summer infant,myria
 Joovy,8071,Red,AIDMIX512001,"Joovy Scooter X2 Double Stroller, Side by Side Stroller, Stroller for Twins, Large Storage Basket, Red",joovy,scooter,x2,double
@@ -388,7 +388,7 @@ WONDERFOLD,W4,Gray,AIDOE4B12001,"WONDERFOLD W4 4 Seater Multi-Function Quad Stro
 Baby Jogger,2082866,Capri,AIDO29182001,"Baby Jogger City Mini 2 Stroller - 2019 | Compact, Lightweight Stroller | Quick Fold Baby Stroller, Capri",baby jogger,city,mini,2
 Chicco,06079678100070,Black,AIDNC1012001,Chicco Activ3 Jogging Travel System - Crux,chicco,activ3
 Baby Jogger,2082865,Slate,AIDQDUCA2001,"Baby Jogger City Mini 2 Stroller - 2019 | Compact, Lightweight Stroller | Quick Fold Baby Stroller, Slate",baby jogger,city,mini,2
-Evenflo,55411881,Daphne,AID3R7622001,"Evenflo Vive Travel System with Embrace, Daphne",evenflo,vive,travel,system,with
+Evenflo,55411881,Daphne,AID3R7622001,"Evenflo Vive Travel System with Embrace, Daphne",evenflo,vive,travel,system,embrace
 UPPAbaby,0618-GLT-US-JKE,Black/Carbon,AIDB37EB1001,2018 UPPAbaby G-LITE Stroller -Jake (Black/Carbon),uppababy,2018,g-lite
 Baby Trend,ST01D09A,Pink,AIDWRUUV3001,"Baby Trend Tango Mini Stroller, Quartz Pink",baby trend,tango,mini
 Baby Jogger,1969638,Steel Gray,AIDG5HZ62001,"Baby Jogger City Go Car Seat, Steel Gray",baby jogger,city,go
@@ -413,7 +413,7 @@ Evenflo,57112255A,Stallion,AID8UBS81001,Evenflo Pivot Xpand Modular Travel Syste
 Baby Jogger,2133509,Barre,AIDSQZCA2001,"Baby Jogger City GO 2 Infant Car Seat, Barre",baby jogger,city,go
 Graco,2079880,Winfield,AIDCQU881001,"Graco Verb Stroller | Lightweight Baby Stroller, Winfield",graco,verb
 ZOE,"",Luxe Navy Blue,AIDT2YDA2001,The Tour+ Luxe (Zoe XL1) - Best Everyday Single Stroller with Umbrella - Tandem Capable - UPF 50+ - Lightweight,zoe,the,tour
-Dinky Ninky,0636823549909,Silver,AIDZ8WOI5001,"Stroller Pegs to Hook Muslin Sun Shade to Canopy, Car Seat Cover Clips, Nursing Cover, Pram Toy Holder, Blanket Clamp - Best Baby Shower Registry Gift - Buggy Accessory (Silver)",dinky ninky,stroller,pegs,to,hook
+Dinky Ninky,0636823549909,Silver,AIDZ8WOI5001,"Stroller Pegs to Hook Muslin Sun Shade to Canopy, Car Seat Cover Clips, Nursing Cover, Pram Toy Holder, Blanket Clamp - Best Baby Shower Registry Gift - Buggy Accessory (Silver)",dinky ninky,stroller,pegs,hook,muslin
 WONDERFOLD,"",Royal Blue,AIDY9VS72001,"WonderFold Multi-Function Push 2 Passenger Double Folding Stroller, Adjustable Canopy & Removable Footrest Seats up to 2 Toddlers (Royal Blue)",wonderfold,multi-function,push,2
 Chicco,05079562710070,Sunset,AIDO05DA2001,"Chicco Liteway Stroller, Sunset",chicco,liteway
 Ergobaby,METROBAR,Accessory: Belly Bar,AIDY70I45001,"Ergobaby Metro Lightweight Baby Stroller Accessories, Accessory: Belly Bar",ergobaby,metro,lightweight,baby
@@ -424,12 +424,12 @@ BOB Gear,U991954,Black,AIDTTXJ22001,"BOB Gear Alterrain Pro Jogging Stroller | O
 Thule,20201301,Black,AIDY9AW61001,Thule Chariot Jogging Kit - Cross/Lite 1,thule,chariot,jogging,kit,cross
 BRITAX,U291936,Cool Flow Teal,AIDNIADA2001,"Britax B-Lively Lightweight Stroller | One Hand, Easy Fold + Infinite Recline + Front Access Storage + Peekaboo Window + Cool Flow Ventilated Fabric, Cool Flow Teal",britax,b-lively,lightweight
 Joovy,8144,Amber,AIDB2DA12001,"Joovy Caboose Graphite Stroller, Stand on Tandem, Sit and Stand, Amber",joovy,caboose,graphite
-ZOE,XL2 BEST v2,Aqua,AIDXO8DA2001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,the,twin
+ZOE,XL2 BEST v2,Aqua,AIDXO8DA2001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,the,twin,double
 DOONA,"",Nitro Black,AIDC7VS72001,Doona Liki Trike S5 - Nitro Black,doona,liki,trike,s5
 Chicco,06079746210070,Graphite,AIDXRQJ02001,"Chicco Viaro Quick-Fold Stroller, Graphite",chicco,viaro,quick-fold
 Graco,2005306,Finn,AIDL9VS72001,"Graco Travelite Umbrella Stroller, Play",graco,travelite,umbrella
 ZOE,"",Black,AIDSGXDA2001,The Tour+ (Zoe XL1) - Best Everyday Single Stroller with Umbrella - Tandem Capable - UPF 50+ - Lightweight,zoe,the,tour
-ZOE,"",Luxe Grey,AIDLE4B12001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller
+ZOE,"",Luxe Grey,AIDLE4B12001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller,lightweight,double
 Joovy,8109,Charcoal,AIDRF9L72001,"Joovy Scooter X2 with Tray, Double Stroller, Side by Side Stroller, Stroller for Twins, Large Storage Basket, Charcoal",joovy,scooter,x2
 Graco,2101066,Haven,AID8YE771001,"Graco Modes Jogger 2.0 Travel System | Includes Jogging Stroller and SnugRide SnugLock 35 LX Infant Car Seat, Haven",graco,modes
 BOB Gear,U921954,Black,AIDH8VS72001,"BOB Gear Alterrain Jogging Stroller | Quick Fold + Adjustable Handlebar + XL UPF 50+ Canopy, Melange Black",bob gear,alterrain
@@ -464,14 +464,14 @@ Chicco,07079674970070,Q Collection,AIDNPNPF1001,"Chicco Bravo Air Quick-Fold Str
 Baby Jogger,2104110,Jet,AIDS6VS72001,"Baby Jogger City Mini 2 Double Stroller, Jet",baby jogger,city,mini,2
 DOONA,"",Desert Green,AIDGHT2R5001,Doona - Liki Trike S3 - Desert Green,doona,liki,trike,s3
 Joovy,8112,Citron,AID0U8612001,"Joovy Caboose Ultralight Graphite Stroller, Citron",joovy,caboose,ultralight,graphite
-ZOE,"",Luxe Green,AIDX0BDA2001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller
+ZOE,"",Luxe Green,AIDX0BDA2001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller,lightweight,double
 Graco,2101050,Binx,AIDSS7R71001,"Graco Jogging Stroller | Modes Jogger 2.0, Binx",graco,jogging
 Baby Trend,"",Magnolia,AIDXIX191001,"Baby Trend Sit N' Stand Easy Fold Toddler Baby Double Stroller and 2 Infant Comfortable Carry Car Seats Travel System Combo, Magnolia",baby trend,sit,n,stand,easy
 Baby Jogger,2083659,Paloma,AIDNVPM52001,"Baby Jogger City Select Baby Stroller Second Seat Kit with Adapters & UV 50 Sun Canopy | Second Baby Seat Converts Single Stroller to Double Stroller, Paloma",baby jogger,city,select
 Joovy,8075,Orange,AIDK9WCA2001,"Joovy Scooter X2 Double Stroller, Orange",joovy,scooter,x2,double
 Baby Trend,ST21B80A,Petal,AIDIME512001,"Baby Trend Rocket Stroller, Petal",baby trend,rocket
 Joovy,8077,Black,AIDAXS512001,"Joovy Scooter X2 Double Stroller, Side by Side Stroller, Stroller for Twins, Large Storage Basket, Black",joovy,scooter,x2,double
-Evenflo,55411894,Spearmint Spree,AIDVDZ291001,"Vive Travel System with Embrace, Spearmint Spree",evenflo,vive,travel,system,with
+Evenflo,55411894,Spearmint Spree,AIDVDZ291001,"Vive Travel System with Embrace, Spearmint Spree",evenflo,vive,travel,system,embrace
 Summer Infant,32723,3Dpac CS+,AIDU0V591001,"Summer 3Dpac CS+ Compact Fold Stroller, Black – Compact Car Seat Adaptable Baby Stroller – Lightweight Stroller with Convenient One-Hand Fold, Reclining Seat and Extra-Large Canopy",summer infant,3dpac,cs
 BOB Gear,U921964,Lilac,AIDITYAA2001,"BOB Gear Alterrain Jogging Stroller | Quick Fold + Adjustable Handlebar + XL UPF 50+ Canopy, Melange Lilac",bob gear,alterrain
 Graco,2083434,Carlee,AIDH0PT91001,"Graco Modes Bassinet Travel System | Includes Modes Bassinet Stroller and SnugRide SnugLock 35 Infant Car Seat, Carlee",graco,modes
@@ -492,12 +492,12 @@ UPPAbaby,0920-CGN-WW-FIN,"",AIDA4FT54001,UPPAbaby Cozyganoosh - Finn (Deep Sea),
 Baby Trend,SS76715,Elixer,AIDUKX191001,"Baby Trend Sit N Stand Double Stroller, Elixer",baby trend,sit,n,stand,double
 Mountain Buggy,"",Teal,AIDO07Y64001,Mountain Buggy Nano V3 Stroller (Teal),mountain buggy,nano,v3
 Baby Jogger,1965676,Black/Gray,AID75HZ62001,"Baby Jogger City Go Infant Car Seat, Black",baby jogger,city,go
-ZOE,XL2 BEST v2,Red,AIDKK8DA2001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,the,twin
+ZOE,XL2 BEST v2,Red,AIDKK8DA2001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,the,twin,double
 Delta Children,13598-2243,Grey Tweed With Red,AIDQM4622001,"Jeep Gemini Stroller by Delta Children - Full of Features: Easy One-Hand Fold, Recline, Lightweight, Oversized Canopy, 2 Cup Holders, Shock Absorbing Frame, Grey Tweed with Red",delta children,jeep,gemini
 Baby Jogger,2085394,Moonlight,AIDA8VS72001,"Baby Jogger Deluxe Pram Kit, Moonlight",baby jogger,deluxe,pram,kit
 BRITAX,S09384900,Connect,AIDXXE771001,"Britax Pathway & B-Safe 35 Travel System, Connect",britax,pathway,b-safe,35,travel
 cynebaby,GOLDEN-S,Lycra Brown,AIDTLBC81001,Infant Baby Stroller for Newborn and Toddler - Cynebaby Convertible Bassinet Stroller Compact Single Baby Carriage Toddler Seat Stroller Luxury Pram Stroller add Cup Holder Footmuff and Stroller Tray,cynebaby,infant,baby
-ZOE,"",Luxe Navy Blue,AIDM3DA12001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller
+ZOE,"",Luxe Navy Blue,AIDM3DA12001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller,lightweight,double
 Thule,11300206,Teal Melange,AIDRVOQ52001,"Thule Spring Stroller, Teal Melange",thule,spring
 ZOE,"",Luxe Pink,AIDK7VS72001,The Tour+ Luxe (Zoe XL1) - Best Everyday Single Stroller with Umbrella - Tandem Capable - UPF 50+ - Lightweight,zoe,the,tour
 Evenflo,63012253,Roan,AIDVLAL72001,"Pivot Xpand Stroller Second Seat, Roan, Compatible with Pivot Xpand Modular Travel System & Modular Stroller",evenflo,pivot
@@ -547,7 +547,7 @@ Baby Jogger,"",Jet,AIDIBZT71001,"Baby Jogger City Select Double Stroller | Baby 
 Wonfuss,WON001,Black Tray,AIDOKG3O4001,"Baby Stroller Newborn Carriage Infant Reversible Bassinet to Luxury Toddler Vista Seat for Boy Girl Compact Single All Terrain Babies Pram Strollers Add Stroller Cover, Cup Holder, Net…",wonfuss,baby
 Baby Joy,"",Grey,AID0PDJ12001,"BABY JOY Double Light-Weight Stroller, Travel Foldable Design, Twin Umbrella Stroller with 5-Point Harness, Cup Holder, Sun Canopy for Baby, Toddlers (Gray)",baby joy,double,light-weight
 Maxi-Cosi,CV371ETL,Nomad Grey,AIDBTVH71001,"Maxi-Cosi Adorra Modular Stroller, Nomad Grey",maxi cosi,adorra,modular
-ZOE,XLC BEST v2,Lime Green,AIDT98DA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the,traveler
+ZOE,XLC BEST v2,Lime Green,AIDT98DA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the
 Delta Children,33508-2121,Yellow,AID3O4622001,"Jeep Arrow Travel Stroller by Delta Children, Yellow",delta children,jeep
 Joovy,8167,Black,AIDP45191001,"Joovy Caboose Too Graphite Stand-On Tandem Stroller, Black",joovy,caboose,too
 Baby Joy,"",Black,AIDW6VS72001,"BABY JOY Baby Stroller, 2-in-1 Convertible Bassinet Sleeping Stroller, Foldable Pram Carriage with 5-Point Harness, Including Rain Cover, Net, Cushion Pad, Foot Cover, Diaper Bag (Black)",baby joy,stroller
@@ -558,7 +558,7 @@ Joovy,8129,Charcoal,AIDHBGS91001,"JOOVY New Groove Ultralight Umbrella Stroller,
 Baby Trend,TS04D06A,Cassis,AIDBYLCA2001,Baby Trend Tango Travel System,baby trend,tango,travel,system
 BRITAX,U931935,Cool Flow Grey,AIDF21DA2001,"Britax B-Free Stroller | All Terrain Tires + Adjustable Handlebar + Extra Storage with Front Access + One Hand, Easy Fold + Cool Flow Ventilated Fabric - Cool Flow Grey",britax,b-free
 Joovy,8127,Black,AID4ES2A1001,"JOOVY New Groove Ultralight Umbrella Stroller, Black",joovy,new,groove,ultralight,umbrella
-Baby Trend,WG01D13A,Ultra Grey,AIDF96L72001,"Baby Trend Expedition 2-in-1 Stroller Wagon PLUS, Ultra Grey",baby trend,expedition,2-in-1
+Baby Trend,WG01D13A,Ultra Grey,AIDF96L72001,"Baby Trend Expedition 2-in-1 Stroller Wagon PLUS, Ultra Grey",baby trend,expedition
 Baby Trend,TS53B61A,Rose Gold,AID2QDJJ1001,"Baby Trend Go Lite Snap Fit Sprout Travel System, Rose Gold",baby trend,go,lite,snap,fit
 BRITAX,S11278600,"",AIDZT1F74001,Britax B-Lively Double Stroller Wind and Rain Stroller | Easy Install + Air Ventilation + Storage Pouch Included,britax,b-lively,double
 UPPAbaby,0918-RBS-US-TAY,Indigo/Silver/Leather,AID2IP9J1001,UPPAbaby VISTA RumbleSeat - Taylor (Indigo/Silver/Saddle Leather),uppababy,vista
@@ -578,7 +578,7 @@ Baby Jogger,2011985,Black,AID1ZAK91001,"Baby Jogger City Select LUX Second Seat 
 Tiny Wonders,BS-BLAC-020,Black,AIDQBVS72001,"Tiny Wonders Black Lightweight Compact Baby Stroller, Portable Airplane Travel Carry On Strollers, Folding Umbrella Pram for 6, 9, 12Months, 1, 2 Year Old Newborn, Infants, Toddlers, Boy, Girl (Black)",tiny wonders,lightweight,compact,baby
 Baby Trend,TJ75B74B,Optic Teal,AIDI6ATD1001,"Baby Trend Pathway 35 Jogger Travel System, Optic Teal",baby trend,pathway,35,jogger,travel
 Contours,ZT020-GRA1,Graphite Gray,AIDOIEJ12001,"Contours Curve Tandem Double Stroller for Infants, Toddlers or Twins - 360° Turning, Multiple Seating Options, Graphite Gray",contours,curve,tandem,double
-Maxi-Cosi,TR414EMQ,Nomad Blue,AID0X1H12001,"Maxi-Cosi Zelia Max 5-in-1 Modular Travel System, Nomad Blue, One Size",maxi cosi,zelia,max,5-in-1
+Maxi-Cosi,TR414EMQ,Nomad Blue,AID0X1H12001,"Maxi-Cosi Zelia Max 5-in-1 Modular Travel System, Nomad Blue, One Size",maxi cosi,zelia,max
 Baby Jogger,2011259,Granite,AIDI3LJ91001,"Baby Jogger City Select LUX Pram Kit, Granite",baby jogger,city,select
 Disney,CV401FXG,Let's Go Minnie!,AID76WTB4001,"Disney Minnie Mouse Teeny Ultra Compact Stroller, Let's Go Minnie!, One Size",disney,minnie,mouse,teeny,ultra
 Baby Jogger,"",Charcoal,AID29NL72001,"Baby Jogger City Mini GT Travel System, Charcoal",baby jogger,city,mini
@@ -602,7 +602,7 @@ Cybex,518001263,Denim Blue,AID13MT94001,"2018 CYBEX Eezy S Twist Stroller, Denim
 BRITAX,S09710000,Crew,AIDQXCK12001,"Britax Pathway & B-Safe 35 Travel System, Crew",britax,pathway,b-safe,35,travel
 Cybex,518001265,Manhattan Grey,AIDZUW191001,"2018 CYBEX Eezy S Twist Stroller, Manhattan Grey",cybex,2018,eezy
 BRITAX,S12645500,Cool Flow Teal,AIDTX0L72001,"Britax B-Clever Lightweight Stroller B-Safe 35 Infant Car Seat Travel System with Child Tray One Hand, Easy Fold Ventilated Canopy Cool Flow Ventilated Fabric, Cool Flow Teal Amazon Exclusive",britax,b-clever,lightweight
-Maxi-Cosi,TR403ETKA,Nomad Black,AIDY5CEA2001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Nomad Black",maxi cosi,adorra,2.0,5-in-1
+Maxi-Cosi,TR403ETKA,Nomad Black,AIDY5CEA2001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Nomad Black",maxi cosi,adorra,2.0
 Contours,ZL038-GRN1,Granite Gray/Black,AIDP1BZY3001,"Contours Bitsy Compact Fold Lightweight Travel Stroller + Convenient Collapsible and Water-Resistant Bitsy Travel Bag/Carrying Case, Granite Gray/Black",contours,bitsy,compact
 Ergobaby,STRJRED,Red - 180 Stroller,AIDB8VS72001,"Ergobaby Stroller, Travel System Ready, 180 Reversible with One-Hand Fold, Red, Red - 180 Stroller, STRJRED",ergobaby,stroller,travel,system,ready
 UPPAbaby,0318-VIS-US-WIL,William,AIDWVKDC1001,UPPAbaby Vista Stroller - William (Chambray Oxford/Silver/Navy Leather),uppababy,vista
@@ -642,9 +642,9 @@ UPPAbaby,0318-VIS-US-DNY,Red/Silver/Leather,AIDO07EB1001,"2018 UPPAbaby VISTA St
 BRITAX,U751905,Raven,AIDKHMD81001,"BRITAX B-Lively Lightweight Stroller, Raven | One Hand, Easy Fold + Infinite Recline + Front Access Storage + Peekaboo Window",britax,b-lively,lightweight
 BRITAX,S10888400,Sketch,AIDLTXJ22001,"Britax Pathway & B-Safe Ultra Travel System, Sketch",britax,pathway,b-safe,ultra,travel
 Costzon,"",Navy,AIDV7VS72001,"Costzon Lightweight Baby Stroller, Foldable Stroller with 5-Point Safety System and Multi Position Reclining Seat (Navy)",costzon,baby
-ZOE,XL2 BEST v2,Noah Grey,AIDAM8DA2001,"The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable (Classic, Noah Grey)",zoe,the,twin
+ZOE,XL2 BEST v2,Noah Grey,AIDAM8DA2001,"The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable (Classic, Noah Grey)",zoe,the,twin,double
 DOONA,"",Racing Green,AID15GK72001,Doona - Liki Trike S5 - Racing Green,doona,liki,trike,s5
-ZOE,XLC BEST,Noah Grey,AIDWCD182001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the,traveler
+ZOE,XLC BEST,Noah Grey,AIDWCD182001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the
 Sasha Kiddie Products,582554,Clear,AIDS5HZ62001,Sasha's Rain and Wind Cover for Baby Jogger City Mini/ City Mini GT and Bob Revolution Jogger Strollers,sasha kiddie products,sashas,rain,and
 Baby Jogger,2011477,Granite,AIDQAM191001,"Baby Jogger City Select LUX Second Seat Kit, Granite",baby jogger,city,select
 Springbuds,AULONG Stroller906,Pink,AID4VG3O4001,SpringBuds Baby Stroller Bassinet Carriage Combo 360 Rotation 2-in-1 Shock-Resistant High Landscape Luxury Pram Infant Stroller for Newborn and Toddler,springbuds,baby,stroller,bassinet
@@ -652,7 +652,7 @@ Delta Children,"",Pink,AIDAM4622001,The Clutch Stroller by Delta Children - Ligh
 Baby Jogger,2113674,Barre,AIDV1GG34001,"Baby Jogger City Mini 2 Pram, Barre",baby jogger,city,mini,2
 Cosco,US133DHC,Blue,AID6LBC81001,"Cosco Umbrella Stroller, Monster Sydney",cosco,umbrella
 Bugaboo,Bugaboobee6,Grey Mélange,AIDEH7S04001,"Bugaboo Bee6 Stroller - Compact, Lightweight, and Easily Foldable Stroller for Travel and City Life. Easy to Steer! The Most Popular Lightweight Stroller! (Grey Mélange)",bugaboo,bee6
-ZOE,"",London Navy,AIDK07Y64001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio
+ZOE,"",London Navy,AIDK07Y64001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio,triple
 Graco,2048709,Multi,AIDZI1H12001,"Graco Aire3 Travel System | Includes The Lightweight Aire3 Stroller and SnugRide SnugLock 30 Infant Car Seat, Gotham",graco,aire3
 INFANS,"",Black,AIDR63EA2001,"INFANS Lightweight Baby Umbrella Stroller, Foldable Infant Travel Stroller with 4 Position Recline, Adjustable Backrest, Cup Holder, Storage Basket, UV Protection Canopy, Carry Belt (Black)",infans,lightweight,baby,umbrella
 UPPAbaby,0618-GLT-US-DNY,Red/Silver,AID737EB1001,2018 UPPAbaby G-LITE Stroller- Denny (Red/Silver),uppababy,2018,g-lite
@@ -670,7 +670,7 @@ UPPAbaby,0417-CRZ-US-JKE,Jake,AIDDJ1QE1001,"UPPAbaby 2017 CRUZ Stroller, Jake",u
 BRITAX,S869800,Black,AIDM2ZY02001,Britax Stroller Ride On Board | 3-Wheel Design for Balance + Quick Release for Easy Install and Removal + Adjustable for Height + Holds Up to 50 Pounds,britax,stroller,ride,on,board
 BRITAX,U911905,Black,AIDFYDK71001,"Britax B-Ready G3 Stroller, Black",britax,b-ready,g3
 Cybex,520003561,Deep Black,AIDTWYM04001,"CYBEX Gazelle S Stroller, Deep Black",cybex,gazelle,s
-ZOE,XLC BEST v2,Black,AIDU08DA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the,traveler
+ZOE,XLC BEST v2,Black,AIDU08DA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the
 Maclaren,WD1G010672,Silver,AIDG70PI5001,"Maclaren Volo Stroller, Silver/Azalea",maclaren,volo
 valco baby,"",Grey Marle,AIDV50PI5001,Valco Baby Neo Twin Double Lightweight All Terrain Stroller (Grey Marle),valco baby,neo,twin,double,lightweight
 WONDERFOLD,"",Fuschia Pink,AID050PI5001,"WonderFold Multi-Function 2 Passenger Push Folding Stroller Wagon, Adjustable & Removable Canopy, Double Seats with 5-Point Harness (Fuschia Pink)",wonderfold,multi-function,2
@@ -679,7 +679,7 @@ Baby Jogger,2105021,Clear,AID8T1QH4001,"Baby Jogger Weather Shield (City Mini 2,
 UPPAbaby,"",Gray,AID1N0I45001,UPPAbaby Vista V2 Stroller - Stella (Grey Brushed Melange/Silver/Chestnut Leather),uppababy,vista,v2
 Baby Jogger,2083881,Lagoon,AIDXKE182001,"Baby Jogger City Select Pram Kit, Lagoon",baby jogger,city,select
 Gaggle,"",Teal,AID5WG3O4001,"Gaggle Compass 4-Seat Quad Stroller with Canopy, 5-Point Harness, Foot-Brake (Teal)",gaggle,compass,4-seat
-ZOE,XLC BEST v2,Eloise Plum,AID1BADA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the,traveler
+ZOE,XLC BEST v2,Eloise Plum,AID1BADA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the
 UPPAbaby,0918-RBS-US-LOC,White/Silver/Leather,AIDW17EB1001,2018 UPPAbaby Vista RumbleSeat - Loic (White/Silver/Saddle Leather),uppababy,2018,vista
 Baby Trend,TS53C29B,Blue Spectrum,AIDT49BA2001,"Baby Trend Go Lite Snap Tech Sprout Travel System, Blue Spectrum",baby trend,go,lite,snap,tech
 Babyzen,"",Black,AID81BZY3001,BABYZEN YOYO2 6+ Stroller - Black Frame with Ginger Seat Cushion & Canopy,babyzen,yoyo2
@@ -692,7 +692,7 @@ WONDERFOLD,"",COBALT VIOLET,AIDAAN9Z3001,"WonderFold Multi-Function 2 Passenger 
 Delta Children,12989-001,Black,AID7N4622001,"Jeep Hydro Sport Plus Jogger by Delta Children, Black",delta children,jeep
 Maclaren,WD1G043022,Regency Stripe,AIDHXGK72001,"Maclaren Quest Stroller- Full-featured, lightweight and compact. Newborn Safety System and compatible with Maclaren Carrycot, extendable UPF50+/waterproof hood, accessories in the box",maclaren,quest
 Graco,2048702,Tasha,AIDX69X61001,"Graco Modes 3 Essentials LX Stroller, Includes Reversible Seat, Tasha",graco,modes
-Baby Jogger,BJC12203,Black,AIDSYCG71001,Front Wheel Set for Baby Jogger City Select & City Premier Strollers (Set of 2),baby jogger,front,wheel
+Baby Jogger,BJC12203,Black,AIDSYCG71001,Front Wheel Set for Baby Jogger City Select & City Premier Strollers (Set of 2),baby jogger,city
 Costzon,"",Blue,AID1LBC81001,"Costzon Baby Stroller, Foldable Infant Pushchair with 5-Point Safety Harness, Multi-Position Reclining Seat, Parent and Child Tray, Large Storage Basket, Suspension Wheels, Blue",costzon,baby
 ZOE,XL1 BEST v2,Red,AIDX2YDA2001,The Tour+ (Zoe XL1) - Best Everyday Single Stroller with Umbrella - Tandem Capable - UPF 50+ - Lightweight,zoe,the,tour
 Baby Jogger,BJ90000,Black,AIDU4KK91001,Baby Jogger Parent Console - Universal,baby jogger,parent,console,universal
@@ -701,7 +701,7 @@ Baby Jogger,2011476,Slate,AIDNVTJ91001,"Baby Jogger City Select LUX Second Seat 
 UPPAbaby,0420-CRZ-NA-JOR,Grey,AID3ZLL72001,UPPAbaby CRUZ V2 Stroller - JORDAN (charcoal/silver/black leather),uppababy,cruz,v2
 Delta Children,12988-2271,Charcoal Galaxy,AIDD7KJ61001,"Jeep Cross-Country Sport Plus Jogger by Delta Children, Charcoal Galaxy",delta children,jeep
 BOB Gear,U991915,Lunar,AIDFRFK72001,"BOB Gear Alterrain Pro Jogging Stroller | One-Hand Quick Fold - Smoothshox + Airfilled Tires - Ultra Reflective Fabric, Lunar",bob gear,alterrain,pro
-ZOE,"",Luxe Black,AIDAR8DA2001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller
+ZOE,"",Luxe Black,AIDAR8DA2001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller,lightweight,double
 Dream On Me,520-Grey,Grey,AID8WLAB4001,"Dream On Me Insta Auto Fold Stroller | Portable Traveling Stroller | One Touch Fold | Compact Perfect for Plane, Grey",dream on me,insta,auto,fold
 Graco,2052261,Shift,AIDO6VS72001,"Graco Modes Duo Stroller, Shift",graco,modes
 UPPAbaby,"",Jordan Charcoal Melange,AID8RHB12001,2018 UPPABaby Vista Stroller - Jordan (Charcoal Melange/Silver/Black Leather) + MESA- Jordan (Charcoal Melange) Merino Wool Version,uppababy,2018,vista
@@ -716,26 +716,26 @@ Dreambaby,L2212,Blue,AIDR46D64001,Dreambaby Stroller Blanket Clips (Blue),dreamb
 Baby Jogger,1980172,Cobalt,AIDG8VS72001,"Baby Jogger City Tour Stroller | Compact Travel Stroller | Lightweight Baby Stroller with Backpack-Style Carry Bag, Perfect for Travel, Cobalt",baby jogger,city,tour
 Baby Jogger,2011479,Port,AID2ZA182001,"Baby Jogger City Select LUX Second Seat Kit, Port",baby jogger,city,select
 Bugaboo,"",Grey Melange,AIDIWKWN4001,"Bugaboo Fox 2 Complete Full-Size All-Terrain Stroller, The Most Advanced Comfort Stroller (Grey Melange)",bugaboo,fox,2,complete,full-size
-Maxi-Cosi,TR403ETLA,Nomad Grey,AID8GPG02001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Nomad Grey",maxi cosi,adorra,2.0,5-in-1
+Maxi-Cosi,TR403ETLA,Nomad Grey,AID8GPG02001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Nomad Grey",maxi cosi,adorra,2.0
 Baby Jogger,2018830,Black,AID37TJ91001,"Baby Jogger City Select LUX Bench Seat, Black",baby jogger,city,select
-Dinky Ninky,0636823549909,Grey,AIDI37X05001,"Stroller Pegs to Hook Muslin Sun Shade to Canopy, Car Seat Cover Clips, Nursing Cover, Pram Toy Holder, Blanket Clamp - Best Baby Shower Registry Gift - Buggy Accessory (Grey)",dinky ninky,stroller,pegs,to,hook
+Dinky Ninky,0636823549909,Grey,AIDI37X05001,"Stroller Pegs to Hook Muslin Sun Shade to Canopy, Car Seat Cover Clips, Nursing Cover, Pram Toy Holder, Blanket Clamp - Best Baby Shower Registry Gift - Buggy Accessory (Grey)",dinky ninky,stroller,pegs,hook,muslin
 Booyah Strollers,"",black,AIDXP9J74001,Double Stroller Stroller Organizer for Booyah Child and Large Pet Stroller.,booyah strollers,double
-Maxi-Cosi,TR401EMJA,Night Black,AIDI6CEA2001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Night Black",maxi cosi,adorra,2.0,5-in-1
+Maxi-Cosi,TR401EMJA,Night Black,AIDI6CEA2001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Night Black",maxi cosi,adorra,2.0
 Graco,2079879,Tansy,AIDMBK291001,"Graco Verb Stroller | Lightweight Baby Stroller, Tansy",graco,verb
 Baby Jogger,1980151,Garnet,AIDR1DRI1001,"Baby Jogger City Tour Stroller | Compact Travel Stroller | Lightweight Baby Stroller with Backpack-Style Carry Bag, Perfect for Travel, Garnet",baby jogger,city,tour
 UPPAbaby,0818-MIN-US-RYN/0919-MST-WW,Ryan Teal Melange,AIDJI3374001,UPPAbaby Minu Stroller - Ryan (Teal Melange/Silver/Saddle Leather) + Snack Tray for Minu,uppababy,minu
 Graco,2081084,Arbis,AIDC95I91001,"Graco Modes 3 Lite DLX Travel System | Includes Modes 3 Lite DLX Stroller and SnugRide SnugLock 30 Infant Car Seat, Arbis",graco,modes
 Babyzen,BZ10104-04,Red,AIDW8VS72001,"Babyzen YOYO+ 6+ Color Pack, Red",babyzen,yoyo
-Baby Trend,WG01D14A,Ultra Black,AIDL7VS72001,"Baby Trend Expedition 2-in-1 Stroller Wagon PLUS, Ultra Black",baby trend,expedition,2-in-1
+Baby Trend,WG01D14A,Ultra Black,AIDL7VS72001,"Baby Trend Expedition 2-in-1 Stroller Wagon PLUS, Ultra Black",baby trend,expedition
 UPPAbaby,0518-GLX-US-JKE,Black,AIDF37EB1001,2018 UPPAbaby G-LUXE Stroller -Jake (Black),uppababy,2018,g-luxe
 WONDERFOLD,"",Woodland Green,AIDO3SDA2001,"WONDERFOLD X2 Multi-Function Pull & Push 2 Passenger Double Stroller Wagon with Removable Canopy, 5-Point Harness with 5-Point Harness and Upgraded Automatic Magnetic Seatbelt Buckle (Woodland Green)",wonderfold,multi-function
 Baby Jogger,"",Jet,AIDRH3EA2001,Baby Jogger City Select Stroller,baby jogger,city,select
 "",803A,grey,AIDA82OL4001,"Lightweight Stroller, Umbrella Stroller for Toddler,Compact & Foldable Travel Stroller for Infant",no_brand,lightweight
-UPPAbaby,0920-MCG-WW-STL,Gray,AID0Y7534001,UPPAbaby Cozyganoosh for MESA - Stella (Grey),uppababy,cozyganoosh
+UPPAbaby,0920-MCG-WW-STL,Gray,AID0Y7534001,UPPAbaby Cozyganoosh for MESA - Stella (Grey),uppababy,cozyganoosh,mesa,stella
 ZOE,"",Luxe Black,AIDPKYDA2001,The Tour+ Luxe (Zoe XL1) - Best Everyday Single Stroller with Umbrella - Tandem Capable - UPF 50+ - Lightweight,zoe,the,tour
 Maclaren,WD1G271052,Dove/Silver,AIDEEVS72001,"Maclaren Quest Arc Stroller- ideal for newborns up to 55lb with extendable UPF 50+/waterproof hood, multi-position seat and 4-wheel suspension. Maclaren Carrycot compatible. Accessories in the box",maclaren,quest
 Babyzen,"",Black,AID1ET4Z3001,Babyzen YOYO2 Stroller - Black Frame with Black Seat Cushion & Canopy,babyzen,yoyo2
-Evenflo,56231952,Mineral Gray,AID3Q7012001,"Evenflo Sibby Travel System with LiteMax 35 Infant Car Seat, Mineral Gray",evenflo,sibby,travel,system,with
+Evenflo,56231952,Mineral Gray,AID3Q7012001,"Evenflo Sibby Travel System with LiteMax 35 Infant Car Seat, Mineral Gray",evenflo,sibby,travel,system,litemax
 Evenflo,"",Glenbarr Grey,AID7E4DA2001,"Evenflo Minno Twin Double Stroller, Glenbarr Grey with Stroller Accessories Starter Kit",evenflo,minno,twin,double
 Baby Joy,"",Deluxe Black,AIDR7VS72001,"BABY JOY Lightweight Stroller, Aluminum Baby Umbrella Convenience Stroller, Travel Foldable Design with Oxford Canopy/ 5-Point Harness/Cup Holder/Storage Basket, Deluxe Black",baby joy,lightweight
 Baby Jogger,2085336,Capri,AID0PYOI5001,"Baby Jogger Bassinet, Capri",baby jogger,bassinet
@@ -746,7 +746,7 @@ BOB Gear,U921962,Gray,AIDXVTCA2001,"BOB Gear Alterrain Jogging Stroller | Quick 
 UPPAbaby,0320-VIS-US-EMT,Green,AIDJC4B12001,UPPAbaby VISTA V2 Stroller - EMMETT (green melange/silver/saddle leather),uppababy,vista,v2
 Baby Joy,"",Pink,AID6VNKA1001,"BABY JOY Double Light-Weight Stroller, Travel Foldable Design, Twin Umbrella Stroller with 5-Point Harness, Cup Holder, Sun Canopy for Baby, Toddlers (Pink)",baby joy,double,light-weight
 Evenflo,57312220,Skyline,AID8D3691001,"Evenflo Folio3 Stroll & Jog Travel System w/LiteMax 35 Infant Car Seat, Crossover Versatility, Ultra-Compact, Self-Standing Folding Design, 12” Air-Filled Tires, Front Wheel Swivel Lock, Skyline Blue",evenflo,folio3,stroll,jog,travel
-ZOE,"",Luxe Light Blue,AIDRSXJ22001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller
+ZOE,"",Luxe Light Blue,AIDRSXJ22001,Zoe Twin+ Luxe (Zoe XL2) Stroller - Best Lightweight Double Stroller for Toddlers - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,twin,luxestroller,lightweight,double
 BRITAX,S09384800,Cabana,AIDX7VS72001,"Britax Pathway & B-Safe 35 Travel System, Cabana",britax,pathway,b-safe,35,travel
 Babyzen,"",Blue,AIDKYXDA2001,"Babyzen YOYO+ 6+ Color Pack, Blue",babyzen,yoyo
 BRITAX,U781905,Dual Comfort Grey,AIDRQJK72001,"Britax B-Agile Lightweight Stroller, Black | One Hand Fold + Easy to Maneuver + Large UV50+ Canopy",britax,b-agile
@@ -774,18 +774,18 @@ Baby Jogger,2083081,Jet,AIDKO1391001,Baby Jogger City Select Stroller,baby jogge
 Dream On Me,459-G,Grey,AIDQ6VS72001,"Dream On Me Jasper Lightweight Stroller, Grey",dream on me,jasper,lightweight
 Baby Jogger,2042013,Slate,AID6U2P81001,"Baby Jogger City Tour LUX Stroller | Compact Travel Stroller | Lightweight Baby Stroller with Backpack-Style Carry Bag, Perfect for Travel, Slate",baby jogger,city,tour,lux
 UPPAbaby,0318-VIS-US-WIL/1017-MSA-US-HEN,Blue,AIDKLB182001,UPPAbaby Vista Stroller - William (Chambray Oxford/Silver/Navy Leather) + MESA Infant Car Seat - Henry (Blue Marl) Wool Version,uppababy,vista
-ZOE,"",Black,AIDBAVS72001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio
-ZOE,"",Eloise Plum,AIDYH9Y64001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio
+ZOE,"",Black,AIDBAVS72001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio,triple
+ZOE,"",Eloise Plum,AIDYH9Y64001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio,triple
 Larktale,LK10003,Barossa Red,AIDVNEJ12001,"Larktale Chit Chat Compact Lightweight Travel Stroller, Barossa Red",larktale,chit,chat
 Summer Infant,21960,Pink,AID724E71001,"Summer 3Dlite Convenience Stroller, Pink – Lightweight Stroller with Aluminum Frame, Large Seat Area, 4 Position Recline, Extra Large Storage Basket – Infant Stroller for Travel and More",summer infant,3dlite,convenience
 Graco,2065964,Black,AIDG0CTI1001,Graco SnugRider 3 Elite Car Seat Carrier | Lightweight Frame Stroller | Travel Stroller Accepts Any Graco Infant Car Seat,graco,snugrider,3,elite,car
-ZOE,XLC BEST v2,Aqua,AIDLW2BA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the,traveler
+ZOE,XLC BEST v2,Aqua,AIDLW2BA2001,The Traveler (Zoe XLC) - Best Lightweight Travel and Everyday Umbrella Stroller System for Toddlers - Disney Approved - Travel Friendly,zoe,the
 Baby Trend,TS27760,Bobbleheads,AIDAF6791001,"Baby Trend Envy Travel System, Bobble Heads",baby trend,envy,travel,system,bobble
 BOB Gear,S10972100,Graphite Black,AID68CK12001,"BOB Revolution Flex 3.0 and B-Safe 35 Travel System, Graphite Black [Old Version]",bob gear,revolution,flex,3.0
 BRITAX,S08365800,Red,AIDG60PI5001,Britax 2017 B-Agile 3 Stroller & B-Safe 35 Infant Car Seat - Red,britax,b-agile
 Chicco,06079609950070,Black,AID0BF364001,Chicco Corso Modular Quick-Fold Stroller - Black,chicco,corso,modular
 UPPAbaby,0818-MIN-US-RYN + 0918-MBK-US-RYN,Ryan,AID5KR174001,UPPAbaby MINU Stroller +from Birth Kit - Ryan (Teal Melange/Silver/Saddle Leather),uppababy,minu
-Evenflo,55421894,Spearmint Spree,AID2Q7012001,"Evenflo Vive Travel System with Embrace Infant Car Seat, Spearmint Spree",evenflo,vive,travel,system,with
+Evenflo,55421894,Spearmint Spree,AID2Q7012001,"Evenflo Vive Travel System with Embrace Infant Car Seat, Spearmint Spree",evenflo,vive,travel,system,embrace
 Baby Jogger,2084017,City Mini GT2,AIDF1LR71001,"Baby Jogger Bug Canopy, City Mini GT2",baby jogger,bug,canopy
 Baby Jogger,2085335,Slate,AIDENG3O4001,"Baby Jogger Bassinet, Slate",baby jogger,bassinet
 Baby Jogger,2041515,Rosewood,AID3GDT81001,"Baby Jogger City Tour LUX Foldable Pram, Rosewood",baby jogger,city,tour,lux
@@ -849,7 +849,7 @@ UPPAbaby,0818-MIN-US-JKE/0919-MST-WW,Jake Black,AIDQNC174001,UPPAbaby Minu Strol
 UPPAbaby,0818-MIN-US-JOR + 0918-MBK-US-JOR,Jordan,AIDPEVS72001,UPPAbaby MINU Stroller +from Birth Kit - Jordan (Charcoal Melange/Silver/Black Leather),uppababy,minu
 Chicco,05079663350070,Chili,AIDQR9664001,"Chicco Mini Bravo Lightweight Stroller - Chili, Red",chicco,mini,bravo
 Dreambaby,L2219,Blue/Green,AIDQ45D64001,Dreambaby Stroller Blanket Clips (Blue/Green),dreambaby,stroller,blanket
-UPPAbaby,0918-BKR-WW,Rain Shield,AIDRCGB12001,UPPAbaby From Birth Kit Rain Shield,uppababy,from,birth,kit
+UPPAbaby,0918-BKR-WW,Rain Shield,AIDRCGB12001,UPPAbaby From Birth Kit Rain Shield,uppababy,birth,kit
 WONDERFOLD,X2,Gray,AID64O512001,"WonderFold Wagon Push Pull 2 Passenger Double Stroller Wagon with Adjustable Handle Bar, Removable Canopy, Seat Pad with 5-Point Harness, One-Step Foot Brake, Safety Reflective Strip, Gray",wonderfold,2
 WONDERFOLD,"",Jet Black,AIDTGGWH4001,"WONDERFOLD W1 Multi-Function 2 Passenger Push/Pull Folding Stroller Wagon with Adjustable & Removable Canopy, 5-Point Harnesses, and One-Step Foot Brake (Jet Black)",wonderfold,multi-function,2
 Contours,ZL034-MDN1,Midnight,AIDZ7Y064001,"Contours Bitsy Compact Fold Stroller, Midnight",contours,bitsy,compact
@@ -896,7 +896,7 @@ Inglesina,AG85G0NZZUS/D,Zenzero,AIDOHZOI5001,"Inglesina Net Stroller, Zenzero",i
 Delta Children,11458-001,Black,AIDTL4622001,"Delta Children Pilot Stroller - Extremely Lightweight Aluminum Travel Stroller with Supportive Recline, Oversized Canopy, Compact Fold & Shock Absorbing Frame-Includes Cup Holder & Storage Bin, Black",delta children,pilot
 Joovy,8238,Sand,AID74TRH4001,"Joovy Kooper X2 Stroller, Sand",joovy,kooper
 Graco,2065075,Reece,AIDR99X61001,"Graco Uno2Duo Travel System | Includes UNO2DUO Stroller and SnugRide SnugLock35 Infant Car Seat, Goes from Single to Double Stroller, Reece",graco,uno2duo
-Maxi-Cosi,TR403EMRA,Nomad Sand,AIDWO7012001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Nomad Sand",maxi cosi,adorra,2.0,5-in-1
+Maxi-Cosi,TR403EMRA,Nomad Sand,AIDWO7012001,"Maxi-Cosi Adorra 2.0 5-in-1 Modular Travel System with Mico Max 30 Infant Car Seat, Nomad Sand",maxi cosi,adorra,2.0
 Babideal,"",Blue,AID4GSM02001,"Babideal Lightweight Compact Folding Baby Stroller & Infant Car Seat Seat, Boho",babideal,lightweight,compact,folding
 INFANS,"",Light Pink,AIDMH3EA2001,"INFANS Lightweight Baby Umbrella Stroller, Foldable Infant Travel Stroller with Carry Belt, 4 Position Recline, Adjustable Backrest, UV Protection Canopy, Cup Holder, Storage Basket (Light Pink)",infans,lightweight,baby,umbrella
 UPPAbaby,0318-VIS-US-TAY,Indigo/Silver/Leather,AID54BVI1001,"2018 UPPAbaby VISTA Stroller, Taylor (Indigo/Silver/Saddle Leather)",uppababy,2018,vista
@@ -913,7 +913,7 @@ gb,620000109,Night Blue,AIDEJG3O4001,"gb Qbit + All City, Night Blue",gb,qbit
 Summer Infant,32853,Black,AIDYF4B12001,"Summer 3Dpac CS+ Double Stroller, Black – Car Seat Compatible Baby Stroller – Lightweight Stroller with Convenient One-Hand Fold, Reclining Seats, Two Extra-Large Canopies & Parent Friendly Features",summer infant,3dpac,cs,double
 Baby Trend,SG40100B,Universal Infant Car Seat Carrier,AIDBQLCA2001,"Baby Trend Snap-N-Go Premiere Universal Infant Car Seat Carrier, Black",baby trend,snap-n-go
 UPPAbaby,0417-CRZ-US-TAY,Taylor,AIDLJ1QE1001,2017 UPPAbaby Cruz - Taylor (Indigo/Silver),uppababy,cruz
-Peg Perego,IS0328NA62TG53DX53,Atmosphere,AIDA9VS72001,"Peg Perego Pop-Up Seat for Team, Duette and Triplette Strollers, Atmosphere (IS0328NA62TG53DX53)",peg perego,pop-up,seat,for,team
+Peg Perego,IS0328NA62TG53DX53,Atmosphere,AIDA9VS72001,"Peg Perego Pop-Up Seat for Team, Duette and Triplette Strollers, Atmosphere (IS0328NA62TG53DX53)",peg perego,pop-up,seat,team,duette
 BOB Gear,S11179200,Graphite Black,AID72HZ62001,"BOB Revolution Flex 3.0 Jogging Stroller, Graphite Black with Handlebar Console and Tire Pump",bob gear,revolution,flex,3.0
 Baby Jogger,2042015,Rosewood,AIDG7VS72001,"Baby Jogger City Tour LUX Stroller | Compact Travel Stroller | Lightweight Baby Stroller with Backpack-Style Carry Bag, Perfect for Travel, Rosewood",baby jogger,city,tour,lux
 BRITAX,U911930,Pistachio,AIDX30PI5001,"Britax B-Ready G3 Stroller, Pistachio",britax,b-ready,g3
@@ -930,15 +930,15 @@ Baby Jogger,2050275,Anniversary,AIDU60PI5001,Baby Jogger City Mini GT Stroller -
 Baby Joy,"",Orange,AIDVBUUV3001,"BABY JOY Lightweight Stroller, Aluminum Baby Umbrella Convenience Stroller, Travel Foldable Design with Oxford Canopy/ 5-Point Harness/Cup Holder/Storage Basket,Orange",baby joy,lightweight
 Maclaren,WD1G270422,Black,AID4K4612001,"Maclaren Quest Arc Stroller- ideal for newborns up to 55lb with extendable UPF 50+/waterproof hood, multi-position seat and 4-wheel suspension. Maclaren Carrycot compatible. Accessories in the box",maclaren,quest
 Maxi-Cosi,CV258BIZ,Devoted Black,AID2WLL72001,"Maxi-Cosi Dana Stroller, Devoted Black",maxi cosi,dana
-UPPAbaby,0918-MBK-US-DEV,DEVIN,AIDJROK72001,UPPAbaby From Birth Kit - DEVIN (light grey),uppababy,from,birth,kit
-ZOE,XL2 BEST v2,Eloise Plum,AIDY6VS72001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,the,twin
+UPPAbaby,0918-MBK-US-DEV,DEVIN,AIDJROK72001,UPPAbaby From Birth Kit - DEVIN (light grey),uppababy,birth,kit
+ZOE,XL2 BEST v2,Eloise Plum,AIDY6VS72001,The Twin+ (Zoe XL2) - Best Double Stroller - Everyday Twin Stroller with Umbrella - UPF 50+ - Tandem Capable,zoe,the,twin,double
 Keenz,7s,GREY,AIDKUWA12001,"Keenz Stroller Wagon – 7S Pull/Push Wagon Stroller – Safe and Secure Baby & Big Kids Wagon with Canopy & Other Accessories Included – Versatile Wagon Stroller Ideal for Special Needs, Grey",keenz,stroller,wagon,–,pull
 Babyzen,850022229237,Taupe,AIDKY8Y64001,Babyzen - YOYO2 Stroller & Bassinet Combo - Black Frame - Taupe (9 Colors),babyzen,yoyo2
 Pamo Babe,"",Black,AID08VS72001,Lightweight Stroller Foldable Infant Umbrella Travel Stroller (Black),pamo babe,lightweight
 Thule,20100209,"",AIDM5G8H1001,Thule Strolling Kit,thule,strolling,kit
 Baby Joy,"",Gray,AIDCEVS72001,"BABY JOY Pocket Stroller, Extra Lightweight Compact Folding Stroller, Aluminum Structure, Five-Point Harness, Easy Handling for Travel, Airplane Compartment, Includes Travel Bag, No Assembly, Gray",baby joy,pocket
 Baby Jogger,2041513,Slate,AIDNQRK72001,"Baby Jogger City Tour LUX Foldable Pram, Slate",baby jogger,city,tour,lux
-ZOE,"",Aqua,AID92AY64001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio
+ZOE,"",Aqua,AID92AY64001,The Trio+ (Zoe XL3) - Best Triple Stroller - Everyday Triplet Stroller with Umbrella - Tandem Capable - UPF 50+,zoe,the,trio,triple
 UPPAbaby,0320-VIS-US-FIN/0217,Silver,AIDKRX974001,UPPAbaby Vista V2 Stroller - Finn (Deep Sea/Silver/Chestnut Leather) + Piggyback for Vista & Vista V2,uppababy,vista,v2
 Graco,2032495,Hazel,AIDA3P3E1001,"Graco Uno2Duo Travel System | Includes UNO2DUO Stroller and SnugRide SnugLock35 Infant Car Seat, Goes from Single to Double Stroller, Hazel (Pink Lining)",graco,uno2duo
 Baby Jogger,2083646,Jet,AIDR8GV12001,"Baby Jogger Deluxe Pram Kit, Jet",baby jogger,deluxe,pram,kit
@@ -963,19 +963,19 @@ BOB Gear,S09891800,Lagoon,AIDEA6EA2001,BOB Revolution Flex 2.0 Jogging Stroller;
 Maclaren,WD1G101702,Marina,AIDP07Y64001,"Maclaren Mark II Style Set Stroller- Super lightweight, extended hood, compact, one-hand fold, extended canopy, reclining seat, 4-wheel suspension. Accessories in the box.",maclaren,mark,ii,style,set
 Kolcraft,KU022-SCR1,Scarlett Red,AID4KG112001,"Kolcraft Cloud Lightweight Umbrella Stroller with Large Sun Canopy, Scarlet Red",kolcraft,cloud,lightweight,umbrella
 Delta Children,11362,Red,AIDXQ7691001,The Clutch Stroller by Delta Children - Lightweight Compact Folding Stroller - Includes Travel Bag - Fits Airplane Overhead Storage - Red,delta children,the,clutch
-Baby Jogger,BJC10152,"",AIDX8HZ62001,Front Wheel for City Mini GT Strollers (for Prior Model of GT Strollers. Not Compatible with Other Models),baby jogger,city
+Baby Jogger,BJC10152,"",AIDX8HZ62001,Front Wheel for City Mini GT Strollers (for Prior Model of GT Strollers. Not Compatible with Other Models),baby jogger,city,mini
 Joovy,8150,Turquoise,AIDV96E71001,"Joovy Big Caboose Graphite Triple Stroller, Stand on Tandem, Sit and Stand, Black",joovy,caboose,graphite
 cynebaby,SIX001,AZURE,AID6YDJ12001,Umbrella Baby Stroller Lightweight Compact Stroller All Terrain Convenience Carriage Stroller Travel Tall Pram for Toddler Big Kids Single Stroller (Azure),cynebaby,umbrella,baby
 Roan,Rocco,Lime,AIDAPA2L5001,Roan Rocco Classic Pram Stroller 2-in-1 with Bassinet and Seat Unit - Lime,roan,classic,pram,stroller
-Dinky Ninky,0636823549909,Gold,AIDDCXOI5001,"Stroller Pegs to Hook Muslin Sun Shade to Canopy, Car Seat Cover Clips, Nursing Cover, Pram Toy Holder, Blanket Clamp - Best Baby Shower Registry Gift - Buggy Accessory (Gold)",dinky ninky,stroller,pegs,to,hook
+Dinky Ninky,0636823549909,Gold,AIDDCXOI5001,"Stroller Pegs to Hook Muslin Sun Shade to Canopy, Car Seat Cover Clips, Nursing Cover, Pram Toy Holder, Blanket Clamp - Best Baby Shower Registry Gift - Buggy Accessory (Gold)",dinky ninky,stroller,pegs,hook,muslin
 ZOE,XL1 BEST v2,Black,AIDDMXDA2001,The Tour+ (Zoe XL1) - Best Everyday Single Stroller with Umbrella - Tandem Capable - UPF 50+ - Lightweight,zoe,the,tour
 WONDERFOLD,X2,Navy,AID3CE182001,"WonderFold Baby XL 2 Passenger Push Pull Twin Double Stroller Wagon with Adjustable Handle Bar, Removable Canopy, Safety Seats with 5-Point Harness, One-Step Foot Brake, Safety Reflective Strip (Navy)",wonderfold,2
-ZOE,XL1 BEST v2 TANDEM,Noah Grey,AIDK5T474001,ZOE XL1 Best Tandem Lightweight Travel & Everyday Umbrella Stroller System,zoe,xl1
+ZOE,XL1 BEST v2 TANDEM,Noah Grey,AIDK5T474001,ZOE XL1 Best Tandem Lightweight Travel & Everyday Umbrella Stroller System,zoe,xl1,tandem,lightweight,travel
 Graco,2048703,Tiegen,AIDB79X61001,"Graco Modes 3 Essentials LX Stroller, Includes Reversible Seat, Tiegen",graco,modes
 Babyzen,"",Black,AID4ZZN04001,Babyzen YOYO2 Stroller - Black Frame with Taupe Seat Cushion & Canopy,babyzen,yoyo2
 Maxi-Cosi,CV371ESR,Nomad Purple,AID4N9BA2001,"Maxi-Cosi Maxi-Cosi Adorra Modular Stroller, Nomad Purple",maxi cosi,adorra,modular
 HONEY JOY,HJ-BB5543-US,Khaki,AID35W674001,"HONEY JOY Baby Stroller, 2-in-1 Reversible Toddler Stroller Seat and Bassinet Combo, Foldable Lightweight Infant Pram Carriage w/Adjustable Canopy & Diaper Bag, Shock Absorption Rubber Wheels (Khaki)",honey joy,baby
-ZOE,XL1 BEST v2 TANDEM,BEST v2 - Camo,AIDCMS474001,ZOE XL1 Best Tandem Lightweight Travel & Everyday Umbrella Stroller System (Camo),zoe,xl1
+ZOE,XL1 BEST v2 TANDEM,BEST v2 - Camo,AIDCMS474001,ZOE XL1 Best Tandem Lightweight Travel & Everyday Umbrella Stroller System (Camo),zoe,xl1,tandem,lightweight,travel
 BOB Gear,U971947,Graphite Black,AIDYTUJF1001,"BOB Revolution Flex 3.0 Jogging Stroller, Graphite Black [Old Version]",bob gear,revolution,flex,3.0
 GoodBaby,616230001,Monument Black,AIDI41XD1001,GB Pockit Stroller Monument Black,goodbaby,gb,pockit
 Blahoo,808A,Blue,AID2KPQ64001,"Blahoo Baby Stroller for Toddler .Foldable Aluminum Alloy Pushchair with Adjustable Backrest.Strollers Add Stroller Cover, Cup Holder, Net(Blue)",blahoo,baby
