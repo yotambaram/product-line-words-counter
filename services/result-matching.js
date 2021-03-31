@@ -1,7 +1,6 @@
 const resultMatching = (trieRoot, productArr) => {
-  let newList = [];
- // let linesMap = new Map()
   for (let i = 0; i < productArr.length; i++) {
+<<<<<<< HEAD
     if (productArr[i].length > 1) {
       // if find the word, take the next word and loog for here at the tree in world child 
      
@@ -19,9 +18,21 @@ const resultMatching = (trieRoot, productArr) => {
      // productArr[i].line = "### No Title ###";
     //  newList.push(productArr[i]);
    // }
+=======
+    if (productArr[i].filteredTitle.length > 1) {
+      let line = trieRoot.findLine(productArr[i].filteredTitle);
+      if (!line) {
+        line = productArr[i].filteredTitle
+      }
+      if (typeof (line) === "string") {
+        line = line.split(",");
+      }
+
+      productArr[i].filteredTitle = line
+    }
+>>>>>>> 54da39d4040b0326a31577f99abc563383f7903e
   }
- 
-  return newList;
+  return productArr;
 };
 
 module.exports.resultMatching = resultMatching;

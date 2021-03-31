@@ -1,7 +1,12 @@
 
 //TODO: Make here function that takes word to delete from DB
 
+<<<<<<< HEAD
 let wordToDelete = {
+=======
+const wordsCleaner = {
+  wordsMap: {
+>>>>>>> 54da39d4040b0326a31577f99abc563383f7903e
     "for": true,
     "to": true,
     "from": true,
@@ -28,6 +33,7 @@ let wordToDelete = {
     "red": true,
     "pink": true,
     "blue": true,
+<<<<<<< HEAD
     "2 Weeks Delivery!": true,
 
 
@@ -49,3 +55,30 @@ let wordToDelete = {
   };
 
   module.exports.wordToDelete = wordToDelete;
+=======
+    "2 Weeks Delivery!": true
+
+  },
+
+  deleteWords(stringTitle) {
+    if (stringTitle.length > 0) {
+      const wordToDeleteArr = Object.keys(this.wordsMap)
+      // 
+      let cleanedWord
+      wordToDeleteArr.forEach(element => {
+        cleanedWord = stringTitle.replace(element, "").trim();
+      });
+      return cleanedWord
+    }
+    return ""
+  }
+}
+
+
+
+
+
+
+
+module.exports.wordsCleaner = wordsCleaner;
+>>>>>>> 54da39d4040b0326a31577f99abc563383f7903e

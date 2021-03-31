@@ -8,7 +8,7 @@ const oneWordTreeBuilder = (allTitle) => {
     categoryWordsTrie.root.brandMap = new Map();
     categoryWordsTrie.root.brandMap["_TOTAL_BRANDS"] = 0
     for (let i = 0; i < allTitle.length; i++) {
-      const title = allTitle[i];
+      const title = allTitle[i].filteredTitle;
       let brand = title[0];
       for (let j = 0; j < title.length; j++) {
         let word = title[j];
@@ -18,16 +18,17 @@ const oneWordTreeBuilder = (allTitle) => {
         word.length > 0 ? categoryWordsTrie.insert(word, brand) : null;
       }
       categoryWordsTrie.root["_TOTAL_PRODUCTS"] = allTitle.length;
+<<<<<<< HEAD
       if(categoryWordsTrie.root.brandMap[brand]) {
+=======
+      if (categoryWordsTrie.root.brandMap[brand]) {
+>>>>>>> 54da39d4040b0326a31577f99abc563383f7903e
         (categoryWordsTrie.root.brandMap[brand]++)
       } else {
         categoryWordsTrie.root.brandMap["_TOTAL_BRANDS"]++;
         categoryWordsTrie.root.brandMap[brand] = 1;
       }
-         
-         
     }
-
     let bigestNum = 0;
     // Can use map()
     for (const [key, value] of Object.entries(
@@ -41,9 +42,9 @@ const oneWordTreeBuilder = (allTitle) => {
         categoryWordsTrie.root.timesMap[timesVal].push(key);
       }
     }
-   let keysArr = Object.keys(categoryWordsTrie.root.timesMap)
+    let keysArr = Object.keys(categoryWordsTrie.root.timesMap)
     categoryWordsTrie.root["commonWord"] =
-    categoryWordsTrie.root.timesMap[keysArr.pop()]; 
+      categoryWordsTrie.root.timesMap[keysArr.pop()];
     return categoryWordsTrie;
   } catch (err) {
     console.log(err);
