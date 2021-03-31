@@ -49,7 +49,7 @@ async function getList(path) {
 
   const trieRoot3 = trieBuilder(firstMatchResult, oneWordStatsTree2);  
 
-  const trieResultsArr2 = trieRoot3.getLines(oneWordStatsTree2.brandMap);
+  const trieResultsArr2 = trieRoot3.getLines(oneWordStatsTree2);
 
   const secondLineArr = shortStringToArrCleaner(trieResultsArr2);
 
@@ -84,7 +84,7 @@ async function getList(path) {
   //   console.log("CSV File Data Ready");
   // });
 
-  const jsonDataObjStringify = JSON.stringify(trieRoot3);
+  const jsonDataObjStringify = JSON.stringify(trieRoot2);
   outputPath3 = await outputPathBuilder("./db-results/json-data", ".txt");
   fs.writeFile(outputPath3, jsonDataObjStringify, (err) => {
     if (err) return console.log(err);

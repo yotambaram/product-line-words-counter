@@ -1,22 +1,8 @@
-const { forEach, result } = require("lodash");
 const _ = require("lodash");
+const { TrieNode } = require("./TrieNode")
 
-class TrieNode {
-  constructor() {
-    this.name = "root";
-    this.parent = null;
-    this.line = null;
-    this.isEnd = false;
-    this.freq = 0;
-    this.timesInBranch = 0;
-    this.timesInBrand = 0;
-    this.childrenCounter = 0;
-    this.children = {};
-    this.level = 0;
-  }
-}
 
-const dfs = (node, list, StatsTree) => {
+const TrieRecursiveDfs = (node, list, StatsTree) => {
   // If the brand has one product:
   if (StatsTree.root.brandMap[node.name] == 1 && node.level == 1) {
     while (node.childrenCounter == 1 && node.level < 5) {
@@ -25,21 +11,9 @@ const dfs = (node, list, StatsTree) => {
     }
     list.push(node.line);
 
-  // } 
-  // else if (StatsTree.root.brandMap[node.name] == 2 && node.level == 1) {
-  //   if(node.childrenCounter > 0 && node.level > 2) {
-  //     list.push(node.line);
-  //   }
-  //   const childrens = Object.keys(node.children);
-
-  //   if (node.childrenCounter > 0 && node.timesInBranch > 1 || node.name === "root" || (StatsTree.root.brandMap[node.name] == 1 && node.level == 1)) {
-  //     childrens.forEach((child) => {
-  //       let childNode = node.children[child];
-  //       dfs(childNode, list, StatsTree);
-  //     })
-  //   }
   } else {
     if (
+
       node.freq / node.timesInBranch > 0.5 &&
       (node.level > 3 || node.childrenCounter === 0)
     ) {
@@ -54,7 +28,7 @@ const dfs = (node, list, StatsTree) => {
     if (node.childrenCounter > 0 && node.timesInBranch > 1 || node.name === "root" || (StatsTree.root.brandMap[node.name] == 1 && node.level == 1)) {
       childrens.forEach((child) => {
         let childNode = node.children[child];
-        dfs(childNode, list, StatsTree);
+        TrieRecursiveDfs(childNode, list, StatsTree);
       });
     }
   }
@@ -62,22 +36,20 @@ const dfs = (node, list, StatsTree) => {
   return list;
 };
 
+
 class TitleWordsTrie {
   constructor() {
     this.root = new TrieNode();
   }
-
+  
   insert(title, statsObj) {
-
-    if (title.length === 0) return; // forbid empty string
+    if (title.length === 0) return;
     let currentNode = this.root;
     let word;
     let brand = title[0]
-
     for (let i = 0; i < title.length; i++) {
       word = title[i];
-
-      if (!currentNode.children.hasOwnProperty(word)) {
+      if (!currentNode.children.hasOwnProperty(word) && statsObj.root.children[word]) {
         currentNode.childrenCounter++;
         currentNode.children[word] = new TrieNode();
         let currentChild = currentNode.children[word];
@@ -86,13 +58,11 @@ class TitleWordsTrie {
         currentChild.name = word;
         currentChild.parent = currentNode.name;
         currentChild.level = currentNode.level + 1;
-
-        currentChild.line =
-          currentNode.line === null || currentNode.line === "root"
-            ? currentChild.name
-            : currentNode.line + "," + currentChild.name; //+
-        // "," +
-        // currentChild.name;
+        if (currentNode.parent !== null && currentNode.parent !== "root") {
+          currentChild.line = currentNode.line + "," + currentNode.name
+        } else if (currentNode.name === brand) {
+          currentChild.line = brand
+        }
       } else if (currentNode.children.hasOwnProperty(word)) {
         currentNode.children[word].timesInBranch++;
       }
@@ -103,8 +73,7 @@ class TitleWordsTrie {
   }
 
   getLines(StatsTree) {
-    // console.log(StatsTree)
-    return dfs(this.root, [], StatsTree);
+    return TrieRecursiveDfs(this.root, [], StatsTree);
   }
 
   findLine(productsArr) {
@@ -127,7 +96,8 @@ class TitleWordsTrie {
       let max = 0;
       let startsWord = "";
       let year = 0
-      // Get the biggest
+
+      // Get the most common word
       for (let word in wordStats) {
         if (wordStats[word] > max) {
           max = wordStats[word];
@@ -138,13 +108,14 @@ class TitleWordsTrie {
 
 
       let productLineString;
+      // Get startsWord
       let maxWordIndex = productsArr.indexOf(startsWord)
-
+      // If there are no statsword, take all product line
       if (maxWordIndex == -1) {
         productLineString = productsArr.join(",")
       } else {
 
-
+        // Checks if the word before Start word is part of the line
         if (productsArr[maxWordIndex - 1] in wordStats && currentNode.children[productsArr[maxWordIndex - 1]].timesInBranch > 2) {
           startsWord = productsArr[maxWordIndex - 1]
           maxWordIndex--
@@ -161,13 +132,13 @@ class TitleWordsTrie {
         }
 
 
-        productLineString = currentNode.line + "," + currentNode.name;
+        productLineString = currentNode.line; + "," + currentNode.name;
         while (currentNode.freq / currentNode.timesInBranch < 0.6) {
 
           maxWordIndex++
           if (currentNode.children[productsArr[maxWordIndex]]) {
             currentNode = currentNode.children[productsArr[maxWordIndex]]
-            productLineString = currentNode.line + "," + currentNode.name
+            productLineString = currentNode.line
           } else { break }
         }
       }

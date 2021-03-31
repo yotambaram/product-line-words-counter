@@ -9,7 +9,8 @@ const resultMatching = (trieRoot, productArr) => {
      // let brand = productArr[0]
      // productArr[i].line = line;
      if(!line) {
-       line = "NO LINE FOUND"
+      
+       line = productArr[i]
      }
       newList.push(line);
       //  !linesMap[line] ? linesMap[line] = 1 : linesMap[line]++
