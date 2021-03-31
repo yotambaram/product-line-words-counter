@@ -8,6 +8,7 @@ const { trieBuilder } = require("./services/trieBuilder");
 const { oneWordTreeBuilder } = require("./services/one-word-tree-builder");
 const { outputPathBuilder } = require("./services/output-path-builder");
 const { stringToArrCleaner } = require("./services/string-to-array-cleaner");
+const {csvWriter} = require("./services/csv-writer");
 const {
   shortStringToArrCleaner,
 } = require("./services/short-string-to-array-cleaner");
@@ -15,9 +16,13 @@ const { convertArrayToCSV } = require("convert-array-to-csv");
 const converter = require("convert-array-to-csv");
 const {dataToCsv} = require("./services/data-to-csv")
 
-let categoryName = "strollers"
-let categoryId = "166842011"
+
+
+let categoryName = "grills"
+let categoryId = "328983011"
 const productEnhancemenPath = "./db/product-enhancement-db.csv";
+
+
 
 async function getList(path) {
   // Get data (This data is the API results)
@@ -77,6 +82,8 @@ async function getList(path) {
        titlesResultMap[titledString]++
        
     }
+    matchingResultsArr[i].line = matchingResultsArr[i].filteredTitle.join(" ")
+     delete matchingResultsArr[i].filteredTitle;
     
   }
   const csvFromArrayOfArrays2 = convertArrayToCSV(titlesResultArr, {
@@ -88,22 +95,30 @@ async function getList(path) {
     "./db-results/product-line-per-brand",
     ".csv"
   );
+
+  
+
   fs.writeFile(outputPath1, csvFromArrayOfArrays2, (err) => {
     if (err) return console.log(err);
     console.log("CSV File Data Ready");
   });
   
-  // print
-  const csvFromArrayOfArrays = convertArrayToCSV(matchingResultsArr, {
-    // header,
-    separator: ",",
-  });
+
+  // console.log(matchingResultsArr[0])
+  // const csvFromArrayOfProducts = convertArrayToCSV(matchingResultsArr, {
+  //   // header,
+  //   separator: ",",
+  // });
 
   const outputPath2 = await outputPathBuilder(`./db-results/${categoryId}-${categoryName}`, ".csv");
-  fs.writeFile(outputPath2, csvFromArrayOfArrays, (err) => {
-    if (err) return console.log(err);
-    console.log("CSV File Data Ready");
-  });
+let resultFields = Object.keys(matchingResultsArr[0])
+
+csvWriter(matchingResultsArr, outputPath2, resultFields)
+
+  // fs.writeFile(outputPath2, matchingResultsArr, (err) => {
+  //   if (err) return console.log(err);
+  //   console.log("CSV File Data Ready");
+  // });
 
   const jsonDataObjStringify = JSON.stringify(trieRoot2);
   outputPath3 = await outputPathBuilder("./db-results/json-data", ".txt");
