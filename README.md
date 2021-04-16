@@ -1,5 +1,5 @@
 # Product Line Research
-<br /> <br /> 
+<br />
 ## Description:
 
 Get product title, brand, color and model and find the product line.
